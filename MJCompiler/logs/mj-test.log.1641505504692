@@ -1,0 +1,84 @@
+INFO  22:40:21,374 - Compiling source file: C:\Users\Lazar\Desktop\PP1_projekat\workspace\MJCompiler\test\program.mj
+INFO  22:40:21,388 - #2 program
+INFO  22:40:21,388 - #51 MJProgram
+INFO  22:40:21,388 - #7 const
+INFO  22:40:21,389 - #51 int
+INFO  22:40:21,389 - #51 x
+INFO  22:40:21,390 - #35 =
+INFO  22:40:21,390 - #49 31
+INFO  22:40:21,390 - #40 ,
+INFO  22:40:21,391 - #51 y
+INFO  22:40:21,391 - #35 =
+INFO  22:40:21,391 - #49 5
+INFO  22:40:21,392 - #40 ,
+INFO  22:40:21,392 - #51 z
+INFO  22:40:21,392 - #35 =
+INFO  22:40:21,392 - #49 21
+INFO  22:40:21,392 - #38 ;
+INFO  22:40:21,392 - #51 double
+INFO  22:40:21,393 - #51 a
+INFO  22:40:21,393 - #44 [
+INFO  22:40:21,394 - #45 ]
+INFO  22:40:21,394 - #40 ,
+INFO  22:40:21,395 - #51 b
+INFO  22:40:21,395 - #40 ,
+INFO  22:40:21,395 - #51 c
+INFO  22:40:21,395 - #44 [
+INFO  22:40:21,395 - #45 ]
+INFO  22:40:21,396 - #38 ;
+INFO  22:40:21,396 - #46 {
+INFO  22:40:21,396 - #47 }
+INFO  22:40:21,398 - Program(
+ MJProgram
+  DeclarationsDerived2(
+    DeclarationsDerived1(
+      DeclarationsDerived3(
+      ) [DeclarationsDerived3]
+      ConstDeclarations(
+        Type(
+         int
+        ) [Type]
+        NumConst(
+         x
+         31
+        ) [NumConst]
+        ConstDeclLst(
+          ConstDeclLst(
+            ConstDeclListDerived1(
+            ) [ConstDeclListDerived1]
+            NumConst(
+             y
+             5
+            ) [NumConst]
+          ) [ConstDeclLst]
+          NumConst(
+           z
+           21
+          ) [NumConst]
+        ) [ConstDeclLst]
+      ) [ConstDeclarations]
+    ) [DeclarationsDerived1]
+    VarDeclarations(
+      Type(
+       double
+      ) [Type]
+      ArrayVar(
+       a
+      ) [ArrayVar]
+      VariableLst(
+        VariableLst(
+          VariableListDerived1(
+          ) [VariableListDerived1]
+          Var(
+           b
+          ) [Var]
+        ) [VariableLst]
+        ArrayVar(
+         c
+        ) [ArrayVar]
+      ) [VariableLst]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+) [Program]
+INFO  22:40:21,398 - ===================================
+INFO  22:40:21,399 -  Deklarisanih promenljivih ima = 0

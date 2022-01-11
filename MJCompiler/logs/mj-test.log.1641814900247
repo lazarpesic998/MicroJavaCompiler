@@ -1,0 +1,655 @@
+INFO  12:41:27,809 - Compiling source file: C:\Users\Lazar\Desktop\PP1_projekat\workspace\MJCompiler\test\program.mj
+INFO  12:41:28,205 - #2 program
+INFO  12:41:28,206 - #51 MJProgram
+INFO  12:41:28,206 - #7 const
+INFO  12:41:28,213 - #51 int
+INFO  12:41:28,213 - #51 x
+INFO  12:41:28,221 - #35 =
+INFO  12:41:28,221 - #49 31
+INFO  12:41:28,221 - #40 ,
+INFO  12:41:28,228 - #51 y
+INFO  12:41:28,228 - #35 =
+INFO  12:41:28,229 - #49 5
+INFO  12:41:28,229 - #40 ,
+INFO  12:41:28,229 - #51 z
+INFO  12:41:28,229 - #35 =
+INFO  12:41:28,229 - #49 21
+INFO  12:41:28,229 - #38 ;
+INFO  12:41:28,229 - #51 double
+INFO  12:41:28,237 - #51 a
+INFO  12:41:28,238 - #44 [
+INFO  12:41:28,238 - #45 ]
+INFO  12:41:28,238 - #40 ,
+INFO  12:41:28,245 - #51 b
+INFO  12:41:28,245 - #40 ,
+INFO  12:41:28,246 - #51 c
+INFO  12:41:28,246 - #44 [
+INFO  12:41:28,246 - #45 ]
+INFO  12:41:28,246 - #38 ;
+INFO  12:41:28,246 - #4 class
+INFO  12:41:28,254 - #51 A
+INFO  12:41:28,255 - #16 extends
+INFO  12:41:28,255 - #51 B
+INFO  12:41:28,255 - #46 {
+INFO  12:41:28,255 - #51 bool
+INFO  12:41:28,262 - #51 condtion
+INFO  12:41:28,263 - #38 ;
+INFO  12:41:28,263 - #46 {
+INFO  12:41:28,263 - #51 int
+INFO  12:41:28,269 - #51 m
+INFO  12:41:28,270 - #42 (
+INFO  12:41:28,270 - #43 )
+INFO  12:41:28,276 - #46 {
+INFO  12:41:28,276 - #47 }
+INFO  12:41:28,281 - #47 }
+INFO  12:41:28,282 - #47 }
+INFO  12:41:28,282 - #21 record
+INFO  12:41:28,288 - #51 Rec
+INFO  12:41:28,288 - #46 {
+INFO  12:41:28,288 - #51 int
+INFO  12:41:28,289 - #51 x
+INFO  12:41:28,289 - #40 ,
+INFO  12:41:28,289 - #51 y
+INFO  12:41:28,289 - #38 ;
+INFO  12:41:28,289 - #51 double
+INFO  12:41:28,289 - #51 d1
+INFO  12:41:28,289 - #38 ;
+INFO  12:41:28,289 - #51 char
+INFO  12:41:28,289 - #51 c
+INFO  12:41:28,289 - #38 ;
+INFO  12:41:28,289 - #47 }
+INFO  12:41:28,289 - #46 {
+INFO  12:41:28,295 - #15 void
+INFO  12:41:28,296 - #51 method1
+INFO  12:41:28,301 - #42 (
+INFO  12:41:28,302 - #43 )
+INFO  12:41:28,302 - #51 int
+INFO  12:41:28,302 - #51 m1
+INFO  12:41:28,302 - #38 ;
+INFO  12:41:28,302 - #46 {
+INFO  12:41:28,302 - #47 }
+INFO  12:41:28,302 - #51 bool
+INFO  12:41:28,302 - #51 m2
+INFO  12:41:28,302 - #42 (
+INFO  12:41:28,302 - #51 int
+INFO  12:41:28,302 - #51 x
+INFO  12:41:28,302 - #40 ,
+INFO  12:41:28,307 - #51 double
+INFO  12:41:28,308 - #51 y
+INFO  12:41:28,308 - #44 [
+INFO  12:41:28,308 - #45 ]
+INFO  12:41:28,308 - #40 ,
+INFO  12:41:28,308 - #51 bool
+INFO  12:41:28,308 - #51 z
+INFO  12:41:28,308 - #43 )
+INFO  12:41:28,314 - #46 {
+INFO  12:41:28,315 - #51 statement
+INFO  12:41:28,315 - #39 :
+INFO  12:41:28,318 - #51 x
+INFO  12:41:28,322 - #41 .
+INFO  12:41:28,322 - #51 a
+INFO  12:41:28,323 - #38 ;
+INFO  12:41:28,327 - #51 statement1
+INFO  12:41:28,328 - #39 :
+INFO  12:41:28,328 - #51 y
+INFO  12:41:28,328 - #44 [
+INFO  12:41:28,328 - #23 -
+INFO  12:41:28,328 - #49 5
+INFO  12:41:28,336 - #24 *
+INFO  12:41:28,341 - #49 5
+INFO  12:41:28,354 - #45 ]
+INFO  12:41:28,373 - #38 ;
+INFO  12:41:28,374 - #46 {
+INFO  12:41:28,374 - #51 statement2
+INFO  12:41:28,374 - #39 :
+INFO  12:41:28,374 - #51 z
+INFO  12:41:28,374 - #44 [
+INFO  12:41:28,374 - #50 a
+INFO  12:41:28,379 - #45 ]
+INFO  12:41:28,379 - #38 ;
+INFO  12:41:28,380 - #47 }
+INFO  12:41:28,380 - #51 statement3
+INFO  12:41:28,380 - #39 :
+INFO  12:41:28,380 - #51 y
+INFO  12:41:28,381 - #44 [
+INFO  12:41:28,381 - #11 new
+INFO  12:41:28,381 - #51 A
+INFO  12:41:28,381 - #45 ]
+INFO  12:41:28,382 - #38 ;
+INFO  12:41:28,382 - #51 statement4
+INFO  12:41:28,382 - #39 :
+INFO  12:41:28,382 - #51 y
+INFO  12:41:28,382 - #44 [
+INFO  12:41:28,382 - #11 new
+INFO  12:41:28,382 - #51 A
+INFO  12:41:28,382 - #44 [
+INFO  12:41:28,382 - #49 1
+INFO  12:41:28,383 - #45 ]
+INFO  12:41:28,383 - #45 ]
+INFO  12:41:28,383 - #38 ;
+INFO  12:41:28,383 - #51 statement5
+INFO  12:41:28,383 - #39 :
+INFO  12:41:28,383 - #51 y
+INFO  12:41:28,383 - #44 [
+INFO  12:41:28,383 - #42 (
+INFO  12:41:28,383 - #48 false
+INFO  12:41:28,384 - #43 )
+INFO  12:41:28,384 - #45 ]
+INFO  12:41:28,384 - #38 ;
+INFO  12:41:28,384 - #51 statement6
+INFO  12:41:28,384 - #39 :
+INFO  12:41:28,384 - #51 y
+INFO  12:41:28,384 - #44 [
+INFO  12:41:28,384 - #23 -
+INFO  12:41:28,384 - #51 x
+INFO  12:41:28,384 - #41 .
+INFO  12:41:28,385 - #51 x
+INFO  12:41:28,385 - #42 (
+INFO  12:41:28,385 - #43 )
+INFO  12:41:28,389 - #45 ]
+INFO  12:41:28,394 - #38 ;
+INFO  12:41:28,395 - #51 statement7
+INFO  12:41:28,395 - #39 :
+INFO  12:41:28,395 - #51 y
+INFO  12:41:28,395 - #44 [
+INFO  12:41:28,395 - #23 -
+INFO  12:41:28,395 - #51 x
+INFO  12:41:28,395 - #41 .
+INFO  12:41:28,395 - #51 x
+INFO  12:41:28,395 - #42 (
+INFO  12:41:28,395 - #48 true
+INFO  12:41:28,395 - #43 )
+INFO  12:41:28,395 - #45 ]
+INFO  12:41:28,395 - #38 ;
+INFO  12:41:28,395 - #47 }
+INFO  12:41:28,395 - #47 }
+INFO  12:41:28,402 - Program(
+ MJProgram
+  DeclarationsDerived4(
+    DeclarationsDerived3(
+      DeclarationsDerived2(
+        DeclarationsDerived1(
+          DeclarationsDerived5(
+          ) [DeclarationsDerived5]
+          ConstDeclarations(
+            Type(
+             int
+            ) [Type]
+            NumConst(
+             x
+             31
+            ) [NumConst]
+            ConstDeclLst(
+              ConstDeclLst(
+                ConstDeclListDerived1(
+                ) [ConstDeclListDerived1]
+                NumConst(
+                 y
+                 5
+                ) [NumConst]
+              ) [ConstDeclLst]
+              NumConst(
+               z
+               21
+              ) [NumConst]
+            ) [ConstDeclLst]
+          ) [ConstDeclarations]
+        ) [DeclarationsDerived1]
+        VarDeclarations(
+          Type(
+           double
+          ) [Type]
+          ArrayVar(
+           a
+          ) [ArrayVar]
+          VariableLst(
+            VariableLst(
+              VariableListDerived1(
+              ) [VariableListDerived1]
+              Var(
+               b
+              ) [Var]
+            ) [VariableLst]
+            ArrayVar(
+             c
+            ) [ArrayVar]
+          ) [VariableLst]
+        ) [VarDeclarations]
+      ) [DeclarationsDerived2]
+      ClassDeclarations(
+       A
+        Exten(
+          Type(
+           B
+          ) [Type]
+        ) [Exten]
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             bool
+            ) [Type]
+            Var(
+             condtion
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        ConstructorMethDeclr(
+          MethodDeclLst(
+            MethodDeclListDerived1(
+            ) [MethodDeclListDerived1]
+            MethodDeclDerived1(
+              MethodTypeDerived1(
+                Type(
+                 int
+                ) [Type]
+              ) [MethodTypeDerived1]
+             m
+              FormalParametarsDerived1(
+              ) [FormalParametarsDerived1]
+              VarDeclarationsListDerived1(
+              ) [VarDeclarationsListDerived1]
+              StatementListDerived1(
+              ) [StatementListDerived1]
+            ) [MethodDeclDerived1]
+          ) [MethodDeclLst]
+        ) [ConstructorMethDeclr]
+      ) [ClassDeclarations]
+    ) [DeclarationsDerived3]
+    RecordDeclarations(
+     Rec
+      VarDeclarationsLst(
+        VarDeclarationsLst(
+          VarDeclarationsLst(
+            VarDeclarationsListDerived1(
+            ) [VarDeclarationsListDerived1]
+            VarDeclarations(
+              Type(
+               int
+              ) [Type]
+              Var(
+               x
+              ) [Var]
+              VariableLst(
+                VariableListDerived1(
+                ) [VariableListDerived1]
+                Var(
+                 y
+                ) [Var]
+              ) [VariableLst]
+            ) [VarDeclarations]
+          ) [VarDeclarationsLst]
+          VarDeclarations(
+            Type(
+             double
+            ) [Type]
+            Var(
+             d1
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        VarDeclarations(
+          Type(
+           char
+          ) [Type]
+          Var(
+           c
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+    ) [RecordDeclarations]
+  ) [DeclarationsDerived4]
+  MethodDeclLst(
+    MethodDeclLst(
+      MethodDeclListDerived1(
+      ) [MethodDeclListDerived1]
+      MethodDeclDerived1(
+        MethodTypeDerived2(
+        ) [MethodTypeDerived2]
+       method1
+        FormalParametarsDerived1(
+        ) [FormalParametarsDerived1]
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             int
+            ) [Type]
+            Var(
+             m1
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        StatementListDerived1(
+        ) [StatementListDerived1]
+      ) [MethodDeclDerived1]
+    ) [MethodDeclLst]
+    MethodDeclDerived1(
+      MethodTypeDerived1(
+        Type(
+         bool
+        ) [Type]
+      ) [MethodTypeDerived1]
+     m2
+      FormalParms(
+        FormPars(
+          Type(
+           int
+          ) [Type]
+          Var(
+           x
+          ) [Var]
+          FormParsVariableLst(
+            FormParsVariableLst(
+              FormParsVariableListDerived1(
+              ) [FormParsVariableListDerived1]
+              Type(
+               double
+              ) [Type]
+              ArrayVar(
+               y
+              ) [ArrayVar]
+            ) [FormParsVariableLst]
+            Type(
+             bool
+            ) [Type]
+            Var(
+             z
+            ) [Var]
+          ) [FormParsVariableLst]
+        ) [FormPars]
+      ) [FormalParms]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementLst(
+        StatementLst(
+          StatementLst(
+            StatementLst(
+              StatementLst(
+                StatementLst(
+                  StatementLst(
+                    StatementListDerived1(
+                    ) [StatementListDerived1]
+                    Stmt(
+                      LabelStm(
+                        Label(
+                         statement
+                        ) [Label]
+                      ) [LabelStm]
+                      DesignatorStm(
+                        DesignatorStatement(
+                          DesignatorClassAndField(
+                           x
+                           a
+                          ) [DesignatorClassAndField]
+                        ) [DesignatorStatement]
+                      ) [DesignatorStm]
+                    ) [Stmt]
+                  ) [StatementLst]
+                  Stmts(
+                    LabelStm(
+                      Label(
+                       statement1
+                      ) [Label]
+                    ) [LabelStm]
+                    DesignatorStm(
+                      DesignatorStatement(
+                        DesignatorArray(
+                         y
+                          Expr(
+                            MinusPref(
+                            ) [MinusPref]
+                            Term(
+                              NumConstFactor(
+                               5
+                              ) [NumConstFactor]
+                              MulopFactorLst(
+                                MulopFactorListDerived1(
+                                ) [MulopFactorListDerived1]
+                                MulopFactor(
+                                  Mul(
+                                  ) [Mul]
+                                  NumConstFactor(
+                                   5
+                                  ) [NumConstFactor]
+                                ) [MulopFactor]
+                              ) [MulopFactorLst]
+                            ) [Term]
+                          ) [Expr]
+                        ) [DesignatorArray]
+                      ) [DesignatorStatement]
+                    ) [DesignatorStm]
+                    StatementsDerived1(
+                      StatementLst(
+                        StatementListDerived1(
+                        ) [StatementListDerived1]
+                        Stmt(
+                          LabelStm(
+                            Label(
+                             statement2
+                            ) [Label]
+                          ) [LabelStm]
+                          DesignatorStm(
+                            DesignatorStatement(
+                              DesignatorArray(
+                               z
+                                Expr(
+                                  MinusPrefixDerived1(
+                                  ) [MinusPrefixDerived1]
+                                  Term(
+                                    CharConstFactor(
+                                     a
+                                    ) [CharConstFactor]
+                                    MulopFactorListDerived1(
+                                    ) [MulopFactorListDerived1]
+                                  ) [Term]
+                                ) [Expr]
+                              ) [DesignatorArray]
+                            ) [DesignatorStatement]
+                          ) [DesignatorStm]
+                        ) [Stmt]
+                      ) [StatementLst]
+                    ) [StatementsDerived1]
+                  ) [Stmts]
+                ) [StatementLst]
+                Stmt(
+                  LabelStm(
+                    Label(
+                     statement3
+                    ) [Label]
+                  ) [LabelStm]
+                  DesignatorStm(
+                    DesignatorStatement(
+                      DesignatorArray(
+                       y
+                        Expr(
+                          MinusPrefixDerived1(
+                          ) [MinusPrefixDerived1]
+                          Term(
+                            NewFactor(
+                              Type(
+                               A
+                              ) [Type]
+                            ) [NewFactor]
+                            MulopFactorListDerived1(
+                            ) [MulopFactorListDerived1]
+                          ) [Term]
+                        ) [Expr]
+                      ) [DesignatorArray]
+                    ) [DesignatorStatement]
+                  ) [DesignatorStm]
+                ) [Stmt]
+              ) [StatementLst]
+              Stmt(
+                LabelStm(
+                  Label(
+                   statement4
+                  ) [Label]
+                ) [LabelStm]
+                DesignatorStm(
+                  DesignatorStatement(
+                    DesignatorArray(
+                     y
+                      Expr(
+                        MinusPrefixDerived1(
+                        ) [MinusPrefixDerived1]
+                        Term(
+                          NewFactorArray(
+                            Type(
+                             A
+                            ) [Type]
+                            Expr(
+                              MinusPrefixDerived1(
+                              ) [MinusPrefixDerived1]
+                              Term(
+                                NumConstFactor(
+                                 1
+                                ) [NumConstFactor]
+                                MulopFactorListDerived1(
+                                ) [MulopFactorListDerived1]
+                              ) [Term]
+                            ) [Expr]
+                          ) [NewFactorArray]
+                          MulopFactorListDerived1(
+                          ) [MulopFactorListDerived1]
+                        ) [Term]
+                      ) [Expr]
+                    ) [DesignatorArray]
+                  ) [DesignatorStatement]
+                ) [DesignatorStm]
+              ) [Stmt]
+            ) [StatementLst]
+            Stmt(
+              LabelStm(
+                Label(
+                 statement5
+                ) [Label]
+              ) [LabelStm]
+              DesignatorStm(
+                DesignatorStatement(
+                  DesignatorArray(
+                   y
+                    Expr(
+                      MinusPrefixDerived1(
+                      ) [MinusPrefixDerived1]
+                      Term(
+                        ExprFactor(
+                          Expr(
+                            MinusPrefixDerived1(
+                            ) [MinusPrefixDerived1]
+                            Term(
+                              BoolConstFactor(
+                               false
+                              ) [BoolConstFactor]
+                              MulopFactorListDerived1(
+                              ) [MulopFactorListDerived1]
+                            ) [Term]
+                          ) [Expr]
+                        ) [ExprFactor]
+                        MulopFactorListDerived1(
+                        ) [MulopFactorListDerived1]
+                      ) [Term]
+                    ) [Expr]
+                  ) [DesignatorArray]
+                ) [DesignatorStatement]
+              ) [DesignatorStm]
+            ) [Stmt]
+          ) [StatementLst]
+          Stmt(
+            LabelStm(
+              Label(
+               statement6
+              ) [Label]
+            ) [LabelStm]
+            DesignatorStm(
+              DesignatorStatement(
+                DesignatorArray(
+                 y
+                  Expr(
+                    MinusPref(
+                    ) [MinusPref]
+                    Term(
+                      DesignatorFactor(
+                        DesignatorClassAndField(
+                         x
+                         x
+                        ) [DesignatorClassAndField]
+                        ActParsParenYes(
+                          ActParsParen(
+                            ActParsListDerived1(
+                            ) [ActParsListDerived1]
+                          ) [ActParsParen]
+                        ) [ActParsParenYes]
+                      ) [DesignatorFactor]
+                      MulopFactorListDerived1(
+                      ) [MulopFactorListDerived1]
+                    ) [Term]
+                  ) [Expr]
+                ) [DesignatorArray]
+              ) [DesignatorStatement]
+            ) [DesignatorStm]
+          ) [Stmt]
+        ) [StatementLst]
+        Stmt(
+          LabelStm(
+            Label(
+             statement7
+            ) [Label]
+          ) [LabelStm]
+          DesignatorStm(
+            DesignatorStatement(
+              DesignatorArray(
+               y
+                Expr(
+                  MinusPref(
+                  ) [MinusPref]
+                  Term(
+                    DesignatorFactor(
+                      DesignatorClassAndField(
+                       x
+                       x
+                      ) [DesignatorClassAndField]
+                      ActParsParenYes(
+                        ActParsParen(
+                          ActParsLst(
+                            ActParam(
+                              Expr(
+                                MinusPrefixDerived1(
+                                ) [MinusPrefixDerived1]
+                                Term(
+                                  BoolConstFactor(
+                                   true
+                                  ) [BoolConstFactor]
+                                  MulopFactorListDerived1(
+                                  ) [MulopFactorListDerived1]
+                                ) [Term]
+                              ) [Expr]
+                            ) [ActParam]
+                          ) [ActParsLst]
+                        ) [ActParsParen]
+                      ) [ActParsParenYes]
+                    ) [DesignatorFactor]
+                    MulopFactorListDerived1(
+                    ) [MulopFactorListDerived1]
+                  ) [Term]
+                ) [Expr]
+              ) [DesignatorArray]
+            ) [DesignatorStatement]
+          ) [DesignatorStm]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclLst]
+) [Program]
+INFO  12:41:28,403 - ===================================
+INFO  12:41:28,411 -  Deklarisanih promenljivih ima = 0

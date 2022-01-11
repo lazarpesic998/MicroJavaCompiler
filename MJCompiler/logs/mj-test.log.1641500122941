@@ -1,0 +1,23 @@
+INFO  21:07:41,409 - Compiling source file: C:\Users\Lazar\Desktop\PP1_projekat\workspace\MJCompiler\test\program.mj
+INFO  21:07:41,422 - #2 program
+INFO  21:07:41,422 - #51 MJProgram
+INFO  21:07:41,422 - #7 const
+INFO  21:07:41,422 - #51 int
+INFO  21:07:41,422 - #51 x
+INFO  21:07:41,422 - #35 =
+INFO  21:07:41,423 - #48 false
+INFO  21:07:41,423 - #46 {
+INFO  21:07:41,423 - #47 }
+INFO  21:07:41,424 - Program(
+ MJProgram
+  ConstDeclDerived1(
+    TypeDerived1(
+     int
+    ) [TypeDerived1]
+    IdentValuePairDerived2(
+     x
+    ) [IdentValuePairDerived2]
+  ) [ConstDeclDerived1]
+) [Program]
+INFO  21:07:41,424 - ===================================
+INFO  21:07:41,425 -  Deklarisanih promenljivih ima = 0

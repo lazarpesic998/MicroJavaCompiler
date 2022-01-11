@@ -1,0 +1,335 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+
+// import java.io.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+
+parser code {:
+	
+	boolean errorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+    
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+    
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+terminal PROG, BREAK, CLASS, ENUM, ELSE, CONST, IF, DO, WHILE, NEW, PRINT, READ, RETURN, VOID, EXTENDS, CONTINUE, THIS, SUPER, GOTO, RECORD;
+terminal PLUS, MINUS, MUL, DIV, MOD, EQ, NEQ, GT, GTE, LT, LTE, AND, OR, EQUAL, INC, DEC, SEMI, COLON, COMMA, DOT, LPAREN, RPAREN, LBRACKET, RBRACKET, LBRACE, RBRACE;
+
+//terminal BOOL;
+terminal String BOOL;
+terminal Integer NUMBER ;
+terminal Character CHAR;
+terminal String IDENT ;
+
+
+
+
+nonterminal Unmatched, Matched;
+
+
+nonterminal ConstDecl, Type, IdentValuePair, ConstDeclList, ConstDeclarations ;
+nonterminal Variable, VarDeclarations, VariableList, Declarations, VarDeclarationsList;
+nonterminal ClassDeclarations, Extension, ClassMethodsDeclarations, ConstructorDeclarations, ConstructorDecl, MethDeclarations, MethDeclarationsOptional;
+nonterminal RecordDeclarations;
+
+nonterminal MethodDecl, MethodType, MethodDeclList, FormalParametars, FormPars, FormParsVariableList;
+nonterminal Statement, SingleStatement, StatementList, Label, LabelStm, Statements;
+nonterminal DesignatorStatement, Designator, DesignatorOperations, DesignatorList;
+nonterminal Expr, ExprOptional, MinusPrefix, CommaNumConstOptional, Term, Factor;
+
+nonterminal ActParsParenOptional, ActParsParen, ActPars, ActParsList;
+//operations
+nonterminal Assignop, Relop, Mulop, MulopFactor, MulopFactorList, Addop, AddopTerm, AddopTermList;
+//condition
+nonterminal Condition, CondTerm, CondFact, RelopExpr, AndCondFact, AndCondFactList, OrCondTerm, OrCondTermList;
+
+
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodTypeName; 
+//nonterminal rs.etf.pp1.symboltable.concepts.Struct VarDeclList; 
+
+
+precedence left ELSE;
+
+Program ::= (Program) PROG IDENT:progName Declarations LBRACE MethodDeclList RBRACE;
+
+Declarations ::= Declarations ConstDeclarations
+			 | Declarations VarDeclarations
+			 | Declarations ClassDeclarations
+			 | Declarations RecordDeclarations
+			 | /*epsilon*/;
+
+
+
+
+							//ConstDecl
+
+ConstDeclarations ::= (ConstDeclarations) CONST Type:constType IdentValuePair ConstDeclList SEMI;
+
+ConstDeclList ::= (ConstDeclLst) ConstDeclList COMMA IdentValuePair
+				| /*epsilon*/;
+
+
+
+IdentValuePair ::= (NumConst) IDENT:constName EQUAL NUMBER
+				| (BoolConst) IDENT:constName EQUAL BOOL
+				| (CharConst) IDENT:constName EQUAL CHAR;
+				
+				
+
+
+							//VarDecl
+						
+
+VarDeclarations ::= (VarDeclarations) Type:varType Variable VariableList SEMI;
+
+VariableList ::= (VariableLst) VariableList COMMA Variable
+				| /*epsilon*/;
+
+
+Variable ::= (ArrayVar) IDENT:varName LBRACKET RBRACKET
+			| (Var) IDENT:varName;
+			
+VarDeclarationsList ::= (VarDeclarationsLst) VarDeclarationsList VarDeclarations
+					| /*epsilon*/;	
+
+
+Type ::= (Type) IDENT;
+
+
+
+							//ClassDecl
+
+ClassDeclarations ::= (ClassDeclarations) CLASS IDENT:className Extension LBRACE VarDeclarationsList MethDeclarationsOptional RBRACE;
+
+Extension ::= (Exten) EXTENDS Type:baseClassName
+			| /*epsilon*/;
+			
+
+
+MethDeclarations ::= (ConstructorMethDeclr) LBRACE MethodDeclList RBRACE;
+
+MethDeclarationsOptional ::= (MethDeclarationsOption) MethDeclarations
+							| /*epsilon*/;
+						
+						
+
+						
+ConstructorDecl ::= IDENT:constructorName LPAREN RPAREN VarDeclarationsList LBRACE StatementList RBRACE;
+
+		
+							
+
+
+							//RecordDecl
+							
+RecordDeclarations ::= (RecordDeclarations) RECORD IDENT:recordName LBRACE VarDeclarationsList RBRACE;
+
+
+							//Methods
+MethodDeclList ::= (MethodDeclLst) MethodDeclList MethodDecl
+				| /*epsilon*/;
+
+MethodDecl ::= MethodType IDENT:methodName LPAREN FormalParametars RPAREN VarDeclarationsList LBRACE StatementList RBRACE ;
+
+MethodType ::= Type | VOID;
+
+FormalParametars ::= (FormalParms) FormPars
+				| /*epsilon*/; 
+
+FormPars ::= (FormPars) Type:paramType Variable FormParsVariableList;
+
+FormParsVariableList ::= (FormParsVariableLst) FormParsVariableList COMMA Type Variable
+				| /*epsilon*/;
+
+
+
+							//Statements
+							
+StatementList ::= (StatementLst) StatementList Statement
+				| /*epsilon*/;
+							
+Statement ::= (StmtLabel) Label COLON SingleStatement
+			| (Stmt) SingleStatement
+			| (Stmts) Statements;
+			
+Statements ::= LBRACE StatementList RBRACE;
+
+
+
+
+SingleStatement ::= (DesignatorStm) DesignatorStatement SEMI
+				| (IfStatement) IF LPAREN Condition:c RPAREN Statement:s
+    			| (ElseStatement) IF LPAREN Condition:c RPAREN Statement:s ELSE Statement:e
+    			| (DoWhileStatement) DO Statement WHILE LPAREN Condition RPAREN SEMI
+    			| (Break) BREAK SEMI
+    			| (Continue) CONTINUE SEMI
+    			| (ReturnStatement) RETURN ExprOptional SEMI
+    			| (ReadStatement) READ LPAREN Designator RPAREN SEMI
+    			| (PrintStatement) PRINT LPAREN Expr CommaNumConstOptional RPAREN SEMI
+    			| (GotoStatement) GOTO Label SEMI;
+    			
+    			
+CommaNumConstOptional ::= (CommaNumConstOption) CommaNumConstOptional COMMA NUMBER
+						| /*epsilon*/;
+    			
+
+Label ::= (Label) IDENT:labelName;
+
+
+
+							//Condition
+							
+Condition ::= (Condition) CondTerm OrCondTermList;
+
+CondTerm ::= (CondTerm) CondFact AndCondFactList;
+
+CondFact ::= (CondFact) Expr RelopExpr;
+
+RelopExpr ::= (RelopExprYes) Relop Expr
+			| /*epsilon*/;
+			
+AndCondFact ::= (AndCondFact) AND CondFact;
+
+AndCondFactList ::= (AndCondFactLst) AndCondFactList AndCondFact
+				| /*epsilon*/;
+				
+
+OrCondTerm ::= (OrCondTerm) OR CondTerm;
+
+OrCondTermList ::= (OrCondTermLst) OrCondTermList OrCondTerm
+				| /*epsilon*/;
+
+
+							//DesignatorStatement
+							
+DesignatorStatement ::= (DesignatorStatement) Designator DesignatorOperations;
+
+Designator ::= (Designator) IDENT:designatorName DesignatorList;
+
+DesignatorList ::= (DesignatorClassAndField) DesignatorList DOT IDENT
+				| (DesignatorArray) DesignatorList LBRACKET Expr RBRACKET
+				| /*epsilon*/;
+			
+			
+DesignatorOperations ::= (DesignatorAssign) Assignop Expr
+						| (DesignatorParens) ActParsParen
+						| (DesignatorInc) INC
+						| (DesignatorDec) DEC
+						| /*epsilon*/;
+			
+			
+Expr ::= (Expr) MinusPrefix Term AddopTermList;
+
+ExprOptional ::= (ExprOption) Expr
+				| /*epsilon*/;
+
+MinusPrefix ::= (MinusPref) MINUS
+			| /*epsilon*/;
+			
+							 //Term and Factor
+			
+Term ::= (Term) Factor MulopFactorList;
+
+Factor ::= (DesignatorFactor) Designator ActParsParenOptional
+		| (NumConstFactor) NUMBER
+		| (CharConstFactor) CHAR
+		| (BoolConstFactor) BOOL
+		| (NewFactor) NEW Type:factorName
+		| (NewFactorArray) NEW Type:factorName LBRACKET Expr RBRACKET
+		| (ExprFactor) LPAREN Expr RPAREN;
+		
+		
+
+				 				//ActPars
+				 				
+				 				
+ActPars ::= (ActParams) ActPars COMMA Expr 
+		| (ActParam) Expr;
+		
+ActParsList ::= (ActParsLst) ActPars
+			| /*epsilon*/;
+		
+ActParsParen ::= (ActParsParen) LPAREN ActParsList RPAREN;
+
+
+ActParsParenOptional ::= (ActParsParenYes) ActParsParen
+					| /*epsilon*/;				
+
+
+
+				 				//Operations				 		
+		
+Assignop ::= (Assignop) EQUAL;
+
+Relop ::= (Eq) EQ
+		| (Neq) NEQ
+		| (Gt) GT
+		| (Gte) GTE
+		| (Lt) LT
+		| (Lte) LTE;
+		
+		
+Mulop ::= (Mul) MUL
+		| (Div) DIV
+		| (Mod) MOD;
+		
+MulopFactor ::= (MulopFactor) Mulop Factor;
+
+MulopFactorList ::= (MulopFactorLst) MulopFactorList MulopFactor
+				| /*epsilon*/;
+
+
+Addop ::= (Plus) PLUS
+		| (Minus) MINUS;
+		
+
+AddopTerm ::= (AddopTerm) Addop Term;
+
+AddopTermList ::= (AddopTermLst) AddopTermList AddopTerm
+				| /*epsilon*/;
+
+
+
