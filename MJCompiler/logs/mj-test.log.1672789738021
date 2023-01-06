@@ -1,0 +1,89 @@
+INFO  00:47:45,388 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  00:47:45,438 - #2 program
+INFO  00:47:45,439 - #50 MJ
+INFO  00:47:45,439 - #50 int
+INFO  00:47:45,441 - #50 a
+INFO  00:47:45,443 - #38 ,
+INFO  00:47:45,444 - #50 b
+INFO  00:47:45,444 - #38 ,
+INFO  00:47:45,445 - #50 c
+INFO  00:47:45,445 - #36 ;
+INFO  00:47:45,445 - #44 {
+INFO  00:47:45,446 - #50 int
+INFO  00:47:45,447 - #50 main
+INFO  00:47:45,447 - #40 (
+INFO  00:47:45,447 - #50 int
+INFO  00:47:45,448 - #50 a
+INFO  00:47:45,448 - #50 a
+ERROR 00:47:45,448 - 
+Sintaksna greska na liniji 6
+INFO  00:47:45,448 - #38 ,
+INFO  00:47:45,448 - #50 int
+INFO  00:47:45,448 - #50 b
+INFO  00:47:45,449 - #41 )
+ERROR 00:47:45,449 - Izvrsen oporavak do , ili ) u liniji 6
+INFO  00:47:45,452 - #44 {
+INFO  00:47:45,453 - #45 }
+INFO  00:47:45,454 - #45 }
+INFO  00:47:45,464 - Program(
+  ProgName(
+   MJ
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived4(
+    ) [DeclarationsDerived4]
+    VarDeclarations(
+      Type(
+       int
+      ) [Type]
+      Var(
+       a
+      ) [Var]
+      VariableLst(
+        VariableLst(
+          VariableListDerived1(
+          ) [VariableListDerived1]
+          Var(
+           b
+          ) [Var]
+        ) [VariableLst]
+        Var(
+         c
+        ) [Var]
+      ) [VariableLst]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodReturnType]
+     main
+      FormalParametarss(
+        FormalParsError(
+        ) [FormalParsError]
+        FormParsVariableLst(
+          FormParsVariableListDerived1(
+          ) [FormParsVariableListDerived1]
+          FormParss(
+            Type(
+             int
+            ) [Type]
+            FormVar(
+             b
+            ) [FormVar]
+          ) [FormParss]
+        ) [FormParsVariableLst]
+      ) [FormalParametarss]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementListDerived1(
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  00:47:45,464 - ===================================

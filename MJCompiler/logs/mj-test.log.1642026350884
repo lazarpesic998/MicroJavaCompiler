@@ -1,0 +1,91 @@
+INFO  23:25:05,573 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  23:25:05,618 - #2 program
+INFO  23:25:05,618 - #51 Program
+INFO  23:25:05,618 - #46 {
+INFO  23:25:05,619 - #15 void
+INFO  23:25:05,619 - #51 main
+INFO  23:25:05,620 - #42 (
+INFO  23:25:05,620 - #22 +
+ERROR 23:25:05,620 - 
+Sintaksna greska na liniji 3
+INFO  23:25:05,621 - #43 )
+INFO  23:25:05,621 - #51 A
+INFO  23:25:05,622 - #51 a
+INFO  23:25:05,622 - #38 ;
+INFO  23:25:05,624 - #51 char
+INFO  23:25:05,625 - #51 ch
+INFO  23:25:05,625 - #38 ;
+INFO  23:25:05,626 - #46 {
+INFO  23:25:05,626 - #13 read
+INFO  23:25:05,627 - #42 (
+INFO  23:25:05,627 - #51 c
+INFO  23:25:05,627 - #41 .
+INFO  23:25:05,628 - #51 i
+INFO  23:25:05,628 - #43 )
+INFO  23:25:05,634 - #38 ;
+INFO  23:25:05,634 - #47 }
+INFO  23:25:05,634 - #47 }
+INFO  23:25:05,636 - Program(
+ Program
+  DeclarationsDerived5(
+  ) [DeclarationsDerived5]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDeclDerived1(
+      MethodTypeDerived2(
+      ) [MethodTypeDerived2]
+     main
+      FormalParms(
+        FormalParsError(
+          FormParsVariableListDerived1(
+          ) [FormParsVariableListDerived1]
+        ) [FormalParsError]
+      ) [FormalParms]
+      VarDeclarationsLst(
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             A
+            ) [Type]
+            Var(
+             a
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        VarDeclarations(
+          Type(
+           char
+          ) [Type]
+          Var(
+           ch
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          ReadStatement(
+            Designator(
+             c
+              DesignatorClassAndField(
+                DesignatorListDerived1(
+                ) [DesignatorListDerived1]
+               i
+              ) [DesignatorClassAndField]
+            ) [Designator]
+          ) [ReadStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclLst]
+) [Program]
+INFO  23:25:05,636 - ===================================
+INFO  23:25:05,639 -  Deklarisanih promenljivih ima = 0

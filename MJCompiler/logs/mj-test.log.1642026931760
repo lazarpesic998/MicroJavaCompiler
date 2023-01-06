@@ -1,0 +1,59 @@
+INFO  23:35:04,527 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  23:35:04,572 - #2 program
+INFO  23:35:04,573 - #51 Program
+INFO  23:35:04,573 - #46 {
+INFO  23:35:04,574 - #15 void
+INFO  23:35:04,574 - #51 main
+INFO  23:35:04,575 - #42 (
+INFO  23:35:04,575 - #22 +
+ERROR 23:35:04,575 - 
+Sintaksna greska na liniji 3
+INFO  23:35:04,576 - #40 ,
+INFO  23:35:04,576 - #51 a
+INFO  23:35:04,576 - #40 ,
+INFO  23:35:04,576 - #51 bool
+INFO  23:35:04,577 - #43 )
+INFO  23:35:04,577 - #51 A
+INFO  23:35:04,577 - #51 a
+INFO  23:35:04,577 - #38 ;
+INFO  23:35:04,580 - #46 {
+INFO  23:35:04,581 - #47 }
+INFO  23:35:04,582 - #47 }
+INFO  23:35:04,583 - Program(
+ Program
+  DeclarationsDerived5(
+  ) [DeclarationsDerived5]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDeclDerived1(
+      MethodTypeDerived2(
+      ) [MethodTypeDerived2]
+     main
+      FormalParms(
+        FormalParsError(
+          FormParsVariableListDerived1(
+          ) [FormParsVariableListDerived1]
+        ) [FormalParsError]
+      ) [FormalParms]
+      VarDeclarationsLst(
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        VarDeclarations(
+          Type(
+           A
+          ) [Type]
+          Var(
+           a
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementListDerived1(
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclLst]
+) [Program]
+INFO  23:35:04,585 - ===================================
+INFO  23:35:04,588 -  Deklarisanih promenljivih ima = 0

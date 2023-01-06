@@ -1,0 +1,160 @@
+INFO  11:00:30,919 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  11:00:30,949 - #2 program
+INFO  11:00:30,949 - #51 MJ
+INFO  11:00:30,949 - #51 int
+INFO  11:00:30,950 - #51 a
+INFO  11:00:30,951 - #44 [
+INFO  11:00:30,951 - #45 ]
+INFO  11:00:30,951 - #40 ,
+INFO  11:00:30,952 - #51 b
+INFO  11:00:30,952 - #40 ,
+INFO  11:00:30,952 - #51 c
+INFO  11:00:30,952 - #44 [
+INFO  11:00:30,952 - #45 ]
+INFO  11:00:30,952 - #38 ;
+INFO  11:00:30,952 - #51 bool
+INFO  11:00:30,953 - #51 x
+INFO  11:00:30,954 - #40 ,
+INFO  11:00:30,954 - #51 y
+INFO  11:00:30,954 - #44 [
+INFO  11:00:30,954 - #45 ]
+INFO  11:00:30,954 - #40 ,
+INFO  11:00:30,954 - #51 z
+INFO  11:00:30,954 - #38 ;
+INFO  11:00:30,954 - #51 char
+INFO  11:00:30,954 - #51 j
+INFO  11:00:30,954 - #40 ,
+INFO  11:00:30,954 - #51 k
+INFO  11:00:30,955 - #44 [
+INFO  11:00:30,955 - #45 ]
+INFO  11:00:30,955 - #40 ,
+INFO  11:00:30,955 - #51 l
+INFO  11:00:30,955 - #38 ;
+INFO  11:00:30,955 - #46 {
+INFO  11:00:30,955 - #51 int
+INFO  11:00:30,955 - #51 m
+INFO  11:00:30,956 - #42 (
+INFO  11:00:30,956 - #43 )
+INFO  11:00:30,956 - #46 {
+INFO  11:00:30,957 - #47 }
+INFO  11:00:30,958 - #15 void
+INFO  11:00:30,958 - #51 m1
+INFO  11:00:30,958 - #42 (
+INFO  11:00:30,958 - #43 )
+INFO  11:00:30,958 - #46 {
+INFO  11:00:30,958 - #47 }
+INFO  11:00:30,958 - #47 }
+INFO  11:00:30,967 - Program(
+  ProgName(
+   MJ
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived2(
+      DeclarationsDerived2(
+        DeclarationsDerived5(
+        ) [DeclarationsDerived5]
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          ArrayVar(
+           a
+          ) [ArrayVar]
+          VariableLst(
+            VariableLst(
+              VariableListDerived1(
+              ) [VariableListDerived1]
+              Var(
+               b
+              ) [Var]
+            ) [VariableLst]
+            ArrayVar(
+             c
+            ) [ArrayVar]
+          ) [VariableLst]
+        ) [VarDeclarations]
+      ) [DeclarationsDerived2]
+      VarDeclarations(
+        Type(
+         bool
+        ) [Type]
+        Var(
+         x
+        ) [Var]
+        VariableLst(
+          VariableLst(
+            VariableListDerived1(
+            ) [VariableListDerived1]
+            ArrayVar(
+             y
+            ) [ArrayVar]
+          ) [VariableLst]
+          Var(
+           z
+          ) [Var]
+        ) [VariableLst]
+      ) [VarDeclarations]
+    ) [DeclarationsDerived2]
+    VarDeclarations(
+      Type(
+       char
+      ) [Type]
+      Var(
+       j
+      ) [Var]
+      VariableLst(
+        VariableLst(
+          VariableListDerived1(
+          ) [VariableListDerived1]
+          ArrayVar(
+           k
+          ) [ArrayVar]
+        ) [VariableLst]
+        Var(
+         l
+        ) [Var]
+      ) [VariableLst]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclLst(
+      MethodDeclListDerived1(
+      ) [MethodDeclListDerived1]
+      MethodDeclDerived1(
+        MethodReturnType(
+          Type(
+           int
+          ) [Type]
+        ) [MethodReturnType]
+       m
+        FormalParametarsDerived1(
+        ) [FormalParametarsDerived1]
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        StatementListDerived1(
+        ) [StatementListDerived1]
+      ) [MethodDeclDerived1]
+    ) [MethodDeclLst]
+    MethodDeclDerived1(
+      MethodReturnVoid(
+      ) [MethodReturnVoid]
+     m1
+      FormalParametarsDerived1(
+      ) [FormalParametarsDerived1]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementListDerived1(
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclLst]
+) [Program]
+INFO  11:00:30,968 - ===================================
+INFO  11:00:30,971 - Deklarisana nizovna promenljiva a tipa 1 na liniji 2
+INFO  11:00:30,971 - Deklarisana promenljiva b tipa 1 na liniji 2
+INFO  11:00:30,971 - Deklarisana nizovna promenljiva c tipa 1 na liniji 2
+INFO  11:00:30,972 - Deklarisana promenljiva x tipa 5 na liniji 3
+INFO  11:00:30,972 - Deklarisana nizovna promenljiva y tipa 5 na liniji 3
+INFO  11:00:30,972 - Deklarisana promenljiva z tipa 5 na liniji 3
+INFO  11:00:30,972 - Deklarisana promenljiva j tipa 2 na liniji 4
+INFO  11:00:30,972 - Deklarisana nizovna promenljiva k tipa 2 na liniji 4
+INFO  11:00:30,972 - Deklarisana promenljiva l tipa 2 na liniji 4

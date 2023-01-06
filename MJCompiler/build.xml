@@ -6,12 +6,14 @@
 			<fileset dir="src/rs/ac/bg/etf/pp1">
 				<exclude name="util/Log4JUtils.java"/>
 				<exclude name="RuleVisitor.java"/>
-				<exclude name="SemanticPass.java"/>
+				<exclude name="SemanticAnalyzer.java"/>
 				<exclude name="MyTab.java"/>
 				<exclude name="CodeGenerator.java"/>
 				<exclude name="CounterVisitor.java"/>
 				<exclude name="MyDumpSymbolTableVisitor.java"/>
 				<exclude name="Compiler.java"/>
+				<exclude name="TabS.java"/>
+				<exclude name="StructExtended.java"/>
 			</fileset>
 		</delete>
 		<delete>
@@ -38,7 +40,7 @@
 			<arg value="src.rs.ac.bg.etf.pp1.ast"/>
 			<arg value="-parser"/>
 			<arg value="MJParser"/>
-			<arg value="-dump_states"/>
+
 			<arg value="-buildtree"/>
 			<arg value="spec/mjparser.cup"/>
 		</java>

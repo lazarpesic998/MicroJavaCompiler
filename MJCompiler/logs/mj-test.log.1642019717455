@@ -1,0 +1,53 @@
+INFO  21:34:45,796 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  21:34:45,843 - #2 program
+INFO  21:34:45,843 - #51 Program
+INFO  21:34:45,844 - #4 class
+INFO  21:34:45,844 - #51 A
+INFO  21:34:45,844 - #46 {
+INFO  21:34:45,845 - #51 int
+INFO  21:34:45,845 - #51 x
+INFO  21:34:45,846 - #22 +
+ERROR 21:34:45,846 - 
+Sintaksna greska na liniji 3
+INFO  21:34:45,847 - #44 [
+INFO  21:34:45,847 - #45 ]
+INFO  21:34:45,847 - #40 ,
+INFO  21:34:45,848 - #51 y
+INFO  21:34:45,848 - #22 +
+INFO  21:34:45,848 - #44 [
+INFO  21:34:45,848 - #45 ]
+INFO  21:34:45,848 - #38 ;
+INFO  21:34:45,848 - #47 }
+INFO  21:34:45,848 - #46 {
+INFO  21:34:45,849 - #47 }
+INFO  21:34:45,854 - Program(
+ Program
+  DeclarationsDerived3(
+    DeclarationsDerived5(
+    ) [DeclarationsDerived5]
+    ClassDeclarations(
+     A
+      ExtensionDerived1(
+      ) [ExtensionDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          VariableError(
+          ) [VariableError]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      MethDeclarationsOptionalDerived1(
+      ) [MethDeclarationsOptionalDerived1]
+    ) [ClassDeclarations]
+  ) [DeclarationsDerived3]
+  MethodDeclListDerived1(
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  21:34:45,858 - ===================================
+INFO  21:34:45,861 -  Deklarisanih promenljivih ima = 0

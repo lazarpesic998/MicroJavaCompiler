@@ -1,0 +1,40 @@
+INFO  00:43:50,290 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  00:43:50,340 - #2 program
+INFO  00:43:50,340 - #50 MJ
+INFO  00:43:50,340 - #50 int
+INFO  00:43:50,341 - #50 a
+INFO  00:43:50,343 - #50 b
+ERROR 00:43:50,344 - 
+Sintaksna greska na liniji 6
+INFO  00:43:50,344 - #38 ,
+INFO  00:43:50,344 - #50 c
+INFO  00:43:50,345 - #36 ;
+INFO  00:43:50,347 - #44 {
+ERROR 00:43:50,348 - Izvrsen oporavak do , ili ; u liniji 6
+INFO  00:43:50,351 - #45 }
+INFO  00:43:50,362 - Program(
+  ProgName(
+   MJ
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived4(
+    ) [DeclarationsDerived4]
+    VarDeclarations(
+      Type(
+       int
+      ) [Type]
+      VariableError(
+      ) [VariableError]
+      VariableLst(
+        VariableListDerived1(
+        ) [VariableListDerived1]
+        Var(
+         c
+        ) [Var]
+      ) [VariableLst]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclListDerived1(
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  00:43:50,363 - ===================================

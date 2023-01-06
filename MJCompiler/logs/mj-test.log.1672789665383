@@ -1,0 +1,27 @@
+INFO  00:45:43,625 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  00:45:43,688 - #2 program
+INFO  00:45:43,688 - #50 MJ
+INFO  00:45:43,688 - #50 int
+INFO  00:45:43,690 - #50 a
+INFO  00:45:43,691 - #38 ,
+INFO  00:45:43,693 - #50 b
+INFO  00:45:43,693 - #38 ,
+INFO  00:45:43,693 - #50 c
+INFO  00:45:43,694 - #36 ;
+INFO  00:45:43,694 - #44 {
+INFO  00:45:43,695 - #50 int
+INFO  00:45:43,697 - #50 main
+INFO  00:45:43,698 - #40 (
+INFO  00:45:43,698 - #41 )
+INFO  00:45:43,699 - #44 {
+INFO  00:45:43,700 - #50 a
+INFO  00:45:43,701 - #50 c
+ERROR 00:45:43,701 - 
+Sintaksna greska na liniji 8
+INFO  00:45:43,701 - #33 =
+INFO  00:45:43,702 - #50 b
+INFO  00:45:43,702 - #50 c
+INFO  00:45:43,703 - #36 ;
+INFO  00:45:43,704 - #45 }
+INFO  00:45:43,704 - #45 }
+ERROR 00:45:43,704 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 10

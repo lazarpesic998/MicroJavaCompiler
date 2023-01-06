@@ -1,0 +1,121 @@
+INFO  00:50:32,810 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  00:50:32,860 - #2 program
+INFO  00:50:32,860 - #50 MJ
+INFO  00:50:32,860 - #50 int
+INFO  00:50:32,862 - #50 a
+INFO  00:50:32,862 - #38 ,
+INFO  00:50:32,863 - #50 b
+INFO  00:50:32,863 - #38 ,
+INFO  00:50:32,864 - #50 c
+INFO  00:50:32,864 - #36 ;
+INFO  00:50:32,864 - #44 {
+INFO  00:50:32,865 - #50 int
+INFO  00:50:32,866 - #50 main
+INFO  00:50:32,866 - #40 (
+INFO  00:50:32,867 - #50 int
+INFO  00:50:32,867 - #50 a
+INFO  00:50:32,867 - #41 )
+INFO  00:50:32,868 - #50 bool
+INFO  00:50:32,869 - #50 k
+INFO  00:50:32,869 - #36 ;
+INFO  00:50:32,870 - #44 {
+INFO  00:50:32,870 - #8 if
+INFO  00:50:32,871 - #40 (
+INFO  00:50:32,871 - #50 a
+INFO  00:50:32,871 - #30 <=
+INFO  00:50:32,873 - #40 (
+INFO  00:50:32,875 - #50 b
+INFO  00:50:32,875 - #50 c
+ERROR 00:50:32,875 - 
+Sintaksna greska na liniji 10
+INFO  00:50:32,875 - #41 )
+INFO  00:50:32,875 - #41 )
+INFO  00:50:32,875 - #44 {
+INFO  00:50:32,876 - #45 }
+INFO  00:50:32,876 - #45 }
+ERROR 00:50:32,877 - Izvrsen oporavak do , ili ) u liniji 10
+INFO  00:50:32,878 - #45 }
+INFO  00:50:32,888 - Program(
+  ProgName(
+   MJ
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived4(
+    ) [DeclarationsDerived4]
+    VarDeclarations(
+      Type(
+       int
+      ) [Type]
+      Var(
+       a
+      ) [Var]
+      VariableLst(
+        VariableLst(
+          VariableListDerived1(
+          ) [VariableListDerived1]
+          Var(
+           b
+          ) [Var]
+        ) [VariableLst]
+        Var(
+         c
+        ) [Var]
+      ) [VariableLst]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodReturnType]
+     main
+      FormalParametarss(
+        FormParss(
+          Type(
+           int
+          ) [Type]
+          FormVar(
+           a
+          ) [FormVar]
+        ) [FormParss]
+        FormParsVariableListDerived1(
+        ) [FormParsVariableListDerived1]
+      ) [FormalParametarss]
+      VarDeclarationsLst(
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+          Var(
+           k
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          IfStatement(
+            ConditionError(
+            ) [ConditionError]
+            Stmts(
+              StatementsDerived1(
+                StatementListDerived1(
+                ) [StatementListDerived1]
+              ) [StatementsDerived1]
+            ) [Stmts]
+          ) [IfStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  00:50:32,888 - ===================================

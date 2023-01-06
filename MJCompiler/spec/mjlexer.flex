@@ -56,10 +56,8 @@ import java_cup.runtime.Symbol;
 "void" 		{ return new_symbol(sym.VOID, yytext()); }
 "extends"	{ return new_symbol(sym.EXTENDS, yytext()); }
 "continue"	{ return new_symbol(sym.CONTINUE, yytext()); }
-//"this"		{ return new_symbol(sym.THIS, yytext()); }
-"super"		{ return new_symbol(sym.SUPER, yytext()); }
-"goto"		{ return new_symbol(sym.GOTO, yytext()); }
-"record"	{ return new_symbol(sym.RECORD, yytext()); }
+"this"		{ return new_symbol(sym.THIS, yytext()); }
+"foreach"	{ return new_symbol(sym.FOREACH, yytext()); }
 
 
 //operatori
@@ -90,6 +88,7 @@ import java_cup.runtime.Symbol;
 "]"			{ return new_symbol(sym.RBRACKET, yytext()); }
 "{" 		{ return new_symbol(sym.LBRACE, yytext()); }
 "}"			{ return new_symbol(sym.RBRACE, yytext()); }
+"=>"		{ return new_symbol(sym.ARROW, yytext()); }
 
 
 
@@ -101,8 +100,8 @@ import java_cup.runtime.Symbol;
 
 //tokeni
 
-//("true" | "false") 				{ return new_symbol(sym.BOOL, new Boolean(yytext())); }
-("true" | "false") 				{ return new_symbol(sym.BOOL, yytext()); }
+("true" | "false") 				{ return new_symbol(sym.BOOL, new Boolean(yytext())); }
+//("true" | "false") 				{ return new_symbol(sym.BOOL, yytext()); }
 [0-9]+							{ return new_symbol(sym.NUMBER, new Integer (yytext())); }
 \'[ -~]\'						{return new_symbol (sym.CHAR, yytext().charAt(1)); }
 ([a-z]|[A-Z])[a-z|A-Z|0-9|_]* 	{return new_symbol (sym.IDENT, yytext()); }

@@ -1,0 +1,76 @@
+INFO  00:48:58,026 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  00:48:58,112 - #2 program
+INFO  00:48:58,112 - #50 MJ
+INFO  00:48:58,113 - #50 int
+INFO  00:48:58,116 - #50 a
+INFO  00:48:58,118 - #38 ,
+INFO  00:48:58,120 - #50 b
+INFO  00:48:58,120 - #38 ,
+INFO  00:48:58,121 - #50 c
+INFO  00:48:58,121 - #36 ;
+INFO  00:48:58,121 - #44 {
+INFO  00:48:58,123 - #50 int
+INFO  00:48:58,124 - #50 main
+INFO  00:48:58,125 - #40 (
+INFO  00:48:58,125 - #50 int
+INFO  00:48:58,125 - #50 a
+INFO  00:48:58,126 - #50 a
+ERROR 00:48:58,126 - 
+Sintaksna greska na liniji 6
+INFO  00:48:58,126 - #41 )
+INFO  00:48:58,126 - #44 {
+INFO  00:48:58,127 - #45 }
+INFO  00:48:58,128 - #45 }
+ERROR 00:48:58,128 - Izvrsen oporavak do , ili ) u liniji 6
+INFO  00:48:58,157 - Program(
+  ProgName(
+   MJ
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived4(
+    ) [DeclarationsDerived4]
+    VarDeclarations(
+      Type(
+       int
+      ) [Type]
+      Var(
+       a
+      ) [Var]
+      VariableLst(
+        VariableLst(
+          VariableListDerived1(
+          ) [VariableListDerived1]
+          Var(
+           b
+          ) [Var]
+        ) [VariableLst]
+        Var(
+         c
+        ) [Var]
+      ) [VariableLst]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodReturnType]
+     main
+      FormalParametarss(
+        FormalParsError(
+        ) [FormalParsError]
+        FormParsVariableListDerived1(
+        ) [FormParsVariableListDerived1]
+      ) [FormalParametarss]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementListDerived1(
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  00:48:58,158 - ===================================

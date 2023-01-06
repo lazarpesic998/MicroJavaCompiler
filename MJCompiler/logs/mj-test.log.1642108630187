@@ -1,0 +1,82 @@
+INFO  22:16:27,501 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  22:16:27,543 - #2 program
+INFO  22:16:27,544 - #51 Program
+INFO  22:16:27,544 - #46 {
+INFO  22:16:27,545 - #15 void
+INFO  22:16:27,545 - #51 main
+INFO  22:16:27,546 - #42 (
+INFO  22:16:27,546 - #43 )
+INFO  22:16:27,547 - #51 A
+INFO  22:16:27,547 - #51 a
+INFO  22:16:27,549 - #38 ;
+INFO  22:16:27,550 - #46 {
+INFO  22:16:27,552 - #8 if
+INFO  22:16:27,553 - #42 (
+INFO  22:16:27,553 - #51 a
+INFO  22:16:27,554 - #22 +
+INFO  22:16:27,558 - #29 >
+ERROR 22:16:27,558 - 
+Sintaksna greska na liniji 5
+INFO  22:16:27,559 - #51 b
+INFO  22:16:27,559 - #43 )
+INFO  22:16:27,559 - #46 {
+INFO  22:16:27,560 - #47 }
+INFO  22:16:27,560 - #6 else
+INFO  22:16:27,565 - #46 {
+INFO  22:16:27,565 - #47 }
+INFO  22:16:27,565 - #47 }
+INFO  22:16:27,566 - #47 }
+INFO  22:16:27,567 - Program(
+ Program
+  DeclarationsDerived5(
+  ) [DeclarationsDerived5]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDeclDerived1(
+      MethodTypeDerived2(
+      ) [MethodTypeDerived2]
+     main
+      FormalParametarsDerived1(
+      ) [FormalParametarsDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        VarDeclarations(
+          Type(
+           A
+          ) [Type]
+          Var(
+           a
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          ElseStatement(
+            ConditionError(
+            ) [ConditionError]
+            Stmts(
+              StatementsDerived1(
+                StatementListDerived1(
+                ) [StatementListDerived1]
+              ) [StatementsDerived1]
+            ) [Stmts]
+            Stmts(
+              StatementsDerived1(
+                StatementListDerived1(
+                ) [StatementListDerived1]
+              ) [StatementsDerived1]
+            ) [Stmts]
+          ) [ElseStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclLst]
+) [Program]
+INFO  22:16:27,568 - ===================================
+INFO  22:16:27,571 -  Deklarisanih promenljivih ima = 0
