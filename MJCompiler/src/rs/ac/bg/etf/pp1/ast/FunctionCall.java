@@ -1,0 +1,98 @@
+// generated with ast extension for cup
+// version 0.8
+// 21/0/2023 23:53:41
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class FunctionCall implements SyntaxNode {
+
+    private SyntaxNode parent;
+    private int line;
+    public rs.etf.pp1.symboltable.concepts.Struct struct = null;
+
+    private Designator Designator;
+    private ActParsList ActParsList;
+
+    public FunctionCall (Designator Designator, ActParsList ActParsList) {
+        this.Designator=Designator;
+        if(Designator!=null) Designator.setParent(this);
+        this.ActParsList=ActParsList;
+        if(ActParsList!=null) ActParsList.setParent(this);
+    }
+
+    public Designator getDesignator() {
+        return Designator;
+    }
+
+    public void setDesignator(Designator Designator) {
+        this.Designator=Designator;
+    }
+
+    public ActParsList getActParsList() {
+        return ActParsList;
+    }
+
+    public void setActParsList(ActParsList ActParsList) {
+        this.ActParsList=ActParsList;
+    }
+
+    public SyntaxNode getParent() {
+        return parent;
+    }
+
+    public void setParent(SyntaxNode parent) {
+        this.parent=parent;
+    }
+
+    public int getLine() {
+        return line;
+    }
+
+    public void setLine(int line) {
+        this.line=line;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(Designator!=null) Designator.accept(visitor);
+        if(ActParsList!=null) ActParsList.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(Designator!=null) Designator.traverseTopDown(visitor);
+        if(ActParsList!=null) ActParsList.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(Designator!=null) Designator.traverseBottomUp(visitor);
+        if(ActParsList!=null) ActParsList.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("FunctionCall(\n");
+
+        if(Designator!=null)
+            buffer.append(Designator.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(ActParsList!=null)
+            buffer.append(ActParsList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [FunctionCall]");
+        return buffer.toString();
+    }
+}

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 4/0/2023 0:53:54
+// 21/0/2023 23:53:41
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,46 +9,38 @@ public class MethodDecl implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
-    private MethodType MethodType;
-    private String methodName;
-    private FormalParametars FormalParametars;
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
+
+    private MethodTypeName MethodTypeName;
+    private FormalParsOptional FormalParsOptional;
     private VarDeclarationsList VarDeclarationsList;
     private StatementList StatementList;
 
-    public MethodDecl (MethodType MethodType, String methodName, FormalParametars FormalParametars, VarDeclarationsList VarDeclarationsList, StatementList StatementList) {
-        this.MethodType=MethodType;
-        if(MethodType!=null) MethodType.setParent(this);
-        this.methodName=methodName;
-        this.FormalParametars=FormalParametars;
-        if(FormalParametars!=null) FormalParametars.setParent(this);
+    public MethodDecl (MethodTypeName MethodTypeName, FormalParsOptional FormalParsOptional, VarDeclarationsList VarDeclarationsList, StatementList StatementList) {
+        this.MethodTypeName=MethodTypeName;
+        if(MethodTypeName!=null) MethodTypeName.setParent(this);
+        this.FormalParsOptional=FormalParsOptional;
+        if(FormalParsOptional!=null) FormalParsOptional.setParent(this);
         this.VarDeclarationsList=VarDeclarationsList;
         if(VarDeclarationsList!=null) VarDeclarationsList.setParent(this);
         this.StatementList=StatementList;
         if(StatementList!=null) StatementList.setParent(this);
     }
 
-    public MethodType getMethodType() {
-        return MethodType;
+    public MethodTypeName getMethodTypeName() {
+        return MethodTypeName;
     }
 
-    public void setMethodType(MethodType MethodType) {
-        this.MethodType=MethodType;
+    public void setMethodTypeName(MethodTypeName MethodTypeName) {
+        this.MethodTypeName=MethodTypeName;
     }
 
-    public String getMethodName() {
-        return methodName;
+    public FormalParsOptional getFormalParsOptional() {
+        return FormalParsOptional;
     }
 
-    public void setMethodName(String methodName) {
-        this.methodName=methodName;
-    }
-
-    public FormalParametars getFormalParametars() {
-        return FormalParametars;
-    }
-
-    public void setFormalParametars(FormalParametars FormalParametars) {
-        this.FormalParametars=FormalParametars;
+    public void setFormalParsOptional(FormalParsOptional FormalParsOptional) {
+        this.FormalParsOptional=FormalParsOptional;
     }
 
     public VarDeclarationsList getVarDeclarationsList() {
@@ -88,23 +80,23 @@ public class MethodDecl implements SyntaxNode {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(MethodType!=null) MethodType.accept(visitor);
-        if(FormalParametars!=null) FormalParametars.accept(visitor);
+        if(MethodTypeName!=null) MethodTypeName.accept(visitor);
+        if(FormalParsOptional!=null) FormalParsOptional.accept(visitor);
         if(VarDeclarationsList!=null) VarDeclarationsList.accept(visitor);
         if(StatementList!=null) StatementList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(MethodType!=null) MethodType.traverseTopDown(visitor);
-        if(FormalParametars!=null) FormalParametars.traverseTopDown(visitor);
+        if(MethodTypeName!=null) MethodTypeName.traverseTopDown(visitor);
+        if(FormalParsOptional!=null) FormalParsOptional.traverseTopDown(visitor);
         if(VarDeclarationsList!=null) VarDeclarationsList.traverseTopDown(visitor);
         if(StatementList!=null) StatementList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(MethodType!=null) MethodType.traverseBottomUp(visitor);
-        if(FormalParametars!=null) FormalParametars.traverseBottomUp(visitor);
+        if(MethodTypeName!=null) MethodTypeName.traverseBottomUp(visitor);
+        if(FormalParsOptional!=null) FormalParsOptional.traverseBottomUp(visitor);
         if(VarDeclarationsList!=null) VarDeclarationsList.traverseBottomUp(visitor);
         if(StatementList!=null) StatementList.traverseBottomUp(visitor);
         accept(visitor);
@@ -115,17 +107,14 @@ public class MethodDecl implements SyntaxNode {
         buffer.append(tab);
         buffer.append("MethodDecl(\n");
 
-        if(MethodType!=null)
-            buffer.append(MethodType.toString("  "+tab));
+        if(MethodTypeName!=null)
+            buffer.append(MethodTypeName.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+methodName);
-        buffer.append("\n");
-
-        if(FormalParametars!=null)
-            buffer.append(FormalParametars.toString("  "+tab));
+        if(FormalParsOptional!=null)
+            buffer.append(FormalParsOptional.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

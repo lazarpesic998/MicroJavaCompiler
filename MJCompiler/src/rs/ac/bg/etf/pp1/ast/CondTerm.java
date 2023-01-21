@@ -1,39 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 4/0/2023 0:53:54
+// 21/0/2023 23:53:41
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class CondTerm implements SyntaxNode {
+public abstract class CondTerm implements SyntaxNode {
 
     private SyntaxNode parent;
+
     private int line;
-    private CondFact CondFact;
-    private AndCondFactList AndCondFactList;
-
-    public CondTerm (CondFact CondFact, AndCondFactList AndCondFactList) {
-        this.CondFact=CondFact;
-        if(CondFact!=null) CondFact.setParent(this);
-        this.AndCondFactList=AndCondFactList;
-        if(AndCondFactList!=null) AndCondFactList.setParent(this);
-    }
-
-    public CondFact getCondFact() {
-        return CondFact;
-    }
-
-    public void setCondFact(CondFact CondFact) {
-        this.CondFact=CondFact;
-    }
-
-    public AndCondFactList getAndCondFactList() {
-        return AndCondFactList;
-    }
-
-    public void setAndCondFactList(AndCondFactList AndCondFactList) {
-        this.AndCondFactList=AndCondFactList;
-    }
 
     public SyntaxNode getParent() {
         return parent;
@@ -51,46 +27,11 @@ public class CondTerm implements SyntaxNode {
         this.line=line;
     }
 
-    public void accept(Visitor visitor) {
-        visitor.visit(this);
-    }
+    public abstract void accept(Visitor visitor);
+    public abstract void childrenAccept(Visitor visitor);
+    public abstract void traverseTopDown(Visitor visitor);
+    public abstract void traverseBottomUp(Visitor visitor);
 
-    public void childrenAccept(Visitor visitor) {
-        if(CondFact!=null) CondFact.accept(visitor);
-        if(AndCondFactList!=null) AndCondFactList.accept(visitor);
-    }
-
-    public void traverseTopDown(Visitor visitor) {
-        accept(visitor);
-        if(CondFact!=null) CondFact.traverseTopDown(visitor);
-        if(AndCondFactList!=null) AndCondFactList.traverseTopDown(visitor);
-    }
-
-    public void traverseBottomUp(Visitor visitor) {
-        if(CondFact!=null) CondFact.traverseBottomUp(visitor);
-        if(AndCondFactList!=null) AndCondFactList.traverseBottomUp(visitor);
-        accept(visitor);
-    }
-
-    public String toString(String tab) {
-        StringBuffer buffer=new StringBuffer();
-        buffer.append(tab);
-        buffer.append("CondTerm(\n");
-
-        if(CondFact!=null)
-            buffer.append(CondFact.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        if(AndCondFactList!=null)
-            buffer.append(AndCondFactList.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        buffer.append(tab);
-        buffer.append(") [CondTerm]");
-        return buffer.toString();
-    }
+    public String toString() { return toString(""); }
+    public abstract String toString(String tab);
 }

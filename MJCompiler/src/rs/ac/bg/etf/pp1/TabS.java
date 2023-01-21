@@ -9,17 +9,24 @@ import rs.etf.pp1.symboltable.visitors.DumpSymbolTableVisitor;
 import rs.etf.pp1.symboltable.visitors.SymbolTableVisitor;
 
 public class TabS extends Tab {
-    //standardni bool tip
-    public static final StructExtended boolType = new StructExtended(StructExtended.Bool);
+    //standardni bool tip -strukturni cvor
+    public static final Struct boolType = new Struct(Struct.Bool);
 
-    //standardni nizovni tipovi
-    public static final StructExtended intArrayType = new StructExtended(StructExtended.Array, intType);
-    public static final StructExtended charArrayType = new StructExtended(StructExtended.Array, charType);
-    public static final StructExtended boolArrayType = new StructExtended(StructExtended.Array, boolType);
-    public static final StructExtended noArrayType = new StructExtended(StructExtended.Array, noType);
+    //standardni nizovni tipovi - strukturni cvorovi za nizove
+    public static final Struct intArrayType = new Struct(Struct.Array, intType);
+    public static final Struct charArrayType = new Struct(Struct.Array, charType);
+    public static final Struct boolArrayType = new Struct(Struct.Array, boolType);
+    public static final Struct noArrayType = new Struct(Struct.Array, noType);
 
+    public static Struct findArrayType(Struct s){
+        if(s == TabS.intType) return intArrayType;
+		if(s == TabS.charType) return charArrayType;
+		if(s == TabS.boolType) return boolArrayType;
+        
+		return noArrayType;
+    }
 
-    //TODO: napravi strukturne cvorove za nizove
+    
     public static void init() {
         Tab.init();
         Scope universe = currentScope;

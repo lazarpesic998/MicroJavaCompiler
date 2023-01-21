@@ -1,16 +1,27 @@
 // generated with ast extension for cup
 // version 0.8
-// 4/0/2023 0:53:54
+// 21/0/2023 23:53:41
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class FormVar extends FormVariable {
 
+    private Type Type;
     private String formVarName;
 
-    public FormVar (String formVarName) {
+    public FormVar (Type Type, String formVarName) {
+        this.Type=Type;
+        if(Type!=null) Type.setParent(this);
         this.formVarName=formVarName;
+    }
+
+    public Type getType() {
+        return Type;
+    }
+
+    public void setType(Type Type) {
+        this.Type=Type;
     }
 
     public String getFormVarName() {
@@ -26,13 +37,16 @@ public class FormVar extends FormVariable {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(Type!=null) Type.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(Type!=null) Type.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(Type!=null) Type.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -40,6 +54,12 @@ public class FormVar extends FormVariable {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("FormVar(\n");
+
+        if(Type!=null)
+            buffer.append(Type.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
 
         buffer.append(" "+tab+formVarName);
         buffer.append("\n");

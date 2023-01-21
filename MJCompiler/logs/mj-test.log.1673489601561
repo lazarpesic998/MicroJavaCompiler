@@ -1,0 +1,259 @@
+INFO  03:13:04,132 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  03:13:04,166 - #2 program
+INFO  03:13:04,166 - #50 ABC
+INFO  03:13:04,167 - #50 char
+INFO  03:13:04,167 - #50 x
+INFO  03:13:04,168 - #42 [
+INFO  03:13:04,168 - #43 ]
+INFO  03:13:04,168 - #38 ,
+INFO  03:13:04,168 - #50 y
+INFO  03:13:04,168 - #38 ,
+INFO  03:13:04,168 - #50 z
+INFO  03:13:04,168 - #36 ;
+INFO  03:13:04,168 - #50 bool
+INFO  03:13:04,169 - #50 c
+INFO  03:13:04,169 - #36 ;
+INFO  03:13:04,169 - #50 int
+INFO  03:13:04,169 - #50 max
+INFO  03:13:04,169 - #36 ;
+INFO  03:13:04,169 - #50 char
+INFO  03:13:04,169 - #50 npp
+INFO  03:13:04,169 - #36 ;
+INFO  03:13:04,169 - #7 const
+INFO  03:13:04,170 - #50 int
+INFO  03:13:04,171 - #50 a1
+INFO  03:13:04,174 - #33 =
+INFO  03:13:04,174 - #48 3
+INFO  03:13:04,174 - #38 ,
+INFO  03:13:04,174 - #50 a2
+INFO  03:13:04,174 - #33 =
+INFO  03:13:04,174 - #48 4
+INFO  03:13:04,174 - #38 ,
+INFO  03:13:04,174 - #50 a3
+INFO  03:13:04,174 - #33 =
+INFO  03:13:04,174 - #48 5
+INFO  03:13:04,174 - #36 ;
+INFO  03:13:04,174 - #7 const
+INFO  03:13:04,175 - #50 char
+INFO  03:13:04,175 - #50 b1
+INFO  03:13:04,175 - #33 =
+INFO  03:13:04,175 - #49 L
+INFO  03:13:04,175 - #38 ,
+INFO  03:13:04,175 - #50 b2
+INFO  03:13:04,175 - #33 =
+INFO  03:13:04,175 - #49 P
+INFO  03:13:04,175 - #36 ;
+INFO  03:13:04,175 - #7 const
+INFO  03:13:04,176 - #50 bool
+INFO  03:13:04,176 - #50 yes
+INFO  03:13:04,176 - #33 =
+INFO  03:13:04,176 - #47 true
+INFO  03:13:04,176 - #38 ,
+INFO  03:13:04,176 - #50 no
+INFO  03:13:04,176 - #33 =
+INFO  03:13:04,176 - #47 false
+INFO  03:13:04,176 - #36 ;
+INFO  03:13:04,176 - #44 {
+INFO  03:13:04,176 - #15 void
+INFO  03:13:04,177 - #50 put
+INFO  03:13:04,177 - #40 (
+INFO  03:13:04,178 - #50 int
+INFO  03:13:04,178 - #50 x
+INFO  03:13:04,178 - #41 )
+INFO  03:13:04,178 - #44 {
+INFO  03:13:04,178 - #14 return
+INFO  03:13:04,179 - #50 x
+INFO  03:13:04,179 - #36 ;
+INFO  03:13:04,179 - #45 }
+INFO  03:13:04,180 - #45 }
+INFO  03:13:04,185 - Program(
+  ProgName(
+   ABC
+  ) [ProgName]
+  DeclarationsDerived1(
+    DeclarationsDerived1(
+      DeclarationsDerived1(
+        DeclarationsDerived2(
+          DeclarationsDerived2(
+            DeclarationsDerived2(
+              DeclarationsDerived2(
+                DeclarationsDerived4(
+                ) [DeclarationsDerived4]
+                VarDeclarations(
+                  Type(
+                   char
+                  ) [Type]
+                  ArrayVar(
+                   x
+                  ) [ArrayVar]
+                  VariableLst(
+                    VariableLst(
+                      VariableListDerived1(
+                      ) [VariableListDerived1]
+                      Var(
+                       y
+                      ) [Var]
+                    ) [VariableLst]
+                    Var(
+                     z
+                    ) [Var]
+                  ) [VariableLst]
+                ) [VarDeclarations]
+              ) [DeclarationsDerived2]
+              VarDeclarations(
+                Type(
+                 bool
+                ) [Type]
+                Var(
+                 c
+                ) [Var]
+                VariableListDerived1(
+                ) [VariableListDerived1]
+              ) [VarDeclarations]
+            ) [DeclarationsDerived2]
+            VarDeclarations(
+              Type(
+               int
+              ) [Type]
+              Var(
+               max
+              ) [Var]
+              VariableListDerived1(
+              ) [VariableListDerived1]
+            ) [VarDeclarations]
+          ) [DeclarationsDerived2]
+          VarDeclarations(
+            Type(
+             char
+            ) [Type]
+            Var(
+             npp
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [DeclarationsDerived2]
+        ConstDeclarations(
+          Type(
+           int
+          ) [Type]
+          NumConst(
+           a1
+           3
+          ) [NumConst]
+          ConstDeclLst(
+            ConstDeclLst(
+              ConstDeclListDerived1(
+              ) [ConstDeclListDerived1]
+              NumConst(
+               a2
+               4
+              ) [NumConst]
+            ) [ConstDeclLst]
+            NumConst(
+             a3
+             5
+            ) [NumConst]
+          ) [ConstDeclLst]
+        ) [ConstDeclarations]
+      ) [DeclarationsDerived1]
+      ConstDeclarations(
+        Type(
+         char
+        ) [Type]
+        CharConst(
+         b1
+         L
+        ) [CharConst]
+        ConstDeclLst(
+          ConstDeclListDerived1(
+          ) [ConstDeclListDerived1]
+          CharConst(
+           b2
+           P
+          ) [CharConst]
+        ) [ConstDeclLst]
+      ) [ConstDeclarations]
+    ) [DeclarationsDerived1]
+    ConstDeclarations(
+      Type(
+       bool
+      ) [Type]
+      BoolConst(
+       yes
+       true
+      ) [BoolConst]
+      ConstDeclLst(
+        ConstDeclListDerived1(
+        ) [ConstDeclListDerived1]
+        BoolConst(
+         no
+         false
+        ) [BoolConst]
+      ) [ConstDeclLst]
+    ) [ConstDeclarations]
+  ) [DeclarationsDerived1]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnVoid(
+       put
+      ) [MethodReturnVoid]
+      FormalParametarss(
+        FormParss(
+          Type(
+           int
+          ) [Type]
+          FormVar(
+           x
+          ) [FormVar]
+        ) [FormParss]
+        FormParsVariableListDerived1(
+        ) [FormParsVariableListDerived1]
+      ) [FormalParametarss]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          ReturnStatement(
+            ExprOption(
+              PlusExpr(
+                Term(
+                  DesignatorFactor(
+                    DesignatorIdent(
+                     x
+                    ) [DesignatorIdent]
+                  ) [DesignatorFactor]
+                  MulopFactorListDerived1(
+                  ) [MulopFactorListDerived1]
+                ) [Term]
+                AddopTermListDerived1(
+                ) [AddopTermListDerived1]
+              ) [PlusExpr]
+            ) [ExprOption]
+          ) [ReturnStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  03:13:04,185 - ===================================
+INFO  03:13:04,186 - Deklarisana NIZOVNA promenljiva x tipa 2 na liniji 2
+INFO  03:13:04,186 - Deklarisana promenljiva y tipa 2 na liniji 2
+INFO  03:13:04,187 - Deklarisana promenljiva z tipa 2 na liniji 2
+INFO  03:13:04,187 - Deklarisana promenljiva c tipa 5 na liniji 3
+INFO  03:13:04,187 - Deklarisana promenljiva max tipa 1 na liniji 4
+INFO  03:13:04,187 - Deklarisana promenljiva npp tipa 2 na liniji 5
+INFO  03:13:04,187 - Deklarisana BROJEVNA KONSTANTA a1 tipa 1 vrednosti: 3 na liniji 7
+INFO  03:13:04,187 - Deklarisana BROJEVNA KONSTANTA a2 tipa 1 vrednosti: 4 na liniji 7
+INFO  03:13:04,187 - Deklarisana BROJEVNA KONSTANTA a3 tipa 1 vrednosti: 5 na liniji 7
+INFO  03:13:04,187 - Deklarisana CHAR KONSTANTA b1 tipa 2 vrednosti: L na liniji 8
+INFO  03:13:04,187 - Deklarisana CHAR KONSTANTA b2 tipa 2 vrednosti: P na liniji 8
+INFO  03:13:04,187 - Deklarisana BOOL KONSTANTA yes tipa 5 vrednosti: true: 1 na liniji 9
+INFO  03:13:04,187 - Deklarisana BOOL KONSTANTA no tipa 5 vrednosti: false: 0 na liniji 9
+INFO  03:13:04,187 - Deklaracija METODE : put() sa povratinim tipom: 0 na liniji 11
+INFO  03:13:04,187 - Nadjen designator: x na liniji 13
+INFO  03:13:04,187 - Obradjen glavni program ABC na liniji 1

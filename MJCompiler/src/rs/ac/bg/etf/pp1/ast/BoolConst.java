@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 4/0/2023 0:53:54
+// 21/0/2023 23:53:41
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,11 +8,11 @@ package rs.ac.bg.etf.pp1.ast;
 public class BoolConst extends IdentValuePair {
 
     private String constName;
-    private Boolean B1;
+    private Boolean constVal;
 
-    public BoolConst (String constName, Boolean B1) {
+    public BoolConst (String constName, Boolean constVal) {
         this.constName=constName;
-        this.B1=B1;
+        this.constVal=constVal;
     }
 
     public String getConstName() {
@@ -23,12 +23,12 @@ public class BoolConst extends IdentValuePair {
         this.constName=constName;
     }
 
-    public Boolean getB1() {
-        return B1;
+    public Boolean getConstVal() {
+        return constVal;
     }
 
-    public void setB1(Boolean B1) {
-        this.B1=B1;
+    public void setConstVal(Boolean constVal) {
+        this.constVal=constVal;
     }
 
     public void accept(Visitor visitor) {
@@ -54,7 +54,7 @@ public class BoolConst extends IdentValuePair {
         buffer.append(" "+tab+constName);
         buffer.append("\n");
 
-        buffer.append(" "+tab+B1);
+        buffer.append(" "+tab+constVal);
         buffer.append("\n");
 
         buffer.append(tab);

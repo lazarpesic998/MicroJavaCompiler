@@ -1,0 +1,177 @@
+INFO  03:13:21,564 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  03:13:21,600 - #2 program
+INFO  03:13:21,600 - #50 ABC
+INFO  03:13:21,600 - #7 const
+INFO  03:13:21,601 - #50 int
+INFO  03:13:21,601 - #50 a1
+INFO  03:13:21,601 - #33 =
+INFO  03:13:21,601 - #48 3
+INFO  03:13:21,602 - #38 ,
+INFO  03:13:21,602 - #50 a2
+INFO  03:13:21,602 - #33 =
+INFO  03:13:21,602 - #48 4
+INFO  03:13:21,603 - #38 ,
+INFO  03:13:21,603 - #50 a3
+INFO  03:13:21,603 - #33 =
+INFO  03:13:21,603 - #48 5
+INFO  03:13:21,603 - #36 ;
+INFO  03:13:21,603 - #7 const
+INFO  03:13:21,604 - #50 char
+INFO  03:13:21,604 - #50 b1
+INFO  03:13:21,604 - #33 =
+INFO  03:13:21,604 - #49 L
+INFO  03:13:21,604 - #38 ,
+INFO  03:13:21,604 - #50 b2
+INFO  03:13:21,604 - #33 =
+INFO  03:13:21,604 - #49 P
+INFO  03:13:21,604 - #36 ;
+INFO  03:13:21,605 - #7 const
+INFO  03:13:21,605 - #50 bool
+INFO  03:13:21,605 - #50 yes
+INFO  03:13:21,605 - #33 =
+INFO  03:13:21,605 - #47 true
+INFO  03:13:21,605 - #38 ,
+INFO  03:13:21,605 - #50 no
+INFO  03:13:21,605 - #33 =
+INFO  03:13:21,605 - #47 false
+INFO  03:13:21,605 - #36 ;
+INFO  03:13:21,605 - #44 {
+INFO  03:13:21,605 - #15 void
+INFO  03:13:21,606 - #50 put
+INFO  03:13:21,606 - #40 (
+INFO  03:13:21,606 - #50 int
+INFO  03:13:21,606 - #50 x
+INFO  03:13:21,606 - #41 )
+INFO  03:13:21,607 - #44 {
+INFO  03:13:21,607 - #14 return
+INFO  03:13:21,608 - #50 x
+INFO  03:13:21,608 - #36 ;
+INFO  03:13:21,609 - #45 }
+INFO  03:13:21,609 - #45 }
+INFO  03:13:21,614 - Program(
+  ProgName(
+   ABC
+  ) [ProgName]
+  DeclarationsDerived1(
+    DeclarationsDerived1(
+      DeclarationsDerived1(
+        DeclarationsDerived4(
+        ) [DeclarationsDerived4]
+        ConstDeclarations(
+          Type(
+           int
+          ) [Type]
+          NumConst(
+           a1
+           3
+          ) [NumConst]
+          ConstDeclLst(
+            ConstDeclLst(
+              ConstDeclListDerived1(
+              ) [ConstDeclListDerived1]
+              NumConst(
+               a2
+               4
+              ) [NumConst]
+            ) [ConstDeclLst]
+            NumConst(
+             a3
+             5
+            ) [NumConst]
+          ) [ConstDeclLst]
+        ) [ConstDeclarations]
+      ) [DeclarationsDerived1]
+      ConstDeclarations(
+        Type(
+         char
+        ) [Type]
+        CharConst(
+         b1
+         L
+        ) [CharConst]
+        ConstDeclLst(
+          ConstDeclListDerived1(
+          ) [ConstDeclListDerived1]
+          CharConst(
+           b2
+           P
+          ) [CharConst]
+        ) [ConstDeclLst]
+      ) [ConstDeclarations]
+    ) [DeclarationsDerived1]
+    ConstDeclarations(
+      Type(
+       bool
+      ) [Type]
+      BoolConst(
+       yes
+       true
+      ) [BoolConst]
+      ConstDeclLst(
+        ConstDeclListDerived1(
+        ) [ConstDeclListDerived1]
+        BoolConst(
+         no
+         false
+        ) [BoolConst]
+      ) [ConstDeclLst]
+    ) [ConstDeclarations]
+  ) [DeclarationsDerived1]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnVoid(
+       put
+      ) [MethodReturnVoid]
+      FormalParametarss(
+        FormParss(
+          Type(
+           int
+          ) [Type]
+          FormVar(
+           x
+          ) [FormVar]
+        ) [FormParss]
+        FormParsVariableListDerived1(
+        ) [FormParsVariableListDerived1]
+      ) [FormalParametarss]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          ReturnStatement(
+            ExprOption(
+              PlusExpr(
+                Term(
+                  DesignatorFactor(
+                    DesignatorIdent(
+                     x
+                    ) [DesignatorIdent]
+                  ) [DesignatorFactor]
+                  MulopFactorListDerived1(
+                  ) [MulopFactorListDerived1]
+                ) [Term]
+                AddopTermListDerived1(
+                ) [AddopTermListDerived1]
+              ) [PlusExpr]
+            ) [ExprOption]
+          ) [ReturnStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  03:13:21,614 - ===================================
+INFO  03:13:21,616 - Deklarisana BROJEVNA KONSTANTA a1 tipa 1 vrednosti: 3 na liniji 3
+INFO  03:13:21,616 - Deklarisana BROJEVNA KONSTANTA a2 tipa 1 vrednosti: 4 na liniji 3
+INFO  03:13:21,616 - Deklarisana BROJEVNA KONSTANTA a3 tipa 1 vrednosti: 5 na liniji 3
+INFO  03:13:21,616 - Deklarisana CHAR KONSTANTA b1 tipa 2 vrednosti: L na liniji 4
+INFO  03:13:21,616 - Deklarisana CHAR KONSTANTA b2 tipa 2 vrednosti: P na liniji 4
+INFO  03:13:21,616 - Deklarisana BOOL KONSTANTA yes tipa 5 vrednosti: true: 1 na liniji 5
+INFO  03:13:21,616 - Deklarisana BOOL KONSTANTA no tipa 5 vrednosti: false: 0 na liniji 5
+INFO  03:13:21,616 - Deklaracija METODE : put() sa povratinim tipom: 0 na liniji 7
+ERROR 03:13:21,616 - Desila se SEMANTICKA GRESKA: designator nije definisan na liniji 9
+INFO  03:13:21,617 - Obradjen glavni program ABC na liniji 1

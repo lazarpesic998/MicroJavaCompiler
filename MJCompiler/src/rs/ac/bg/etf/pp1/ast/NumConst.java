@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 4/0/2023 0:53:54
+// 21/0/2023 23:53:41
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,11 +8,11 @@ package rs.ac.bg.etf.pp1.ast;
 public class NumConst extends IdentValuePair {
 
     private String constName;
-    private Integer N1;
+    private Integer constVal;
 
-    public NumConst (String constName, Integer N1) {
+    public NumConst (String constName, Integer constVal) {
         this.constName=constName;
-        this.N1=N1;
+        this.constVal=constVal;
     }
 
     public String getConstName() {
@@ -23,12 +23,12 @@ public class NumConst extends IdentValuePair {
         this.constName=constName;
     }
 
-    public Integer getN1() {
-        return N1;
+    public Integer getConstVal() {
+        return constVal;
     }
 
-    public void setN1(Integer N1) {
-        this.N1=N1;
+    public void setConstVal(Integer constVal) {
+        this.constVal=constVal;
     }
 
     public void accept(Visitor visitor) {
@@ -54,7 +54,7 @@ public class NumConst extends IdentValuePair {
         buffer.append(" "+tab+constName);
         buffer.append("\n");
 
-        buffer.append(" "+tab+N1);
+        buffer.append(" "+tab+constVal);
         buffer.append("\n");
 
         buffer.append(tab);

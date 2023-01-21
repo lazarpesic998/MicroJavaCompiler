@@ -1,0 +1,17 @@
+//poklapanje formalnih i stvarnih parametara funkcije
+program ABC
+char c[];
+int max;
+char npp;
+{
+    int put(char x[])
+    {
+		npp = x[1];
+        return 1;
+    }
+
+	void main(){
+		max = put(npp);
+	}
+
+}

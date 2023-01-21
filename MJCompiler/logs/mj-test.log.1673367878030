@@ -1,0 +1,124 @@
+INFO  16:31:39,731 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  16:31:39,780 - #2 program
+INFO  16:31:39,780 - #50 ABC
+INFO  16:31:39,780 - #50 char
+INFO  16:31:39,782 - #50 c
+INFO  16:31:39,784 - #42 [
+INFO  16:31:39,785 - #43 ]
+INFO  16:31:39,785 - #36 ;
+INFO  16:31:39,786 - #50 int
+INFO  16:31:39,791 - #50 max
+INFO  16:31:39,791 - #36 ;
+INFO  16:31:39,792 - #50 char
+INFO  16:31:39,794 - #50 npp
+INFO  16:31:39,795 - #36 ;
+INFO  16:31:39,799 - #44 {
+INFO  16:31:39,799 - #50 int
+INFO  16:31:39,807 - #50 put
+INFO  16:31:39,809 - #40 (
+INFO  16:31:39,809 - #50 int
+INFO  16:31:39,811 - #50 x
+INFO  16:31:39,813 - #41 )
+INFO  16:31:39,815 - #44 {
+INFO  16:31:39,817 - #14 return
+INFO  16:31:39,819 - #50 x
+INFO  16:31:39,819 - #36 ;
+INFO  16:31:39,821 - #45 }
+INFO  16:31:39,823 - #45 }
+INFO  16:31:39,837 - Program(
+  ProgName(
+   ABC
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived2(
+      DeclarationsDerived2(
+        DeclarationsDerived4(
+        ) [DeclarationsDerived4]
+        VarDeclarations(
+          Type(
+           char
+          ) [Type]
+          ArrayVar(
+           c
+          ) [ArrayVar]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [DeclarationsDerived2]
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        Var(
+         max
+        ) [Var]
+        VariableListDerived1(
+        ) [VariableListDerived1]
+      ) [VarDeclarations]
+    ) [DeclarationsDerived2]
+    VarDeclarations(
+      Type(
+       char
+      ) [Type]
+      Var(
+       npp
+      ) [Var]
+      VariableListDerived1(
+      ) [VariableListDerived1]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodReturnType]
+     put
+      FormalParametarss(
+        FormParss(
+          Type(
+           int
+          ) [Type]
+          FormVar(
+           x
+          ) [FormVar]
+        ) [FormParss]
+        FormParsVariableListDerived1(
+        ) [FormParsVariableListDerived1]
+      ) [FormalParametarss]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          ReturnStatement(
+            ExprOption(
+              PlusExpr(
+                Term(
+                  DesignatorFactor(
+                    DesignatorIdent(
+                     x
+                    ) [DesignatorIdent]
+                  ) [DesignatorFactor]
+                  MulopFactorListDerived1(
+                  ) [MulopFactorListDerived1]
+                ) [Term]
+                AddopTermListDerived1(
+                ) [AddopTermListDerived1]
+              ) [PlusExpr]
+            ) [ExprOption]
+          ) [ReturnStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  16:31:39,839 - ===================================
+INFO  16:31:39,842 - Deklarisana nizovna promenljiva c tipa 2 na liniji 2
+INFO  16:31:39,842 - Deklarisana promenljiva max tipa 1 na liniji 3
+INFO  16:31:39,843 - Deklarisana promenljiva npp tipa 2 na liniji 4
+INFO  16:31:39,843 - Obradjen glavni program ABC na liniji 1

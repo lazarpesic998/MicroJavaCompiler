@@ -34,7 +34,7 @@ public class MJParserTest {
 			
 			br = new BufferedReader(new FileReader(sourceCode));
 			Yylex lexer = new Yylex(br);
-			//MJParserTest p = new MJParserTest();
+			// MJParserTest p = new MJParserTest();
 			
 			MJParser p = new MJParser(lexer);
 	        Symbol s = p.parse();  //pocetak parsiranja
@@ -46,8 +46,8 @@ public class MJParserTest {
 			log.info("===================================");
 
 			// ispis prepoznatih programskih konstrukcija
-//			SemanticAnalyzer v = new SemanticAnalyzer();
-//			prog.traverseBottomUp(v); 
+			SemanticAnalyzer v = new SemanticAnalyzer();
+			prog.traverseBottomUp(v); 
 	      
 			//log.info(" Print count calls = " + v.printCallCount);
 
