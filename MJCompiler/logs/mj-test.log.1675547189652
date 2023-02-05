@@ -1,0 +1,184 @@
+INFO  22:46:06,592 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  22:46:06,630 - #2 program
+INFO  22:46:06,630 - #50 ABC
+INFO  22:46:06,630 - #44 {
+INFO  22:46:06,631 - #15 void
+INFO  22:46:06,631 - #50 main
+INFO  22:46:06,631 - #40 (
+INFO  22:46:06,632 - #41 )
+INFO  22:46:06,633 - #50 int
+INFO  22:46:06,634 - #50 x
+INFO  22:46:06,635 - #38 ,
+INFO  22:46:06,635 - #50 y
+INFO  22:46:06,635 - #36 ;
+INFO  22:46:06,636 - #50 bool
+INFO  22:46:06,636 - #50 ibool
+INFO  22:46:06,636 - #36 ;
+INFO  22:46:06,636 - #44 {
+INFO  22:46:06,636 - #8 if
+INFO  22:46:06,637 - #40 (
+INFO  22:46:06,637 - #50 x
+INFO  22:46:06,637 - #28 >=
+INFO  22:46:06,638 - #48 0
+INFO  22:46:06,638 - #31 &&
+INFO  22:46:06,639 - #50 y
+INFO  22:46:06,644 - #27 >
+INFO  22:46:06,644 - #48 2
+INFO  22:46:06,645 - #41 )
+INFO  22:46:06,645 - #12 print
+INFO  22:46:06,645 - #40 (
+INFO  22:46:06,645 - #48 4
+INFO  22:46:06,645 - #41 )
+INFO  22:46:06,646 - #36 ;
+INFO  22:46:06,646 - #6 else
+INFO  22:46:06,647 - #12 print
+INFO  22:46:06,648 - #40 (
+INFO  22:46:06,648 - #48 5
+INFO  22:46:06,648 - #41 )
+INFO  22:46:06,648 - #36 ;
+INFO  22:46:06,648 - #45 }
+INFO  22:46:06,649 - #45 }
+INFO  22:46:06,655 - Program(
+  ProgName(
+   ABC
+  ) [ProgName]
+  DeclarationsDerived4(
+  ) [DeclarationsDerived4]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnVoid(
+       main
+      ) [MethodReturnVoid]
+      FormalParsOptionalDerived1(
+      ) [FormalParsOptionalDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             int
+            ) [Type]
+            Var(
+             x
+            ) [Var]
+            VariableLst(
+              VariableListDerived1(
+              ) [VariableListDerived1]
+              Var(
+               y
+              ) [Var]
+            ) [VariableLst]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+          Var(
+           ibool
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          ElseStatement(
+            CondIf(
+              ConditionTerm(
+                CondTermList(
+                  CondTermFact(
+                    CondFactTwoExpr(
+                      PlusExpr(
+                        TermFactor(
+                          DesignatorFactor(
+                            DesignatorIdent(
+                             x
+                            ) [DesignatorIdent]
+                          ) [DesignatorFactor]
+                        ) [TermFactor]
+                      ) [PlusExpr]
+                      Gte(
+                      ) [Gte]
+                      PlusExpr(
+                        TermFactor(
+                          ConstNumFactor(
+                           0
+                          ) [ConstNumFactor]
+                        ) [TermFactor]
+                      ) [PlusExpr]
+                    ) [CondFactTwoExpr]
+                  ) [CondTermFact]
+                  Andop(
+                  ) [Andop]
+                  CondFactTwoExpr(
+                    PlusExpr(
+                      TermFactor(
+                        DesignatorFactor(
+                          DesignatorIdent(
+                           y
+                          ) [DesignatorIdent]
+                        ) [DesignatorFactor]
+                      ) [TermFactor]
+                    ) [PlusExpr]
+                    Gt(
+                    ) [Gt]
+                    PlusExpr(
+                      TermFactor(
+                        ConstNumFactor(
+                         2
+                        ) [ConstNumFactor]
+                      ) [TermFactor]
+                    ) [PlusExpr]
+                  ) [CondFactTwoExpr]
+                ) [CondTermList]
+              ) [ConditionTerm]
+            ) [CondIf]
+            Stmt(
+              PrintStatement(
+                PlusExpr(
+                  TermFactor(
+                    ConstNumFactor(
+                     4
+                    ) [ConstNumFactor]
+                  ) [TermFactor]
+                ) [PlusExpr]
+                CommaNumConstOptionalDerived1(
+                ) [CommaNumConstOptionalDerived1]
+              ) [PrintStatement]
+            ) [Stmt]
+            ElseStart(
+            ) [ElseStart]
+            Stmt(
+              PrintStatement(
+                PlusExpr(
+                  TermFactor(
+                    ConstNumFactor(
+                     5
+                    ) [ConstNumFactor]
+                  ) [TermFactor]
+                ) [PlusExpr]
+                CommaNumConstOptionalDerived1(
+                ) [CommaNumConstOptionalDerived1]
+              ) [PrintStatement]
+            ) [Stmt]
+          ) [ElseStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  22:46:06,655 - ===================================
+INFO  22:46:06,657 - Deklaracija METODE : main() sa povratinim tipom: 0 na liniji 3
+INFO  22:46:06,658 - Deklarisana promenljiva x tipa 1 na liniji 4
+INFO  22:46:06,658 - Deklarisana promenljiva y tipa 1 na liniji 4
+INFO  22:46:06,658 - Deklarisana promenljiva ibool tipa 5 na liniji 5
+INFO  22:46:06,658 - Nadjen designator: x na liniji 20
+INFO  22:46:06,658 - Nadjen designator: y na liniji 20
+INFO  22:46:06,658 - Obradjen glavni program ABC na liniji 1
+INFO  22:46:06,660 - Parsiranje uspesno zavrseno!

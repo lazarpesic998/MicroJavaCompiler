@@ -61,24 +61,21 @@ terminal Integer NUMBER ;
 terminal Character CHAR;
 terminal String IDENT;
 
-//NONTERMINAL SYMBOLS
-nonterminal Unmatched, Matched;
-
 
 nonterminal ConstDecl, IdentValuePair, ConstDeclList, ConstDeclarations ;
 nonterminal Variable, VarDeclarations, VariableList, Declarations, VarDeclarationsList;
 nonterminal ClassDeclarations, Extension, ClassMethodsDeclarations, ConstructorDeclarations, ConstructorDecl, MethDeclarations, MethDeclarationsOptional;
-
+nonterminal DesignatorArrayStart;
 nonterminal MethodDeclList, FormalParsOptional, FormPars, FormVariable;
 nonterminal Statement, SingleStatement, StatementList, Label, LabelStm, Statements;
 nonterminal DesignatorOperations, DesignatorOptional, DesignatorOptionalList;
 nonterminal ParameterList;
 nonterminal CommaNumConstOptional;
-nonterminal WhileStart, ForeachStart, ForeachIdent;
+nonterminal IfStart, ElseStart, WhileStart, ForeachStart, ForeachIdent;
 
 nonterminal FunctionCallName, ActPars, ActParsList;
 //operations
-nonterminal Assignop, Relop, Mulop, Addop;
+nonterminal Assignop, Relop, Mulop, Addop, Andop, Orop;
 //conditions
 nonterminal ConditionIf, Condition, CondTerm, CondFact;
 
@@ -193,8 +190,8 @@ Statements ::= LBRACE StatementList RBRACE;
 
 
 SingleStatement ::= (DesignatorStm) DesignatorStatement SEMI
-				| (IfStatement) IF LPAREN ConditionIf:c RPAREN Statement:s
-    			| (ElseStatement) IF LPAREN ConditionIf:c RPAREN Statement:s ELSE Statement:e
+				| (IfStatement) IfStart LPAREN ConditionIf:c RPAREN Statement:s
+    			| (ElseStatement) IfStart LPAREN ConditionIf:c RPAREN Statement:s ElseStart Statement:e
     			| (WhileStatement) WhileStart:whileStart LPAREN Condition RPAREN Statement
     			| (Break) BREAK SEMI
     			| (Continue) CONTINUE SEMI
@@ -202,14 +199,18 @@ SingleStatement ::= (DesignatorStm) DesignatorStatement SEMI
     			| (ReadStatement) READ LPAREN Designator RPAREN SEMI
     			| (PrintStatement) PRINT LPAREN Expr CommaNumConstOptional RPAREN SEMI
     			| (ForeachStatement) Designator:designator DOT ForeachStart LPAREN ForeachIdent:foreachIdent ARROW Statement RPAREN SEMI;
-    			
+
+IfStart ::= (IfStart) IF;
+
+ElseStart ::= (ElseStart) ELSE;
+
 WhileStart ::= (WhileStart) WHILE; 
 
 ForeachStart ::= (ForeachStart) FOREACH;
 
 ForeachIdent ::= (ForeachIdent) IDENT:ident;
 
-CommaNumConstOptional ::= (CommaNumConstOption) CommaNumConstOptional COMMA NUMBER
+CommaNumConstOptional ::= (CommaNumConstOption) COMMA NUMBER
 						| /*epsilon*/;
     			
 
@@ -223,10 +224,14 @@ ConditionIf ::= (CondIf)  Condition
 			| (ConditionError) error:l {: parser.report_error("Izvrsen oporavak do ) u liniji " + lleft, null);  :};
 							
 Condition ::= (ConditionTerm) CondTerm
-			| (ConditionList) Condition OR CondTerm;
+			| (ConditionList) Condition Orop CondTerm;
 
 CondTerm ::= (CondTermFact) CondFact
-			| (CondTermList) CondTerm AND CondFact;
+			| (CondTermList) CondTerm Andop CondFact;
+
+Orop ::= (Orop) OR;
+
+Andop ::= (Andop) AND;
 
 CondFact ::= (CondFactExpr) Expr
 			| (CondFactTwoExpr) Expr:expr1 Relop Expr:expr2;
@@ -245,7 +250,9 @@ ParameterList ::= (ParameterListDesignator) Designator
 
 Designator ::= (DesignatorIdent) IDENT:designatorName
 			| (DesignatorClassAndField) Designator:designator DOT IDENT
-			| (DesignatorArray) Designator:designator LBRACKET Expr RBRACKET;
+			| (DesignatorArray) DesignatorArrayStart Expr RBRACKET;
+
+DesignatorArrayStart ::= (DesignatorArrayStart) Designator:designator LBRACKET;
 
 DesignatorOptional ::= (DesignatorOption) Designator
 					| (NoDesignatorOption)/*epsiolon*/;
@@ -269,9 +276,9 @@ Term ::= (TermFactor) Factor:factor
 
 Factor ::= (DesignatorFactor) Designator:designator
 		| (FactorFunctionCall) FunctionCall:functionCall
-		| (NumConstFactor) NUMBER:numFactor
-		| (CharConstFactor) CHAR:charFactor
-		| (BoolConstFactor) BOOL:boolFactor
+		| (ConstNumFactor) NUMBER:numFactor
+		| (ConstCharFactor) CHAR:charFactor
+		| (ConstBoolFactor) BOOL:boolFactor
 		| (NewFactor) NEW Type:factorName
 		| (NewFactorArray) NEW Type:factorName LBRACKET Expr:expr RBRACKET
 		| (ExprFactor) LPAREN Expr:expr RPAREN;

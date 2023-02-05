@@ -38,16 +38,11 @@ public class TabS extends Tab {
 
     }
 
-    /*public static void dump(SymbolTableVisitor stv) {
-        System.out.println("=====================SYMBOL TABLE DUMP=========================");
-        if (stv == null)
-            stv = new DumpSymbolTableVisitor();
-        for (Scope s = currentScope; s != null; s = s.getOuter()) {
-            s.accept(stv);
-        }
-        System.out.println(stv.getOutput());
-    }*/
-
-    //TODO: napravi insert sa drugim parametrima
-    //public static Obj insert(int kind, String name, Struct type)
+    public static Obj findInScope(String name){
+        Obj resultObj = null;
+		if(TabS.currentScope.getLocals() != null){
+			resultObj = TabS.currentScope.getLocals().searchKey(name);
+		}
+        return (resultObj != null) ? resultObj : noObj;
+    }
 }

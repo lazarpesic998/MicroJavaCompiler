@@ -1,0 +1,27 @@
+program MJProgram
+    const int x=4, y=6;
+    int a, b, d;
+{
+    int k() int c;{
+        c=3;
+
+        print(c);
+
+        return c+2+7*2+10;
+    }
+
+    void main(){
+
+        a = 4;
+        b = a+5;
+
+        d = k();
+        
+     	// print(747);
+     	
+     	print(d);
+
+       
+    }
+    
+}

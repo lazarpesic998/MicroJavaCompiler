@@ -61,10 +61,6 @@ terminal Integer NUMBER ;
 terminal Character CHAR;
 terminal String IDENT;
 
-//NONTERMINAL SYMBOLS
-nonterminal Unmatched Unmatched;
-nonterminal Matched Matched;
-
 
 nonterminal ConstDecl ConstDecl;
 nonterminal IdentValuePair IdentValuePair;
@@ -82,7 +78,7 @@ nonterminal ConstructorDeclarations ConstructorDeclarations;
 nonterminal ConstructorDecl ConstructorDecl;
 nonterminal MethDeclarations MethDeclarations;
 nonterminal MethDeclarationsOptional MethDeclarationsOptional;
-
+nonterminal DesignatorArrayStart DesignatorArrayStart;
 nonterminal MethodDeclList MethodDeclList;
 nonterminal FormalParsOptional FormalParsOptional;
 nonterminal FormPars FormPars;
@@ -98,6 +94,8 @@ nonterminal DesignatorOptional DesignatorOptional;
 nonterminal DesignatorOptionalList DesignatorOptionalList;
 nonterminal ParameterList ParameterList;
 nonterminal CommaNumConstOptional CommaNumConstOptional;
+nonterminal IfStart IfStart;
+nonterminal ElseStart ElseStart;
 nonterminal WhileStart WhileStart;
 nonterminal ForeachStart ForeachStart;
 nonterminal ForeachIdent ForeachIdent;
@@ -110,6 +108,8 @@ nonterminal Assignop Assignop;
 nonterminal Relop Relop;
 nonterminal Mulop Mulop;
 nonterminal Addop Addop;
+nonterminal Andop Andop;
+nonterminal Orop Orop;
 //conditions
 nonterminal ConditionIf ConditionIf;
 nonterminal Condition Condition;
@@ -227,8 +227,8 @@ Statements ::= LBRACE StatementList:S1 RBRACE {: RESULT=new StatementsDerived1(S
 
 
 SingleStatement ::= (DesignatorStm) DesignatorStatement:D1 SEMI {: RESULT=new DesignatorStm(D1); RESULT.setLine(D1left); :}
-				| (IfStatement) IF LPAREN ConditionIf:c RPAREN Statement:s {: RESULT=new IfStatement(c, s); RESULT.setLine(cleft); :}
-    			| (ElseStatement) IF LPAREN ConditionIf:c RPAREN Statement:s ELSE Statement:e {: RESULT=new ElseStatement(c, s, e); RESULT.setLine(cleft); :}
+				| (IfStatement) IfStart:I1 LPAREN ConditionIf:c RPAREN Statement:s {: RESULT=new IfStatement(I1, c, s); RESULT.setLine(I1left); :}
+    			| (ElseStatement) IfStart:I1 LPAREN ConditionIf:c RPAREN Statement:s ElseStart:E2 Statement:e {: RESULT=new ElseStatement(I1, c, s, E2, e); RESULT.setLine(I1left); :}
     			| (WhileStatement) WhileStart:whileStart LPAREN Condition:C1 RPAREN Statement:S2 {: RESULT=new WhileStatement(whileStart, C1, S2); RESULT.setLine(whileStartleft); :}
     			| (Break) BREAK SEMI {: RESULT=new Break(); :}
     			| (Continue) CONTINUE SEMI {: RESULT=new Continue(); :}
@@ -236,14 +236,18 @@ SingleStatement ::= (DesignatorStm) DesignatorStatement:D1 SEMI {: RESULT=new De
     			| (ReadStatement) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new ReadStatement(D1); RESULT.setLine(D1left); :}
     			| (PrintStatement) PRINT LPAREN Expr:E1 CommaNumConstOptional:C2 RPAREN SEMI {: RESULT=new PrintStatement(E1, C2); RESULT.setLine(E1left); :}
     			| (ForeachStatement) Designator:designator DOT ForeachStart:F1 LPAREN ForeachIdent:foreachIdent ARROW Statement:S2 RPAREN SEMI {: RESULT=new ForeachStatement(designator, F1, foreachIdent, S2); RESULT.setLine(designatorleft); :};
-    			
+
+IfStart ::= (IfStart) IF {: RESULT=new IfStart(); :};
+
+ElseStart ::= (ElseStart) ELSE {: RESULT=new ElseStart(); :};
+
 WhileStart ::= (WhileStart) WHILE {: RESULT=new WhileStart(); :}; 
 
 ForeachStart ::= (ForeachStart) FOREACH {: RESULT=new ForeachStart(); :};
 
 ForeachIdent ::= (ForeachIdent) IDENT:ident {: RESULT=new ForeachIdent(ident); RESULT.setLine(identleft); :};
 
-CommaNumConstOptional ::= (CommaNumConstOption) CommaNumConstOptional:C1 COMMA NUMBER:N2 {: RESULT=new CommaNumConstOption(C1, N2); RESULT.setLine(C1left); :}
+CommaNumConstOptional ::= (CommaNumConstOption) COMMA NUMBER:N1 {: RESULT=new CommaNumConstOption(N1); RESULT.setLine(N1left); :}
 						| {: RESULT=new CommaNumConstOptionalDerived1(); :} /*epsilon*/;
     			
 
@@ -257,10 +261,14 @@ ConditionIf ::= (CondIf)  Condition:C1 {: RESULT=new CondIf(C1); RESULT.setLine(
 			| (ConditionError) error:l {: parser.report_error("Izvrsen oporavak do ) u liniji " + lleft, null);  :} {: RESULT=new ConditionError(); :};
 							
 Condition ::= (ConditionTerm) CondTerm:C1 {: RESULT=new ConditionTerm(C1); RESULT.setLine(C1left); :}
-			| (ConditionList) Condition:C1 OR CondTerm:C2 {: RESULT=new ConditionList(C1, C2); RESULT.setLine(C1left); :};
+			| (ConditionList) Condition:C1 Orop:O2 CondTerm:C3 {: RESULT=new ConditionList(C1, O2, C3); RESULT.setLine(C1left); :};
 
 CondTerm ::= (CondTermFact) CondFact:C1 {: RESULT=new CondTermFact(C1); RESULT.setLine(C1left); :}
-			| (CondTermList) CondTerm:C1 AND CondFact:C2 {: RESULT=new CondTermList(C1, C2); RESULT.setLine(C1left); :};
+			| (CondTermList) CondTerm:C1 Andop:A2 CondFact:C3 {: RESULT=new CondTermList(C1, A2, C3); RESULT.setLine(C1left); :};
+
+Orop ::= (Orop) OR {: RESULT=new Orop(); :};
+
+Andop ::= (Andop) AND {: RESULT=new Andop(); :};
 
 CondFact ::= (CondFactExpr) Expr:E1 {: RESULT=new CondFactExpr(E1); RESULT.setLine(E1left); :}
 			| (CondFactTwoExpr) Expr:expr1 Relop:R1 Expr:expr2 {: RESULT=new CondFactTwoExpr(expr1, R1, expr2); RESULT.setLine(expr1left); :};
@@ -279,7 +287,9 @@ ParameterList ::= (ParameterListDesignator) Designator:D1 {: RESULT=new Paramete
 
 Designator ::= (DesignatorIdent) IDENT:designatorName {: RESULT=new DesignatorIdent(designatorName); RESULT.setLine(designatorNameleft); :}
 			| (DesignatorClassAndField) Designator:designator DOT IDENT:I1 {: RESULT=new DesignatorClassAndField(designator, I1); RESULT.setLine(designatorleft); :}
-			| (DesignatorArray) Designator:designator LBRACKET Expr:E1 RBRACKET {: RESULT=new DesignatorArray(designator, E1); RESULT.setLine(designatorleft); :};
+			| (DesignatorArray) DesignatorArrayStart:D1 Expr:E2 RBRACKET {: RESULT=new DesignatorArray(D1, E2); RESULT.setLine(D1left); :};
+
+DesignatorArrayStart ::= (DesignatorArrayStart) Designator:designator LBRACKET {: RESULT=new DesignatorArrayStart(designator); RESULT.setLine(designatorleft); :};
 
 DesignatorOptional ::= (DesignatorOption) Designator:D1 {: RESULT=new DesignatorOption(D1); RESULT.setLine(D1left); :}
 					| (NoDesignatorOption) {: RESULT=new NoDesignatorOption(); :}/*epsiolon*/;
@@ -303,9 +313,9 @@ Term ::= (TermFactor) Factor:factor {: RESULT=new TermFactor(factor); RESULT.set
 
 Factor ::= (DesignatorFactor) Designator:designator {: RESULT=new DesignatorFactor(designator); RESULT.setLine(designatorleft); :}
 		| (FactorFunctionCall) FunctionCall:functionCall {: RESULT=new FactorFunctionCall(functionCall); RESULT.setLine(functionCallleft); :}
-		| (NumConstFactor) NUMBER:numFactor {: RESULT=new NumConstFactor(numFactor); RESULT.setLine(numFactorleft); :}
-		| (CharConstFactor) CHAR:charFactor {: RESULT=new CharConstFactor(charFactor); RESULT.setLine(charFactorleft); :}
-		| (BoolConstFactor) BOOL:boolFactor {: RESULT=new BoolConstFactor(boolFactor); RESULT.setLine(boolFactorleft); :}
+		| (ConstNumFactor) NUMBER:numFactor {: RESULT=new ConstNumFactor(numFactor); RESULT.setLine(numFactorleft); :}
+		| (ConstCharFactor) CHAR:charFactor {: RESULT=new ConstCharFactor(charFactor); RESULT.setLine(charFactorleft); :}
+		| (ConstBoolFactor) BOOL:boolFactor {: RESULT=new ConstBoolFactor(boolFactor); RESULT.setLine(boolFactorleft); :}
 		| (NewFactor) NEW Type:factorName {: RESULT=new NewFactor(factorName); RESULT.setLine(factorNameleft); :}
 		| (NewFactorArray) NEW Type:factorName LBRACKET Expr:expr RBRACKET {: RESULT=new NewFactorArray(factorName, expr); RESULT.setLine(factorNameleft); :}
 		| (ExprFactor) LPAREN Expr:expr RPAREN {: RESULT=new ExprFactor(expr); RESULT.setLine(exprleft); :};

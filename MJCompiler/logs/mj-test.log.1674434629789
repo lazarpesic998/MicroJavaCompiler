@@ -1,0 +1,207 @@
+INFO  01:43:47,504 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  01:43:47,557 - #2 program
+INFO  01:43:47,558 - #50 MJProgram
+INFO  01:43:47,558 - #50 int
+INFO  01:43:47,559 - #50 c
+INFO  01:43:47,559 - #36 ;
+INFO  01:43:47,560 - #50 int
+INFO  01:43:47,561 - #50 y
+INFO  01:43:47,561 - #36 ;
+INFO  01:43:47,561 - #44 {
+INFO  01:43:47,562 - #50 int
+INFO  01:43:47,562 - #50 k
+INFO  01:43:47,562 - #40 (
+INFO  01:43:47,562 - #41 )
+INFO  01:43:47,563 - #50 int
+INFO  01:43:47,563 - #50 c
+INFO  01:43:47,564 - #36 ;
+INFO  01:43:47,564 - #44 {
+INFO  01:43:47,564 - #50 c
+INFO  01:43:47,564 - #33 =
+INFO  01:43:47,565 - #48 2
+INFO  01:43:47,565 - #36 ;
+INFO  01:43:47,566 - #14 return
+INFO  01:43:47,566 - #50 c
+INFO  01:43:47,571 - #20 +
+INFO  01:43:47,571 - #48 2
+INFO  01:43:47,572 - #36 ;
+INFO  01:43:47,572 - #45 }
+INFO  01:43:47,573 - #15 void
+INFO  01:43:47,574 - #50 main
+INFO  01:43:47,574 - #40 (
+INFO  01:43:47,574 - #41 )
+INFO  01:43:47,574 - #44 {
+INFO  01:43:47,574 - #12 print
+INFO  01:43:47,574 - #40 (
+INFO  01:43:47,574 - #48 5
+INFO  01:43:47,574 - #41 )
+INFO  01:43:47,575 - #36 ;
+INFO  01:43:47,575 - #12 print
+INFO  01:43:47,575 - #40 (
+INFO  01:43:47,575 - #48 6
+INFO  01:43:47,576 - #41 )
+INFO  01:43:47,576 - #36 ;
+INFO  01:43:47,576 - #45 }
+INFO  01:43:47,576 - #45 }
+INFO  01:43:47,583 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived2(
+      DeclarationsDerived4(
+      ) [DeclarationsDerived4]
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        Var(
+         c
+        ) [Var]
+        VariableListDerived1(
+        ) [VariableListDerived1]
+      ) [VarDeclarations]
+    ) [DeclarationsDerived2]
+    VarDeclarations(
+      Type(
+       int
+      ) [Type]
+      Var(
+       y
+      ) [Var]
+      VariableListDerived1(
+      ) [VariableListDerived1]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclLst(
+      MethodDeclListDerived1(
+      ) [MethodDeclListDerived1]
+      MethodDecl(
+        MethodReturnType(
+          Type(
+           int
+          ) [Type]
+         k
+        ) [MethodReturnType]
+        FormalParsOptionalDerived1(
+        ) [FormalParsOptionalDerived1]
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             int
+            ) [Type]
+            Var(
+             c
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        StatementLst(
+          StatementLst(
+            StatementListDerived1(
+            ) [StatementListDerived1]
+            Stmt(
+              DesignatorStm(
+                DesignatorStatementAssign(
+                  DesignatorIdent(
+                   c
+                  ) [DesignatorIdent]
+                  AssignopExpresion(
+                    Assignop(
+                    ) [Assignop]
+                    PlusExpr(
+                      TermFactor(
+                        ConstNumFactor(
+                         2
+                        ) [ConstNumFactor]
+                      ) [TermFactor]
+                    ) [PlusExpr]
+                  ) [AssignopExpresion]
+                ) [DesignatorStatementAssign]
+              ) [DesignatorStm]
+            ) [Stmt]
+          ) [StatementLst]
+          Stmt(
+            ReturnStatement(
+              ExprOption(
+                ExprAddopList(
+                  PlusExpr(
+                    TermFactor(
+                      DesignatorFactor(
+                        DesignatorIdent(
+                         c
+                        ) [DesignatorIdent]
+                      ) [DesignatorFactor]
+                    ) [TermFactor]
+                  ) [PlusExpr]
+                  Plus(
+                  ) [Plus]
+                  TermFactor(
+                    ConstNumFactor(
+                     2
+                    ) [ConstNumFactor]
+                  ) [TermFactor]
+                ) [ExprAddopList]
+              ) [ExprOption]
+            ) [ReturnStatement]
+          ) [Stmt]
+        ) [StatementLst]
+      ) [MethodDecl]
+    ) [MethodDeclLst]
+    MethodDecl(
+      MethodReturnVoid(
+       main
+      ) [MethodReturnVoid]
+      FormalParsOptionalDerived1(
+      ) [FormalParsOptionalDerived1]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementLst(
+        StatementLst(
+          StatementListDerived1(
+          ) [StatementListDerived1]
+          Stmt(
+            PrintStatement(
+              PlusExpr(
+                TermFactor(
+                  ConstNumFactor(
+                   5
+                  ) [ConstNumFactor]
+                ) [TermFactor]
+              ) [PlusExpr]
+              CommaNumConstOptionalDerived1(
+              ) [CommaNumConstOptionalDerived1]
+            ) [PrintStatement]
+          ) [Stmt]
+        ) [StatementLst]
+        Stmt(
+          PrintStatement(
+            PlusExpr(
+              TermFactor(
+                ConstNumFactor(
+                 6
+                ) [ConstNumFactor]
+              ) [TermFactor]
+            ) [PlusExpr]
+            CommaNumConstOptionalDerived1(
+            ) [CommaNumConstOptionalDerived1]
+          ) [PrintStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  01:43:47,584 - ===================================
+INFO  01:43:47,588 - Deklarisana promenljiva c tipa 1 na liniji 2
+INFO  01:43:47,588 - Deklarisana promenljiva y tipa 1 na liniji 2
+INFO  01:43:47,588 - Deklaracija METODE : k() sa povratinim tipom: 1 na liniji 4
+INFO  01:43:47,588 - Deklarisana promenljiva c tipa 1 na liniji 4
+INFO  01:43:47,588 - Nadjen designator: c na liniji 5
+INFO  01:43:47,588 - Nadjen designator: c na liniji 6
+INFO  01:43:47,589 - Deklaracija METODE : main() sa povratinim tipom: 0 na liniji 9
+INFO  01:43:47,589 - Obradjen glavni program MJProgram na liniji 1
+INFO  01:43:47,592 - Parsiranje uspesno zavrseno!

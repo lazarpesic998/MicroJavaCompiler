@@ -7,12 +7,18 @@ int g;
         int niz[];
     {
         g = N;
+        print(g);
         y = 53;
-        y++;
+        print(y);
+        g++;
+        print(y);
         x = -y + g * N;
+        print(x);
+        //out of bounds error
+        // x=2;
+        // y=-1;
         niz = new int [N];
         niz[0] = niz[x+y];
         niz[1]++;
-        
     }
 } 

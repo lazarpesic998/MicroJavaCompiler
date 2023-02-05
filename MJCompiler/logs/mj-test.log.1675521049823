@@ -1,0 +1,80 @@
+INFO  15:30:24,270 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  15:30:24,308 - #2 program
+INFO  15:30:24,308 - #50 ABC
+INFO  15:30:24,308 - #44 {
+INFO  15:30:24,308 - #15 void
+INFO  15:30:24,310 - #50 main
+INFO  15:30:24,310 - #40 (
+INFO  15:30:24,310 - #41 )
+INFO  15:30:24,310 - #50 int
+INFO  15:30:24,311 - #50 x
+INFO  15:30:24,312 - #38 ,
+INFO  15:30:24,312 - #50 y
+INFO  15:30:24,312 - #36 ;
+INFO  15:30:24,312 - #50 bool
+INFO  15:30:24,314 - #50 ibool
+INFO  15:30:24,314 - #33 =
+ERROR 15:30:24,314 - 
+Sintaksna greska na liniji 5
+INFO  15:30:24,314 - #47 false
+INFO  15:30:24,314 - #36 ;
+INFO  15:30:24,314 - #44 {
+INFO  15:30:24,314 - #45 }
+INFO  15:30:24,314 - #45 }
+ERROR 15:30:24,314 - Izvrsen oporavak do , ili ; u liniji 5
+INFO  15:30:24,320 - Program(
+  ProgName(
+   ABC
+  ) [ProgName]
+  DeclarationsDerived4(
+  ) [DeclarationsDerived4]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnVoid(
+       main
+      ) [MethodReturnVoid]
+      FormalParsOptionalDerived1(
+      ) [FormalParsOptionalDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             int
+            ) [Type]
+            Var(
+             x
+            ) [Var]
+            VariableLst(
+              VariableListDerived1(
+              ) [VariableListDerived1]
+              Var(
+               y
+              ) [Var]
+            ) [VariableLst]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+          VariableError(
+          ) [VariableError]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementListDerived1(
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  15:30:24,320 - ===================================
+INFO  15:30:24,322 - Deklaracija METODE : main() sa povratinim tipom: 0 na liniji 3
+INFO  15:30:24,323 - Deklarisana promenljiva x tipa 1 na liniji 4
+INFO  15:30:24,323 - Deklarisana promenljiva y tipa 1 na liniji 4
+INFO  15:30:24,323 - Obradjen glavni program ABC na liniji 1
+ERROR 15:30:24,323 - Parsiranje NIJE uspesno zavrseno!

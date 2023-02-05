@@ -1,17 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/0/2023 23:53:41
+// 5/1/2023 1:44:11
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public interface Visitor { 
 
-    public void visit(Unmatched Unmatched);
     public void visit(ExprOptional ExprOptional);
     public void visit(Mulop Mulop);
     public void visit(ConstructorDecl ConstructorDecl);
-    public void visit(Matched Matched);
     public void visit(Relop Relop);
     public void visit(ParameterList ParameterList);
     public void visit(ConstructorDeclarations ConstructorDeclarations);
@@ -74,9 +72,9 @@ public interface Visitor {
     public void visit(ExprFactor ExprFactor);
     public void visit(NewFactorArray NewFactorArray);
     public void visit(NewFactor NewFactor);
-    public void visit(BoolConstFactor BoolConstFactor);
-    public void visit(CharConstFactor CharConstFactor);
-    public void visit(NumConstFactor NumConstFactor);
+    public void visit(ConstBoolFactor ConstBoolFactor);
+    public void visit(ConstCharFactor ConstCharFactor);
+    public void visit(ConstNumFactor ConstNumFactor);
     public void visit(FactorFunctionCall FactorFunctionCall);
     public void visit(DesignatorFactor DesignatorFactor);
     public void visit(TermFactorList TermFactorList);
@@ -90,6 +88,7 @@ public interface Visitor {
     public void visit(AssignopExpresion AssignopExpresion);
     public void visit(NoDesignatorOption NoDesignatorOption);
     public void visit(DesignatorOption DesignatorOption);
+    public void visit(DesignatorArrayStart DesignatorArrayStart);
     public void visit(DesignatorArray DesignatorArray);
     public void visit(DesignatorClassAndField DesignatorClassAndField);
     public void visit(DesignatorIdent DesignatorIdent);
@@ -103,6 +102,8 @@ public interface Visitor {
     public void visit(DesignatorStatementAssign DesignatorStatementAssign);
     public void visit(CondFactTwoExpr CondFactTwoExpr);
     public void visit(CondFactExpr CondFactExpr);
+    public void visit(Andop Andop);
+    public void visit(Orop Orop);
     public void visit(CondTermList CondTermList);
     public void visit(CondTermFact CondTermFact);
     public void visit(ConditionList ConditionList);
@@ -115,6 +116,8 @@ public interface Visitor {
     public void visit(ForeachIdent ForeachIdent);
     public void visit(ForeachStart ForeachStart);
     public void visit(WhileStart WhileStart);
+    public void visit(ElseStart ElseStart);
+    public void visit(IfStart IfStart);
     public void visit(ForeachStatement ForeachStatement);
     public void visit(PrintStatement PrintStatement);
     public void visit(ReadStatement ReadStatement);

@@ -1,0 +1,267 @@
+INFO  15:20:16,721 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  15:20:16,780 - #2 program
+INFO  15:20:16,781 - #50 test301
+INFO  15:20:16,781 - #7 const
+INFO  15:20:16,781 - #50 int
+INFO  15:20:16,781 - #50 nula
+INFO  15:20:16,782 - #33 =
+INFO  15:20:16,783 - #48 0
+INFO  15:20:16,783 - #36 ;
+INFO  15:20:16,783 - #7 const
+INFO  15:20:16,783 - #50 int
+INFO  15:20:16,783 - #50 jedan
+INFO  15:20:16,783 - #33 =
+INFO  15:20:16,783 - #48 1
+INFO  15:20:16,783 - #36 ;
+INFO  15:20:16,783 - #7 const
+INFO  15:20:16,784 - #50 int
+INFO  15:20:16,784 - #50 pet
+INFO  15:20:16,784 - #33 =
+INFO  15:20:16,784 - #48 5
+INFO  15:20:16,784 - #36 ;
+INFO  15:20:16,784 - #50 int
+INFO  15:20:16,784 - #50 niz
+INFO  15:20:16,785 - #42 [
+INFO  15:20:16,785 - #43 ]
+INFO  15:20:16,785 - #38 ,
+INFO  15:20:16,785 - #50 niz2
+INFO  15:20:16,785 - #42 [
+INFO  15:20:16,785 - #43 ]
+INFO  15:20:16,785 - #38 ,
+INFO  15:20:16,786 - #50 a
+INFO  15:20:16,786 - #38 ,
+INFO  15:20:16,786 - #50 b
+INFO  15:20:16,786 - #36 ;
+INFO  15:20:16,786 - #50 char
+INFO  15:20:16,787 - #50 nizch
+INFO  15:20:16,787 - #42 [
+INFO  15:20:16,787 - #43 ]
+INFO  15:20:16,787 - #36 ;
+INFO  15:20:16,787 - #44 {
+INFO  15:20:16,787 - #15 void
+INFO  15:20:16,787 - #50 main
+INFO  15:20:16,788 - #40 (
+INFO  15:20:16,789 - #41 )
+INFO  15:20:16,789 - #50 int
+INFO  15:20:16,790 - #50 bodovi
+INFO  15:20:16,790 - #36 ;
+INFO  15:20:16,790 - #50 bool
+INFO  15:20:16,790 - #50 bt
+INFO  15:20:16,790 - #36 ;
+INFO  15:20:16,790 - #44 {
+INFO  15:20:16,790 - #50 niz
+INFO  15:20:16,790 - #33 =
+INFO  15:20:16,790 - #11 new
+INFO  15:20:16,790 - #50 int
+INFO  15:20:16,791 - #42 [
+INFO  15:20:16,791 - #48 3
+INFO  15:20:16,791 - #43 ]
+INFO  15:20:16,791 - #36 ;
+INFO  15:20:16,792 - #42 [
+INFO  15:20:16,792 - #50 a
+INFO  15:20:16,792 - #38 ,
+INFO  15:20:16,792 - #50 b
+INFO  15:20:16,792 - #43 ]
+INFO  15:20:16,792 - #33 =
+INFO  15:20:16,793 - #50 niz
+INFO  15:20:16,793 - #36 ;
+INFO  15:20:16,793 - #45 }
+INFO  15:20:16,793 - #45 }
+INFO  15:20:16,800 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived2(
+      DeclarationsDerived1(
+        DeclarationsDerived1(
+          DeclarationsDerived1(
+            DeclarationsDerived4(
+            ) [DeclarationsDerived4]
+            ConstDeclarations(
+              Type(
+               int
+              ) [Type]
+              NumConst(
+               nula
+               0
+              ) [NumConst]
+              ConstDeclListDerived1(
+              ) [ConstDeclListDerived1]
+            ) [ConstDeclarations]
+          ) [DeclarationsDerived1]
+          ConstDeclarations(
+            Type(
+             int
+            ) [Type]
+            NumConst(
+             jedan
+             1
+            ) [NumConst]
+            ConstDeclListDerived1(
+            ) [ConstDeclListDerived1]
+          ) [ConstDeclarations]
+        ) [DeclarationsDerived1]
+        ConstDeclarations(
+          Type(
+           int
+          ) [Type]
+          NumConst(
+           pet
+           5
+          ) [NumConst]
+          ConstDeclListDerived1(
+          ) [ConstDeclListDerived1]
+        ) [ConstDeclarations]
+      ) [DeclarationsDerived1]
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        ArrayVar(
+         niz
+        ) [ArrayVar]
+        VariableLst(
+          VariableLst(
+            VariableLst(
+              VariableListDerived1(
+              ) [VariableListDerived1]
+              ArrayVar(
+               niz2
+              ) [ArrayVar]
+            ) [VariableLst]
+            Var(
+             a
+            ) [Var]
+          ) [VariableLst]
+          Var(
+           b
+          ) [Var]
+        ) [VariableLst]
+      ) [VarDeclarations]
+    ) [DeclarationsDerived2]
+    VarDeclarations(
+      Type(
+       char
+      ) [Type]
+      ArrayVar(
+       nizch
+      ) [ArrayVar]
+      VariableListDerived1(
+      ) [VariableListDerived1]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnVoid(
+       main
+      ) [MethodReturnVoid]
+      FormalParsOptionalDerived1(
+      ) [FormalParsOptionalDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             int
+            ) [Type]
+            Var(
+             bodovi
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+          Var(
+           bt
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementLst(
+        StatementLst(
+          StatementListDerived1(
+          ) [StatementListDerived1]
+          Stmt(
+            DesignatorStm(
+              DesignatorStatementAssign(
+                DesignatorIdent(
+                 niz
+                ) [DesignatorIdent]
+                AssignopExpresion(
+                  Assignop(
+                  ) [Assignop]
+                  PlusExpr(
+                    TermFactor(
+                      NewFactorArray(
+                        Type(
+                         int
+                        ) [Type]
+                        PlusExpr(
+                          TermFactor(
+                            ConstNumFactor(
+                             3
+                            ) [ConstNumFactor]
+                          ) [TermFactor]
+                        ) [PlusExpr]
+                      ) [NewFactorArray]
+                    ) [TermFactor]
+                  ) [PlusExpr]
+                ) [AssignopExpresion]
+              ) [DesignatorStatementAssign]
+            ) [DesignatorStm]
+          ) [Stmt]
+        ) [StatementLst]
+        Stmt(
+          DesignatorStm(
+            DesignatorMagic(
+              ParameterListComma(
+                ParameterListDesignator(
+                  DesignatorIdent(
+                   a
+                  ) [DesignatorIdent]
+                ) [ParameterListDesignator]
+                DesignatorOption(
+                  DesignatorIdent(
+                   b
+                  ) [DesignatorIdent]
+                ) [DesignatorOption]
+              ) [ParameterListComma]
+              DesignatorIdent(
+               niz
+              ) [DesignatorIdent]
+            ) [DesignatorMagic]
+          ) [DesignatorStm]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  15:20:16,801 - ===================================
+INFO  15:20:16,812 - Deklarisana BROJEVNA KONSTANTA nula tipa 1 vrednosti: 0 na liniji 5
+INFO  15:20:16,812 - Deklarisana BROJEVNA KONSTANTA jedan tipa 1 vrednosti: 1 na liniji 6
+INFO  15:20:16,812 - Deklarisana BROJEVNA KONSTANTA pet tipa 1 vrednosti: 5 na liniji 7
+INFO  15:20:16,812 - Deklarisana NIZOVNA promenljiva niz tipa 1 na liniji 9
+INFO  15:20:16,812 - Deklarisana NIZOVNA promenljiva niz2 tipa 1 na liniji 9
+INFO  15:20:16,812 - Deklarisana promenljiva a tipa 1 na liniji 9
+INFO  15:20:16,812 - Deklarisana promenljiva b tipa 1 na liniji 9
+INFO  15:20:16,812 - Deklarisana NIZOVNA promenljiva nizch tipa 2 na liniji 10
+INFO  15:20:16,812 - Deklaracija METODE : main() sa povratinim tipom: 0 na liniji 13
+INFO  15:20:16,812 - Deklarisana promenljiva bodovi tipa 1 na liniji 14
+INFO  15:20:16,812 - Deklarisana promenljiva bt tipa 5 na liniji 15
+INFO  15:20:16,812 - Nadjen designator: niz na liniji 25
+INFO  15:20:16,812 - Nadjen designator: a na liniji 34
+INFO  15:20:16,812 - Nadjen magic designator a tipa 1 na liniji 34
+INFO  15:20:16,812 - Nadjen designator: b na liniji 34
+INFO  15:20:16,812 - Nadjen magic designator b tipa 1 na liniji 34
+INFO  15:20:16,812 - Nadjen designator: niz na liniji 34
+INFO  15:20:16,812 - Good MAGIC...   na liniji 34
+INFO  15:20:16,812 - Obradjen glavni program test301 na liniji 3
