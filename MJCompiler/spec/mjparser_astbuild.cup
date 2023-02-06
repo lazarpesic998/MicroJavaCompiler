@@ -112,6 +112,7 @@ nonterminal Andop Andop;
 nonterminal Orop Orop;
 //conditions
 nonterminal ConditionIf ConditionIf;
+nonterminal ConditionWhile ConditionWhile;
 nonterminal Condition Condition;
 nonterminal CondTerm CondTerm;
 nonterminal CondFact CondFact;
@@ -229,7 +230,7 @@ Statements ::= LBRACE StatementList:S1 RBRACE {: RESULT=new StatementsDerived1(S
 SingleStatement ::= (DesignatorStm) DesignatorStatement:D1 SEMI {: RESULT=new DesignatorStm(D1); RESULT.setLine(D1left); :}
 				| (IfStatement) IfStart:I1 LPAREN ConditionIf:c RPAREN Statement:s {: RESULT=new IfStatement(I1, c, s); RESULT.setLine(I1left); :}
     			| (ElseStatement) IfStart:I1 LPAREN ConditionIf:c RPAREN Statement:s ElseStart:E2 Statement:e {: RESULT=new ElseStatement(I1, c, s, E2, e); RESULT.setLine(I1left); :}
-    			| (WhileStatement) WhileStart:whileStart LPAREN Condition:C1 RPAREN Statement:S2 {: RESULT=new WhileStatement(whileStart, C1, S2); RESULT.setLine(whileStartleft); :}
+    			| (WhileStatement) WhileStart:whileStart LPAREN ConditionWhile:C1 RPAREN Statement:S2 {: RESULT=new WhileStatement(whileStart, C1, S2); RESULT.setLine(whileStartleft); :}
     			| (Break) BREAK SEMI {: RESULT=new Break(); :}
     			| (Continue) CONTINUE SEMI {: RESULT=new Continue(); :}
     			| (ReturnStatement) RETURN ExprOptional:expr SEMI {: RESULT=new ReturnStatement(expr); RESULT.setLine(exprleft); :}
@@ -259,7 +260,9 @@ Label ::= (Label) IDENT:labelName {: RESULT=new Label(labelName); RESULT.setLine
 							
 ConditionIf ::= (CondIf)  Condition:C1 {: RESULT=new CondIf(C1); RESULT.setLine(C1left); :}
 			| (ConditionError) error:l {: parser.report_error("Izvrsen oporavak do ) u liniji " + lleft, null);  :} {: RESULT=new ConditionError(); :};
-							
+
+ConditionWhile ::= (ConditionWhile) Condition:C1 {: RESULT=new ConditionWhile(C1); RESULT.setLine(C1left); :};
+
 Condition ::= (ConditionTerm) CondTerm:C1 {: RESULT=new ConditionTerm(C1); RESULT.setLine(C1left); :}
 			| (ConditionList) Condition:C1 Orop:O2 CondTerm:C3 {: RESULT=new ConditionList(C1, O2, C3); RESULT.setLine(C1left); :};
 

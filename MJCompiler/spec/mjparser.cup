@@ -77,7 +77,7 @@ nonterminal FunctionCallName, ActPars, ActParsList;
 //operations
 nonterminal Assignop, Relop, Mulop, Addop, Andop, Orop;
 //conditions
-nonterminal ConditionIf, Condition, CondTerm, CondFact;
+nonterminal ConditionIf, ConditionWhile, Condition, CondTerm, CondFact;
 
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodDecl, MethodTypeName, Designator;
@@ -192,7 +192,7 @@ Statements ::= LBRACE StatementList RBRACE;
 SingleStatement ::= (DesignatorStm) DesignatorStatement SEMI
 				| (IfStatement) IfStart LPAREN ConditionIf:c RPAREN Statement:s
     			| (ElseStatement) IfStart LPAREN ConditionIf:c RPAREN Statement:s ElseStart Statement:e
-    			| (WhileStatement) WhileStart:whileStart LPAREN Condition RPAREN Statement
+    			| (WhileStatement) WhileStart:whileStart LPAREN ConditionWhile RPAREN Statement
     			| (Break) BREAK SEMI
     			| (Continue) CONTINUE SEMI
     			| (ReturnStatement) RETURN ExprOptional:expr SEMI
@@ -222,7 +222,9 @@ Label ::= (Label) IDENT:labelName;
 							
 ConditionIf ::= (CondIf)  Condition
 			| (ConditionError) error:l {: parser.report_error("Izvrsen oporavak do ) u liniji " + lleft, null);  :};
-							
+
+ConditionWhile ::= (ConditionWhile) Condition;
+
 Condition ::= (ConditionTerm) CondTerm
 			| (ConditionList) Condition Orop CondTerm;
 

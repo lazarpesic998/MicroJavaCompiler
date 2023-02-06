@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 5/1/2023 1:44:10
+// 6/1/2023 0:18:28
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,14 +8,14 @@ package rs.ac.bg.etf.pp1.ast;
 public class WhileStatement extends SingleStatement {
 
     private WhileStart WhileStart;
-    private Condition Condition;
+    private ConditionWhile ConditionWhile;
     private Statement Statement;
 
-    public WhileStatement (WhileStart WhileStart, Condition Condition, Statement Statement) {
+    public WhileStatement (WhileStart WhileStart, ConditionWhile ConditionWhile, Statement Statement) {
         this.WhileStart=WhileStart;
         if(WhileStart!=null) WhileStart.setParent(this);
-        this.Condition=Condition;
-        if(Condition!=null) Condition.setParent(this);
+        this.ConditionWhile=ConditionWhile;
+        if(ConditionWhile!=null) ConditionWhile.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
     }
@@ -28,12 +28,12 @@ public class WhileStatement extends SingleStatement {
         this.WhileStart=WhileStart;
     }
 
-    public Condition getCondition() {
-        return Condition;
+    public ConditionWhile getConditionWhile() {
+        return ConditionWhile;
     }
 
-    public void setCondition(Condition Condition) {
-        this.Condition=Condition;
+    public void setConditionWhile(ConditionWhile ConditionWhile) {
+        this.ConditionWhile=ConditionWhile;
     }
 
     public Statement getStatement() {
@@ -50,20 +50,20 @@ public class WhileStatement extends SingleStatement {
 
     public void childrenAccept(Visitor visitor) {
         if(WhileStart!=null) WhileStart.accept(visitor);
-        if(Condition!=null) Condition.accept(visitor);
+        if(ConditionWhile!=null) ConditionWhile.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(WhileStart!=null) WhileStart.traverseTopDown(visitor);
-        if(Condition!=null) Condition.traverseTopDown(visitor);
+        if(ConditionWhile!=null) ConditionWhile.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(WhileStart!=null) WhileStart.traverseBottomUp(visitor);
-        if(Condition!=null) Condition.traverseBottomUp(visitor);
+        if(ConditionWhile!=null) ConditionWhile.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -79,8 +79,8 @@ public class WhileStatement extends SingleStatement {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(Condition!=null)
-            buffer.append(Condition.toString("  "+tab));
+        if(ConditionWhile!=null)
+            buffer.append(ConditionWhile.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

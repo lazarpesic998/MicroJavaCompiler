@@ -17,6 +17,6 @@ program ABC
 
         if(x>0 && y<2) x=2;
         if(x>=0 || y<=2) x=3;
-        if(x!=0 &&)
+        if(x!=0 && y>2 || x==1) x=4;
     }
 } 

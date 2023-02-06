@@ -19,10 +19,19 @@ public class CodeGenerator extends VisitorAdaptor {
 	private int totalNumberOfJumpsInIf = 0;
 	private int totalNumberOfAndJumps = 0;
 
-	//TODO: za ugnjezdene pozive, moralokalni stek, kad naidjes naIfStart napravi ih
 	private Stack<Integer> skipThenStack = new Stack<>();
 	private Stack<Integer> skipElseStack = new Stack<>();
-	private Stack<Integer> thenStack = new Stack<>();;
+	private Stack<Integer> thenStack = new Stack<>();
+
+	//za ugnjezdene pozive, moralokalni stek, kad naidjes naIfStart napravi ih
+	private List<Stack<Integer>> skipThenList = new ArrayList<>();
+	private List<Stack<Integer>> skipElseList = new ArrayList<>();
+	private List<Stack<Integer>> thenList = new ArrayList<>();
+
+	private Stack<Integer> loopStack = new Stack<>();
+	private Stack<Integer> skipLoopStack = new Stack<>();
+
+
 
 	private Obj currentArrayObj = null;
 	private int currentArrayLenght =0;
@@ -234,12 +243,54 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.putFalseJump(currentRelop, Code.pc);
 	}
 
+	public void visit(IfStart ifStart){
+		saveOldStacks();
+		createNewStacks();
+	}
+
+	private void saveOldStacks() {
+		if(skipThenList.size() != 0){
+			int lastIndex = skipThenList.size()-1;
+			skipThenList.set(lastIndex, skipThenStack);
+			skipElseList.set(lastIndex, skipElseStack);
+			thenList.set(lastIndex, thenStack);
+		}
+	}
+
+	private void createNewStacks() {
+		skipThenStack = new Stack<>();
+		skipElseStack = new Stack<>();
+		thenStack = new Stack<>();
+
+		skipThenList.add(skipThenStack);
+		skipElseList.add(skipElseStack);
+		thenList.add(thenStack);
+	}
+
+	private void restoreStacks() {
+		if(skipThenList.size() > 1){
+			int lastIndex = skipThenList.size()-1;
+			//skoloni poslednji
+			skipThenList.remove(lastIndex);
+			skipElseList.remove(lastIndex);
+			thenList.remove(lastIndex);
+			lastIndex--;
+			//stavi da je trenutni prethodni
+			skipThenStack = skipThenList.get(lastIndex);
+			skipElseStack = skipElseList.get(lastIndex);
+			thenStack = thenList.get(lastIndex);
+
+		}
+	}
+
 	//popravi zapise koji su posle then (i posle else)
 	public void visit(IfStatement ifStatement) {
 		resetNumberOfJumpsCounters();
 		while (!skipThenStack.isEmpty()) {
 			Code.fixup(skipThenStack.pop());
 		}
+
+		restoreStacks();
 	}
 
 	//kada se zavrsi then deo treba treba preskociti else
@@ -259,6 +310,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		while (!skipElseStack.isEmpty()) {
 			Code.fixup(skipElseStack.pop());
 		}
+		restoreStacks();
 	}
 
 	//ovo je mesto gde popravljamo skok - skacemo na then
@@ -340,5 +392,44 @@ public class CodeGenerator extends VisitorAdaptor {
 		objectsToBeInitialised.add(null);
 	}
 
+
+	//WHILE
+	//petlja pocinje kad pocinje i provera njenih uslova
+	public void visit(WhileStart whileStart){
+		loopStack.push(Code.pc);
+	}
+
+	//na ovom mestu znas gde se zavrsava petlja pa popravi skokove iza petlje
+	//kad se zavrsi while iteracija vrati se da proveris uslov ponovo
+	public void visit(WhileStatement whileStatement){
+		if(!loopStack.isEmpty()){
+			int adr = loopStack.get(0);
+			Code.putJump(adr);
+		}
+		while(!skipLoopStack.isEmpty()){
+			Code.fixup(skipLoopStack.pop());
+		}
+		loopStack.clear();
+	}
+
+	public void visit(ConditionWhile conditionWhile){
+		for(int i=0; i<skipThenStack.size(); i++){
+			skipLoopStack.push(skipThenStack.get(i));
+		}
+		skipThenStack.clear();
+	}
+
+	//skoci ponovo na petlju
+	public void visit(Continue toBeContinued){
+		if(!loopStack.isEmpty()){
+			Code.putJump(loopStack.get(0));
+		}
+	}
+
+	//stavi skok iza petelje
+	public void visit(Break takeABreak){
+		skipLoopStack.push(Code.pc+1);
+		Code.putJump(0);
+	}
 
 }
