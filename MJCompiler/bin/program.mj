@@ -73,30 +73,30 @@ int a, curr;
 		if(i == 3 && verify()) print(-4);
 		else print(4);  
 		
-		// read(niz[0]);
-		// read(niz[1]);
-		// read(niz[2]);
+		read(niz[0]);
+		read(niz[1]);
+		read(niz[2]);
 		print(eol);
 		print(sum(sum(niz[0], niz[1]), niz[2])); 
 			
 		print(eol); 
 		print(inkrement(niz[2], 2));
 		
-		// a = 3;
-		// i = 0;
-		// while (i < 3){
-		// 	niz[i] = niz[i] * 2 * a;
-		// 	i++;
-		// }
+		a = 3;
+		i = 0;
+		while (i < 3){
+			niz[i] = niz[i] * 2 * a;
+			i++;
+		}
 		
-		// niz.foreach(curr => print(curr););
-		// print(eol);
+		niz.foreach(curr => print(curr););
+		print(eol);
 		
-		// niz2 = 0;
-		// niz.foreach(curr => {
-		// 	niz2 = niz2 + curr * curr;
-		// });
-		// print(niz2);
+		niz2 = 0;
+		niz.foreach(curr => {
+			niz2 = niz2 + curr * curr;
+		});
+		print(niz2);
 	
 	}
 }

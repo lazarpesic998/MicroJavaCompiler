@@ -71,7 +71,7 @@ nonterminal Statement, SingleStatement, StatementList, Label, LabelStm, Statemen
 nonterminal DesignatorOperations, DesignatorOptional, DesignatorOptionalList;
 nonterminal ParameterList;
 nonterminal CommaNumConstOptional;
-nonterminal IfStart, ElseStart, WhileStart, ForeachStart, ForeachIdent;
+nonterminal IfStart, ElseStart, WhileStart, ForeachDesignator, ForeachStart, ForeachIdent;
 
 nonterminal FunctionCallName, ActPars, ActParsList;
 //operations
@@ -198,7 +198,7 @@ SingleStatement ::= (DesignatorStm) DesignatorStatement SEMI
     			| (ReturnStatement) RETURN ExprOptional:expr SEMI
     			| (ReadStatement) READ LPAREN Designator RPAREN SEMI
     			| (PrintStatement) PRINT LPAREN Expr CommaNumConstOptional RPAREN SEMI
-    			| (ForeachStatement) Designator:designator DOT ForeachStart LPAREN ForeachIdent:foreachIdent ARROW Statement RPAREN SEMI;
+    			| (ForeachStatement) ForeachDesignator LPAREN ForeachIdent:foreachIdent ARROW Statement RPAREN SEMI;
 
 IfStart ::= (IfStart) IF;
 
@@ -206,9 +206,11 @@ ElseStart ::= (ElseStart) ELSE;
 
 WhileStart ::= (WhileStart) WHILE; 
 
-ForeachStart ::= (ForeachStart) FOREACH;
+ForeachDesignator ::= (ForeachDesignator) Designator DOT FOREACH;
 
-ForeachIdent ::= (ForeachIdent) IDENT:ident;
+// ForeachStart ::= (ForeachStart) FOREACH;
+
+ForeachIdent ::= (ForeachIdent) Designator;
 
 CommaNumConstOptional ::= (CommaNumConstOption) COMMA NUMBER
 						| /*epsilon*/;

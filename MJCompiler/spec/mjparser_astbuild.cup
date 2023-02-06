@@ -97,6 +97,7 @@ nonterminal CommaNumConstOptional CommaNumConstOptional;
 nonterminal IfStart IfStart;
 nonterminal ElseStart ElseStart;
 nonterminal WhileStart WhileStart;
+nonterminal ForeachDesignator ForeachDesignator;
 nonterminal ForeachStart ForeachStart;
 nonterminal ForeachIdent ForeachIdent;
 
@@ -236,7 +237,7 @@ SingleStatement ::= (DesignatorStm) DesignatorStatement:D1 SEMI {: RESULT=new De
     			| (ReturnStatement) RETURN ExprOptional:expr SEMI {: RESULT=new ReturnStatement(expr); RESULT.setLine(exprleft); :}
     			| (ReadStatement) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new ReadStatement(D1); RESULT.setLine(D1left); :}
     			| (PrintStatement) PRINT LPAREN Expr:E1 CommaNumConstOptional:C2 RPAREN SEMI {: RESULT=new PrintStatement(E1, C2); RESULT.setLine(E1left); :}
-    			| (ForeachStatement) Designator:designator DOT ForeachStart:F1 LPAREN ForeachIdent:foreachIdent ARROW Statement:S2 RPAREN SEMI {: RESULT=new ForeachStatement(designator, F1, foreachIdent, S2); RESULT.setLine(designatorleft); :};
+    			| (ForeachStatement) ForeachDesignator:F1 LPAREN ForeachIdent:foreachIdent ARROW Statement:S2 RPAREN SEMI {: RESULT=new ForeachStatement(F1, foreachIdent, S2); RESULT.setLine(F1left); :};
 
 IfStart ::= (IfStart) IF {: RESULT=new IfStart(); :};
 
@@ -244,9 +245,11 @@ ElseStart ::= (ElseStart) ELSE {: RESULT=new ElseStart(); :};
 
 WhileStart ::= (WhileStart) WHILE {: RESULT=new WhileStart(); :}; 
 
-ForeachStart ::= (ForeachStart) FOREACH {: RESULT=new ForeachStart(); :};
+ForeachDesignator ::= (ForeachDesignator) Designator:D1 DOT FOREACH {: RESULT=new ForeachDesignator(D1); RESULT.setLine(D1left); :};
 
-ForeachIdent ::= (ForeachIdent) IDENT:ident {: RESULT=new ForeachIdent(ident); RESULT.setLine(identleft); :};
+// ForeachStart ::= (ForeachStart) FOREACH;
+
+ForeachIdent ::= (ForeachIdent) Designator:D1 {: RESULT=new ForeachIdent(D1); RESULT.setLine(D1left); :};
 
 CommaNumConstOptional ::= (CommaNumConstOption) COMMA NUMBER:N1 {: RESULT=new CommaNumConstOption(N1); RESULT.setLine(N1left); :}
 						| {: RESULT=new CommaNumConstOptionalDerived1(); :} /*epsilon*/;

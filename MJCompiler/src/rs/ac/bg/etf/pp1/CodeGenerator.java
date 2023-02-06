@@ -31,11 +31,12 @@ public class CodeGenerator extends VisitorAdaptor {
 	private Stack<Integer> loopStack = new Stack<>();
 	private Stack<Integer> skipLoopStack = new Stack<>();
 
-
-
 	private Obj currentArrayObj = null;
 	private int currentArrayLenght =0;
 	private List<Obj> objectsToBeInitialised = new ArrayList<>();
+
+	private Obj currentForeachArray = null;
+	private Obj myForeachCnt = SemanticAnalyzer.myForeachCnt;
 
 	public int getMainPc() {
 		return mainPc;
@@ -430,6 +431,58 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(Break takeABreak){
 		skipLoopStack.push(Code.pc+1);
 		Code.putJump(0);
+	}
+
+	//FOREACH
+	private void incForeachCnt(){
+		Code.load(myForeachCnt);
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.store(myForeachCnt);
+
+		// Code.load(myForeachCnt);
+		// Code.loadConst(5);
+		// Code.put(Code.print);
+	}
+
+	private void resetForeachCnt(){
+		Code.loadConst(0);
+		Code.store(myForeachCnt);
+	}
+
+	//samo za pamcenje nad kojim nizom je pozvan foreach
+	public void visit(ForeachDesignator foreachDesignator){
+		currentForeachArray = foreachDesignator.getDesignator().obj;
+	}
+
+	//ovde cu da se vracam da pokupim nove vrednosti curr
+	public void visit(ForeachIdent foreachIdent){
+
+		resetForeachCnt();
+		loopStack.push(Code.pc);
+
+		//if(myForeachCnt < arrayLen)
+		Code.load(myForeachCnt);
+		Code.loadConst(currentArrayLenght);
+		skipLoopStack.push(Code.pc+1);
+		Code.putFalseJump(Code.lt, Code.pc);
+
+		//curr = niz[myForeachCnt]
+		Code.load(currentArrayObj);
+		Code.load(myForeachCnt);
+		Code.put(Code.aload);
+		Code.store(foreachIdent.getDesignator().obj);
+
+		//curr++
+		incForeachCnt();
+	}
+
+	public void visit(ForeachStatement foreachStatement){
+		Code.putJump(loopStack.pop());
+
+		while(!skipLoopStack.isEmpty()){
+			Code.fixup(skipLoopStack.pop());
+		}
 	}
 
 }

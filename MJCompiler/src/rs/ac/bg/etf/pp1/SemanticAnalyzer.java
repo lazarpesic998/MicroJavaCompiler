@@ -34,6 +34,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	Struct currentType = null;
 
 	Logger log = Logger.getLogger(getClass());
+	static Obj myForeachCnt;
 
 	public void report_error(String message, SyntaxNode info) {
 		errorDetected = true;
@@ -171,6 +172,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("SEMANTICKA GRESKA: methoda " + currentMethod.getName() + "() nema RETURN iskaz", methodDecl);
 		}
 		currentMethod.setLevel(formParsCnt);
+		myForeachCnt = TabS.insert(Obj.Var, "myForeachCnt", TabS.intType);
 		TabS.chainLocalSymbols(currentMethod);
 		TabS.closeScope();
 
@@ -617,7 +619,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		loopCnt++;
 	}
 
-	public void visit(ForeachStart foreachStart) {
+	public void visit(ForeachDesignator ForeachDesignator) {
 		loopCnt++;
 	}
 
@@ -649,18 +651,18 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public void visit(ForeachStatement foreachStatement) {
 		// Designator mora oznacavati niz proizvoljnog tipa.
-		if (foreachStatement.getDesignator().obj.getType().getKind() != Struct.Array) {
+		if (foreachStatement.getForeachDesignator().getDesignator().obj.getType().getKind() != Struct.Array) {
 			report_error("Desila se SEMANTICKA GRESKA: Designator mora oznacavati niz proizvoljnog tipa",
 					foreachStatement);
 		}
 
 		// ident mora biti lokalna ili globalna promenljiva istog tipa kao i elementi
 		// niza koji opisuje Designator
-		Obj identObj = TabS.find(foreachStatement.getForeachIdent().getIdent());
+		Obj identObj = foreachStatement.getForeachIdent().getDesignator().obj;
 		if (identObj == TabS.noObj) {
 			report_error("Desila se SEMANTICKA GRESKA: ident u foreach nije deklarisan", foreachStatement);
 		} else {
-			if (!identObj.getType().equals(foreachStatement.getDesignator().obj.getType().getElemType())) {
+			if (!identObj.getType().equals(foreachStatement.getForeachDesignator().getDesignator().obj.getType().getElemType())) {
 				report_error(
 						"Desila se SEMANTICKA GRESKA: ident mora biti lokalna ili globalna promenljiva istog tipa kao i elementi niza koji opisuje Designator",
 						foreachStatement);

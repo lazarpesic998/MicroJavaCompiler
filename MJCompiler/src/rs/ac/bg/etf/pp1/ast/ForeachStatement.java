@@ -1,42 +1,31 @@
 // generated with ast extension for cup
 // version 0.8
-// 6/1/2023 0:18:28
+// 6/1/2023 22:22:46
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class ForeachStatement extends SingleStatement {
 
-    private Designator Designator;
-    private ForeachStart ForeachStart;
+    private ForeachDesignator ForeachDesignator;
     private ForeachIdent ForeachIdent;
     private Statement Statement;
 
-    public ForeachStatement (Designator Designator, ForeachStart ForeachStart, ForeachIdent ForeachIdent, Statement Statement) {
-        this.Designator=Designator;
-        if(Designator!=null) Designator.setParent(this);
-        this.ForeachStart=ForeachStart;
-        if(ForeachStart!=null) ForeachStart.setParent(this);
+    public ForeachStatement (ForeachDesignator ForeachDesignator, ForeachIdent ForeachIdent, Statement Statement) {
+        this.ForeachDesignator=ForeachDesignator;
+        if(ForeachDesignator!=null) ForeachDesignator.setParent(this);
         this.ForeachIdent=ForeachIdent;
         if(ForeachIdent!=null) ForeachIdent.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
     }
 
-    public Designator getDesignator() {
-        return Designator;
+    public ForeachDesignator getForeachDesignator() {
+        return ForeachDesignator;
     }
 
-    public void setDesignator(Designator Designator) {
-        this.Designator=Designator;
-    }
-
-    public ForeachStart getForeachStart() {
-        return ForeachStart;
-    }
-
-    public void setForeachStart(ForeachStart ForeachStart) {
-        this.ForeachStart=ForeachStart;
+    public void setForeachDesignator(ForeachDesignator ForeachDesignator) {
+        this.ForeachDesignator=ForeachDesignator;
     }
 
     public ForeachIdent getForeachIdent() {
@@ -60,23 +49,20 @@ public class ForeachStatement extends SingleStatement {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Designator!=null) Designator.accept(visitor);
-        if(ForeachStart!=null) ForeachStart.accept(visitor);
+        if(ForeachDesignator!=null) ForeachDesignator.accept(visitor);
         if(ForeachIdent!=null) ForeachIdent.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Designator!=null) Designator.traverseTopDown(visitor);
-        if(ForeachStart!=null) ForeachStart.traverseTopDown(visitor);
+        if(ForeachDesignator!=null) ForeachDesignator.traverseTopDown(visitor);
         if(ForeachIdent!=null) ForeachIdent.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Designator!=null) Designator.traverseBottomUp(visitor);
-        if(ForeachStart!=null) ForeachStart.traverseBottomUp(visitor);
+        if(ForeachDesignator!=null) ForeachDesignator.traverseBottomUp(visitor);
         if(ForeachIdent!=null) ForeachIdent.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
         accept(visitor);
@@ -87,14 +73,8 @@ public class ForeachStatement extends SingleStatement {
         buffer.append(tab);
         buffer.append("ForeachStatement(\n");
 
-        if(Designator!=null)
-            buffer.append(Designator.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        if(ForeachStart!=null)
-            buffer.append(ForeachStart.toString("  "+tab));
+        if(ForeachDesignator!=null)
+            buffer.append(ForeachDesignator.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

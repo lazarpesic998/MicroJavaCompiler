@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 6/1/2023 0:18:28
+// 6/1/2023 22:22:46
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,18 +9,19 @@ public class ForeachIdent implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
-    private String ident;
+    private Designator Designator;
 
-    public ForeachIdent (String ident) {
-        this.ident=ident;
+    public ForeachIdent (Designator Designator) {
+        this.Designator=Designator;
+        if(Designator!=null) Designator.setParent(this);
     }
 
-    public String getIdent() {
-        return ident;
+    public Designator getDesignator() {
+        return Designator;
     }
 
-    public void setIdent(String ident) {
-        this.ident=ident;
+    public void setDesignator(Designator Designator) {
+        this.Designator=Designator;
     }
 
     public SyntaxNode getParent() {
@@ -44,13 +45,16 @@ public class ForeachIdent implements SyntaxNode {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(Designator!=null) Designator.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(Designator!=null) Designator.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(Designator!=null) Designator.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -59,7 +63,10 @@ public class ForeachIdent implements SyntaxNode {
         buffer.append(tab);
         buffer.append("ForeachIdent(\n");
 
-        buffer.append(" "+tab+ident);
+        if(Designator!=null)
+            buffer.append(Designator.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);
