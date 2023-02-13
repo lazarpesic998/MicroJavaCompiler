@@ -1,0 +1,83 @@
+INFO  22:04:28,722 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  22:04:28,769 - #2 program
+INFO  22:04:28,769 - #51 Program
+INFO  22:04:28,771 - #46 {
+INFO  22:04:28,771 - #15 void
+INFO  22:04:28,772 - #51 main
+INFO  22:04:28,773 - #42 (
+INFO  22:04:28,773 - #51 int
+INFO  22:04:28,774 - #51 x
+INFO  22:04:28,774 - #44 [
+INFO  22:04:28,774 - #45 ]
+INFO  22:04:28,774 - #40 ,
+INFO  22:04:28,775 - #22 +
+ERROR 22:04:28,775 - 
+Sintaksna greska na liniji 3
+INFO  22:04:28,776 - #40 ,
+INFO  22:04:28,776 - #51 double
+INFO  22:04:28,776 - #51 y
+INFO  22:04:28,777 - #43 )
+INFO  22:04:28,778 - #51 A
+INFO  22:04:28,780 - #51 a
+INFO  22:04:28,780 - #38 ;
+INFO  22:04:28,780 - #46 {
+INFO  22:04:28,781 - #47 }
+INFO  22:04:28,782 - #47 }
+INFO  22:04:28,783 - Program(
+ Program
+  DeclarationsDerived5(
+  ) [DeclarationsDerived5]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDeclDerived1(
+      MethodTypeDerived2(
+      ) [MethodTypeDerived2]
+     main
+      FormalParametarss(
+        FormParss(
+          Type(
+           int
+          ) [Type]
+          FormArrayVar(
+           x
+          ) [FormArrayVar]
+        ) [FormParss]
+        FormParsVariableLst(
+          FormParsVariableLst(
+            FormParsVariableListDerived1(
+            ) [FormParsVariableListDerived1]
+            FormalParsError(
+            ) [FormalParsError]
+          ) [FormParsVariableLst]
+          FormParss(
+            Type(
+             double
+            ) [Type]
+            FormVar(
+             y
+            ) [FormVar]
+          ) [FormParss]
+        ) [FormParsVariableLst]
+      ) [FormalParametarss]
+      VarDeclarationsLst(
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        VarDeclarations(
+          Type(
+           A
+          ) [Type]
+          Var(
+           a
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementListDerived1(
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclLst]
+) [Program]
+INFO  22:04:28,784 - ===================================
+INFO  22:04:28,787 -  Deklarisanih promenljivih ima = 0

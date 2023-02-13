@@ -1,0 +1,231 @@
+INFO  04:18:14,288 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  04:18:14,334 - #2 program
+INFO  04:18:14,335 - #50 test301
+INFO  04:18:14,335 - #7 const
+INFO  04:18:14,336 - #50 int
+INFO  04:18:14,336 - #50 nula
+INFO  04:18:14,336 - #33 =
+INFO  04:18:14,336 - #48 0
+INFO  04:18:14,336 - #36 ;
+INFO  04:18:14,337 - #7 const
+INFO  04:18:14,338 - #50 int
+INFO  04:18:14,338 - #50 jedan
+INFO  04:18:14,338 - #33 =
+INFO  04:18:14,338 - #48 1
+INFO  04:18:14,338 - #36 ;
+INFO  04:18:14,338 - #7 const
+INFO  04:18:14,338 - #50 int
+INFO  04:18:14,338 - #50 pet
+INFO  04:18:14,338 - #33 =
+INFO  04:18:14,338 - #48 5
+INFO  04:18:14,339 - #36 ;
+INFO  04:18:14,339 - #50 int
+INFO  04:18:14,339 - #50 niz
+INFO  04:18:14,339 - #42 [
+INFO  04:18:14,339 - #43 ]
+INFO  04:18:14,339 - #38 ,
+INFO  04:18:14,340 - #50 niz2
+INFO  04:18:14,340 - #42 [
+INFO  04:18:14,340 - #43 ]
+INFO  04:18:14,340 - #38 ,
+INFO  04:18:14,340 - #50 a
+INFO  04:18:14,340 - #38 ,
+INFO  04:18:14,340 - #50 b
+INFO  04:18:14,340 - #36 ;
+INFO  04:18:14,340 - #50 char
+INFO  04:18:14,341 - #50 nizch
+INFO  04:18:14,341 - #42 [
+INFO  04:18:14,341 - #43 ]
+INFO  04:18:14,341 - #36 ;
+INFO  04:18:14,341 - #44 {
+INFO  04:18:14,341 - #15 void
+INFO  04:18:14,342 - #50 main
+INFO  04:18:14,342 - #40 (
+INFO  04:18:14,342 - #41 )
+INFO  04:18:14,342 - #50 int
+INFO  04:18:14,343 - #50 bodovi
+INFO  04:18:14,343 - #36 ;
+INFO  04:18:14,343 - #50 bool
+INFO  04:18:14,343 - #50 bt
+INFO  04:18:14,343 - #36 ;
+INFO  04:18:14,343 - #44 {
+INFO  04:18:14,343 - #50 niz
+INFO  04:18:14,344 - #33 =
+INFO  04:18:14,344 - #11 new
+INFO  04:18:14,345 - #50 int
+INFO  04:18:14,345 - #42 [
+INFO  04:18:14,345 - #48 3
+INFO  04:18:14,345 - #43 ]
+INFO  04:18:14,346 - #36 ;
+INFO  04:18:14,347 - #45 }
+INFO  04:18:14,347 - #45 }
+INFO  04:18:14,352 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived2(
+      DeclarationsDerived1(
+        DeclarationsDerived1(
+          DeclarationsDerived1(
+            DeclarationsDerived4(
+            ) [DeclarationsDerived4]
+            ConstDeclarations(
+              Type(
+               int
+              ) [Type]
+              NumConst(
+               nula
+               0
+              ) [NumConst]
+              ConstDeclListDerived1(
+              ) [ConstDeclListDerived1]
+            ) [ConstDeclarations]
+          ) [DeclarationsDerived1]
+          ConstDeclarations(
+            Type(
+             int
+            ) [Type]
+            NumConst(
+             jedan
+             1
+            ) [NumConst]
+            ConstDeclListDerived1(
+            ) [ConstDeclListDerived1]
+          ) [ConstDeclarations]
+        ) [DeclarationsDerived1]
+        ConstDeclarations(
+          Type(
+           int
+          ) [Type]
+          NumConst(
+           pet
+           5
+          ) [NumConst]
+          ConstDeclListDerived1(
+          ) [ConstDeclListDerived1]
+        ) [ConstDeclarations]
+      ) [DeclarationsDerived1]
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        ArrayVar(
+         niz
+        ) [ArrayVar]
+        VariableLst(
+          VariableLst(
+            VariableLst(
+              VariableListDerived1(
+              ) [VariableListDerived1]
+              ArrayVar(
+               niz2
+              ) [ArrayVar]
+            ) [VariableLst]
+            Var(
+             a
+            ) [Var]
+          ) [VariableLst]
+          Var(
+           b
+          ) [Var]
+        ) [VariableLst]
+      ) [VarDeclarations]
+    ) [DeclarationsDerived2]
+    VarDeclarations(
+      Type(
+       char
+      ) [Type]
+      ArrayVar(
+       nizch
+      ) [ArrayVar]
+      VariableListDerived1(
+      ) [VariableListDerived1]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnVoid(
+       main
+      ) [MethodReturnVoid]
+      FormalParsOptionalDerived1(
+      ) [FormalParsOptionalDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             int
+            ) [Type]
+            Var(
+             bodovi
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+          Var(
+           bt
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          DesignatorStm(
+            DesignatorStatementAssign(
+              DesignatorIdent(
+               niz
+              ) [DesignatorIdent]
+              AssignopExpresion(
+                Assignop(
+                ) [Assignop]
+                PlusExpr(
+                  TermFactor(
+                    NewFactorArray(
+                      Type(
+                       int
+                      ) [Type]
+                      PlusExpr(
+                        TermFactor(
+                          ConstNumFactor(
+                           3
+                          ) [ConstNumFactor]
+                        ) [TermFactor]
+                      ) [PlusExpr]
+                    ) [NewFactorArray]
+                  ) [TermFactor]
+                ) [PlusExpr]
+              ) [AssignopExpresion]
+            ) [DesignatorStatementAssign]
+          ) [DesignatorStm]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  04:18:14,353 - ===================================
+INFO  04:18:14,355 - Deklarisana BROJEVNA KONSTANTA nula tipa 1 vrednosti: 0 na liniji 5
+INFO  04:18:14,355 - Deklarisana BROJEVNA KONSTANTA jedan tipa 1 vrednosti: 1 na liniji 6
+INFO  04:18:14,355 - Deklarisana BROJEVNA KONSTANTA pet tipa 1 vrednosti: 5 na liniji 7
+INFO  04:18:14,355 - Deklarisana NIZOVNA promenljiva niz tipa 1 na liniji 9
+INFO  04:18:14,355 - Deklarisana NIZOVNA promenljiva niz2 tipa 1 na liniji 9
+INFO  04:18:14,355 - Deklarisana promenljiva a tipa 1 na liniji 9
+INFO  04:18:14,355 - Deklarisana promenljiva b tipa 1 na liniji 9
+INFO  04:18:14,356 - Deklarisana NIZOVNA promenljiva nizch tipa 2 na liniji 10
+INFO  04:18:14,356 - Deklaracija METODE : main() sa povratinim tipom: 0 na liniji 13
+INFO  04:18:14,356 - Deklarisana promenljiva bodovi tipa 1 na liniji 14
+INFO  04:18:14,356 - Deklarisana promenljiva bt tipa 5 na liniji 15
+INFO  04:18:14,356 - Nadjen designator: niz na liniji 25
+INFO  04:18:14,356 - Obradjen glavni program test301 na liniji 3
+INFO  04:18:14,361 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,193 @@
+INFO  01:51:10,014 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  01:51:10,066 - #2 program
+INFO  01:51:10,066 - #50 ABC
+INFO  01:51:10,066 - #44 {
+INFO  01:51:10,068 - #15 void
+INFO  01:51:10,069 - #50 main
+INFO  01:51:10,069 - #40 (
+INFO  01:51:10,069 - #41 )
+INFO  01:51:10,070 - #50 int
+INFO  01:51:10,071 - #50 x
+INFO  01:51:10,072 - #38 ,
+INFO  01:51:10,073 - #50 y
+INFO  01:51:10,073 - #36 ;
+INFO  01:51:10,073 - #50 bool
+INFO  01:51:10,075 - #50 ibool
+INFO  01:51:10,075 - #36 ;
+INFO  01:51:10,075 - #44 {
+INFO  01:51:10,075 - #50 y
+INFO  01:51:10,077 - #33 =
+INFO  01:51:10,077 - #48 99
+INFO  01:51:10,078 - #36 ;
+INFO  01:51:10,079 - #8 if
+INFO  01:51:10,079 - #40 (
+INFO  01:51:10,080 - #50 x
+INFO  01:51:10,080 - #28 >=
+INFO  01:51:10,080 - #48 0
+INFO  01:51:10,081 - #32 ||
+INFO  01:51:10,081 - #50 y
+INFO  01:51:10,082 - #30 <=
+INFO  01:51:10,082 - #48 2
+INFO  01:51:10,083 - #41 )
+INFO  01:51:10,083 - #12 print
+INFO  01:51:10,083 - #40 (
+INFO  01:51:10,083 - #48 3
+INFO  01:51:10,083 - #41 )
+INFO  01:51:10,084 - #36 ;
+INFO  01:51:10,084 - #45 }
+INFO  01:51:10,085 - #45 }
+INFO  01:51:10,092 - Program(
+  ProgName(
+   ABC
+  ) [ProgName]
+  DeclarationsDerived4(
+  ) [DeclarationsDerived4]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnVoid(
+       main
+      ) [MethodReturnVoid]
+      FormalParsOptionalDerived1(
+      ) [FormalParsOptionalDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             int
+            ) [Type]
+            Var(
+             x
+            ) [Var]
+            VariableLst(
+              VariableListDerived1(
+              ) [VariableListDerived1]
+              Var(
+               y
+              ) [Var]
+            ) [VariableLst]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+          Var(
+           ibool
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementLst(
+        StatementLst(
+          StatementListDerived1(
+          ) [StatementListDerived1]
+          Stmt(
+            DesignatorStm(
+              DesignatorStatementAssign(
+                DesignatorIdent(
+                 y
+                ) [DesignatorIdent]
+                AssignopExpresion(
+                  Assignop(
+                  ) [Assignop]
+                  PlusExpr(
+                    TermFactor(
+                      ConstNumFactor(
+                       99
+                      ) [ConstNumFactor]
+                    ) [TermFactor]
+                  ) [PlusExpr]
+                ) [AssignopExpresion]
+              ) [DesignatorStatementAssign]
+            ) [DesignatorStm]
+          ) [Stmt]
+        ) [StatementLst]
+        Stmt(
+          IfStatement(
+            IfStart(
+            ) [IfStart]
+            CondIf(
+              ConditionList(
+                ConditionTerm(
+                  CondTermFact(
+                    CondFactTwoExpr(
+                      PlusExpr(
+                        TermFactor(
+                          DesignatorFactor(
+                            DesignatorIdent(
+                             x
+                            ) [DesignatorIdent]
+                          ) [DesignatorFactor]
+                        ) [TermFactor]
+                      ) [PlusExpr]
+                      Gte(
+                      ) [Gte]
+                      PlusExpr(
+                        TermFactor(
+                          ConstNumFactor(
+                           0
+                          ) [ConstNumFactor]
+                        ) [TermFactor]
+                      ) [PlusExpr]
+                    ) [CondFactTwoExpr]
+                  ) [CondTermFact]
+                ) [ConditionTerm]
+                Orop(
+                ) [Orop]
+                CondTermFact(
+                  CondFactTwoExpr(
+                    PlusExpr(
+                      TermFactor(
+                        DesignatorFactor(
+                          DesignatorIdent(
+                           y
+                          ) [DesignatorIdent]
+                        ) [DesignatorFactor]
+                      ) [TermFactor]
+                    ) [PlusExpr]
+                    Lte(
+                    ) [Lte]
+                    PlusExpr(
+                      TermFactor(
+                        ConstNumFactor(
+                         2
+                        ) [ConstNumFactor]
+                      ) [TermFactor]
+                    ) [PlusExpr]
+                  ) [CondFactTwoExpr]
+                ) [CondTermFact]
+              ) [ConditionList]
+            ) [CondIf]
+            Stmt(
+              PrintStatement(
+                PlusExpr(
+                  TermFactor(
+                    ConstNumFactor(
+                     3
+                    ) [ConstNumFactor]
+                  ) [TermFactor]
+                ) [PlusExpr]
+                CommaNumConstOptionalDerived1(
+                ) [CommaNumConstOptionalDerived1]
+              ) [PrintStatement]
+            ) [Stmt]
+          ) [IfStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  01:51:10,092 - ===================================
+INFO  01:51:10,104 - Deklaracija METODE : main() sa povratinim tipom: 0 na liniji 3
+INFO  01:51:10,104 - Deklarisana promenljiva x tipa 1 na liniji 4
+INFO  01:51:10,104 - Deklarisana promenljiva y tipa 1 na liniji 4
+INFO  01:51:10,104 - Deklarisana promenljiva ibool tipa 5 na liniji 5
+INFO  01:51:10,104 - Nadjen designator: y na liniji 22
+INFO  01:51:10,104 - Nadjen designator: x na liniji 23
+INFO  01:51:10,104 - Nadjen designator: y na liniji 23
+INFO  01:51:19,388 - Obradjen glavni program ABC na liniji 1

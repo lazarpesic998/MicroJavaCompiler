@@ -1,0 +1,67 @@
+INFO  21:42:53,197 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  21:42:53,239 - #2 program
+INFO  21:42:53,240 - #51 Program
+INFO  21:42:53,240 - #46 {
+INFO  21:42:53,240 - #15 void
+INFO  21:42:53,241 - #51 main
+INFO  21:42:53,242 - #42 (
+INFO  21:42:53,242 - #51 x
+INFO  21:42:53,242 - #40 ,
+ERROR 21:42:53,243 - 
+Sintaksna greska na liniji 3
+INFO  21:42:53,243 - #24 *
+INFO  21:42:53,243 - #24 *
+INFO  21:42:53,243 - #24 *
+INFO  21:42:53,244 - #24 *
+INFO  21:42:53,244 - #40 ,
+INFO  21:42:53,244 - #51 y
+INFO  21:42:53,244 - #43 )
+INFO  21:42:53,244 - #51 A
+INFO  21:42:53,245 - #51 a
+INFO  21:42:53,245 - #38 ;
+INFO  21:42:53,247 - #46 {
+INFO  21:42:53,248 - #47 }
+INFO  21:42:53,249 - #47 }
+INFO  21:42:53,254 - Program(
+ Program
+  DeclarationsDerived5(
+  ) [DeclarationsDerived5]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDeclDerived1(
+      MethodTypeDerived2(
+      ) [MethodTypeDerived2]
+     main
+      FormalParms(
+        FormParams(
+          Type(
+           x
+          ) [Type]
+          VariableError(
+          ) [VariableError]
+        ) [FormParams]
+        FormParsVariableListDerived1(
+        ) [FormParsVariableListDerived1]
+      ) [FormalParms]
+      VarDeclarationsLst(
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        VarDeclarations(
+          Type(
+           A
+          ) [Type]
+          Var(
+           a
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementListDerived1(
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclLst]
+) [Program]
+INFO  21:42:53,255 - ===================================
+INFO  21:42:53,257 -  Deklarisanih promenljivih ima = 0

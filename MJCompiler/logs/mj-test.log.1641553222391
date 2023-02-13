@@ -1,0 +1,130 @@
+INFO  11:56:58,163 - Compiling source file: C:\Users\Lazar\Desktop\PP1_projekat\workspace\MJCompiler\test\program.mj
+INFO  11:56:58,187 - #2 program
+INFO  11:56:58,187 - #51 MJProgram
+INFO  11:56:58,187 - #7 const
+INFO  11:56:58,188 - #51 int
+INFO  11:56:58,188 - #51 x
+INFO  11:56:58,189 - #35 =
+INFO  11:56:58,189 - #49 31
+INFO  11:56:58,189 - #40 ,
+INFO  11:56:58,190 - #51 y
+INFO  11:56:58,191 - #35 =
+INFO  11:56:58,191 - #49 5
+INFO  11:56:58,191 - #40 ,
+INFO  11:56:58,191 - #51 z
+INFO  11:56:58,191 - #35 =
+INFO  11:56:58,192 - #49 21
+INFO  11:56:58,192 - #38 ;
+INFO  11:56:58,192 - #51 double
+INFO  11:56:58,193 - #51 a
+INFO  11:56:58,193 - #44 [
+INFO  11:56:58,194 - #45 ]
+INFO  11:56:58,194 - #40 ,
+INFO  11:56:58,195 - #51 b
+INFO  11:56:58,195 - #40 ,
+INFO  11:56:58,196 - #51 c
+INFO  11:56:58,196 - #44 [
+INFO  11:56:58,196 - #45 ]
+INFO  11:56:58,196 - #38 ;
+INFO  11:56:58,196 - #4 class
+INFO  11:56:58,197 - #51 A
+INFO  11:56:58,197 - #16 extends
+INFO  11:56:58,198 - #51 B
+INFO  11:56:58,198 - #46 {
+INFO  11:56:58,198 - #47 }
+INFO  11:56:58,198 - #38 ;
+INFO  11:56:58,198 - #21 record
+INFO  11:56:58,200 - #51 Rec
+INFO  11:56:58,200 - #46 {
+INFO  11:56:58,200 - #51 int
+INFO  11:56:58,200 - #51 x
+INFO  11:56:58,200 - #40 ,
+INFO  11:56:58,200 - #51 y
+INFO  11:56:58,200 - #38 ;
+INFO  11:56:58,201 - #47 }
+INFO  11:56:58,201 - #46 {
+INFO  11:56:58,212 - #47 }
+INFO  11:56:58,215 - Program(
+ MJProgram
+  DeclarationsDerived4(
+    DeclarationsDerived3(
+      DeclarationsDerived2(
+        DeclarationsDerived1(
+          DeclarationsDerived5(
+          ) [DeclarationsDerived5]
+          ConstDeclarations(
+            Type(
+             int
+            ) [Type]
+            NumConst(
+             x
+             31
+            ) [NumConst]
+            ConstDeclLst(
+              ConstDeclLst(
+                ConstDeclListDerived1(
+                ) [ConstDeclListDerived1]
+                NumConst(
+                 y
+                 5
+                ) [NumConst]
+              ) [ConstDeclLst]
+              NumConst(
+               z
+               21
+              ) [NumConst]
+            ) [ConstDeclLst]
+          ) [ConstDeclarations]
+        ) [DeclarationsDerived1]
+        VarDeclarations(
+          Type(
+           double
+          ) [Type]
+          ArrayVar(
+           a
+          ) [ArrayVar]
+          VariableLst(
+            VariableLst(
+              VariableListDerived1(
+              ) [VariableListDerived1]
+              Var(
+               b
+              ) [Var]
+            ) [VariableLst]
+            ArrayVar(
+             c
+            ) [ArrayVar]
+          ) [VariableLst]
+        ) [VarDeclarations]
+      ) [DeclarationsDerived2]
+      ClassDeclarations(
+       A
+        Exten(
+          Type(
+           B
+          ) [Type]
+        ) [Exten]
+      ) [ClassDeclarations]
+    ) [DeclarationsDerived3]
+    RecordDeclarations(
+     Rec
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        Var(
+         x
+        ) [Var]
+        VariableLst(
+          VariableListDerived1(
+          ) [VariableListDerived1]
+          Var(
+           y
+          ) [Var]
+        ) [VariableLst]
+      ) [VarDeclarations]
+    ) [RecordDeclarations]
+  ) [DeclarationsDerived4]
+) [Program]
+INFO  11:56:58,215 - ===================================
+INFO  11:56:58,231 -  Deklarisanih promenljivih ima = 0

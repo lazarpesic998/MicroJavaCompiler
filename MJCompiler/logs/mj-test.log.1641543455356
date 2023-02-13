@@ -1,0 +1,24 @@
+INFO  09:17:14,967 - Compiling source file: C:\Users\Lazar\Desktop\PP1_projekat\workspace\MJCompiler\test\program.mj
+INFO  09:17:15,260 - #2 program
+INFO  09:17:15,261 - #51 MJProgram
+INFO  09:17:15,261 - #4 class
+INFO  09:17:15,262 - #51 A
+INFO  09:17:15,262 - #16 extends
+INFO  09:17:15,262 - #51 B
+INFO  09:17:15,262 - #46 {
+INFO  09:17:15,274 - #47 }
+INFO  09:17:15,274 - #46 {
+INFO  09:17:15,275 - #47 }
+INFO  09:17:15,292 - Program(
+ MJProgram
+  ClassDeclarationsDerived1(
+   A
+    ExtensionDerived1(
+      Type(
+       B
+      ) [Type]
+    ) [ExtensionDerived1]
+  ) [ClassDeclarationsDerived1]
+) [Program]
+INFO  09:17:15,292 - ===================================
+INFO  09:17:15,311 -  Deklarisanih promenljivih ima = 0

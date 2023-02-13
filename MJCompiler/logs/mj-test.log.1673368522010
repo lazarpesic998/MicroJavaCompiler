@@ -1,0 +1,125 @@
+INFO  17:25:15,163 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  17:25:15,193 - #2 program
+INFO  17:25:15,193 - #50 ABC
+INFO  17:25:15,194 - #50 pool
+INFO  17:25:15,194 - #50 c
+INFO  17:25:15,195 - #42 [
+INFO  17:25:15,195 - #43 ]
+INFO  17:25:15,195 - #36 ;
+INFO  17:25:15,195 - #50 int
+INFO  17:25:15,196 - #50 max
+INFO  17:25:15,196 - #36 ;
+INFO  17:25:15,196 - #50 char
+INFO  17:25:15,196 - #50 npp
+INFO  17:25:15,196 - #36 ;
+INFO  17:25:15,196 - #44 {
+INFO  17:25:15,196 - #50 int
+INFO  17:25:15,197 - #50 put
+INFO  17:25:15,197 - #40 (
+INFO  17:25:15,197 - #50 int
+INFO  17:25:15,197 - #50 x
+INFO  17:25:15,197 - #41 )
+INFO  17:25:15,198 - #44 {
+INFO  17:25:15,198 - #14 return
+INFO  17:25:15,199 - #50 x
+INFO  17:25:15,199 - #36 ;
+INFO  17:25:15,200 - #45 }
+INFO  17:25:15,201 - #45 }
+INFO  17:25:15,206 - Program(
+  ProgName(
+   ABC
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived2(
+      DeclarationsDerived2(
+        DeclarationsDerived4(
+        ) [DeclarationsDerived4]
+        VarDeclarations(
+          Type(
+           pool
+          ) [Type]
+          ArrayVar(
+           c
+          ) [ArrayVar]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [DeclarationsDerived2]
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        Var(
+         max
+        ) [Var]
+        VariableListDerived1(
+        ) [VariableListDerived1]
+      ) [VarDeclarations]
+    ) [DeclarationsDerived2]
+    VarDeclarations(
+      Type(
+       char
+      ) [Type]
+      Var(
+       npp
+      ) [Var]
+      VariableListDerived1(
+      ) [VariableListDerived1]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodReturnType]
+     put
+      FormalParametarss(
+        FormParss(
+          Type(
+           int
+          ) [Type]
+          FormVar(
+           x
+          ) [FormVar]
+        ) [FormParss]
+        FormParsVariableListDerived1(
+        ) [FormParsVariableListDerived1]
+      ) [FormalParametarss]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          ReturnStatement(
+            ExprOption(
+              PlusExpr(
+                Term(
+                  DesignatorFactor(
+                    DesignatorIdent(
+                     x
+                    ) [DesignatorIdent]
+                  ) [DesignatorFactor]
+                  MulopFactorListDerived1(
+                  ) [MulopFactorListDerived1]
+                ) [Term]
+                AddopTermListDerived1(
+                ) [AddopTermListDerived1]
+              ) [PlusExpr]
+            ) [ExprOption]
+          ) [ReturnStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  17:25:15,206 - ===================================
+ERROR 17:25:15,208 - Nije pronadjen tip pool u tabeli simbola! 
+INFO  17:25:15,208 - Deklarisana NIZOVNA promenljiva c tipa 0 na liniji 2
+INFO  17:25:15,208 - Deklarisana promenljiva max tipa 1 na liniji 3
+INFO  17:25:15,208 - Deklarisana promenljiva npp tipa 2 na liniji 4
+INFO  17:25:15,208 - Obradjen glavni program ABC na liniji 1

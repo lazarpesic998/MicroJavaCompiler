@@ -1,0 +1,109 @@
+INFO  18:32:13,702 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  18:32:13,737 - #2 program
+INFO  18:32:13,737 - #50 MJProgram
+INFO  18:32:13,737 - #50 int
+INFO  18:32:13,737 - #50 c
+INFO  18:32:13,738 - #36 ;
+INFO  18:32:13,738 - #50 int
+INFO  18:32:13,739 - #50 y
+INFO  18:32:13,739 - #36 ;
+INFO  18:32:13,739 - #44 {
+INFO  18:32:13,739 - #15 void
+INFO  18:32:13,740 - #50 main
+INFO  18:32:13,740 - #40 (
+INFO  18:32:13,740 - #41 )
+INFO  18:32:13,740 - #44 {
+INFO  18:32:13,741 - #12 print
+INFO  18:32:13,741 - #40 (
+INFO  18:32:13,741 - #48 1
+INFO  18:32:13,742 - #41 )
+INFO  18:32:13,742 - #36 ;
+INFO  18:32:13,742 - #12 print
+INFO  18:32:13,743 - #40 (
+INFO  18:32:13,743 - #48 2
+INFO  18:32:13,743 - #41 )
+INFO  18:32:13,743 - #36 ;
+INFO  18:32:13,743 - #45 }
+INFO  18:32:13,743 - #45 }
+INFO  18:32:13,748 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived2(
+      DeclarationsDerived4(
+      ) [DeclarationsDerived4]
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        Var(
+         c
+        ) [Var]
+        VariableListDerived1(
+        ) [VariableListDerived1]
+      ) [VarDeclarations]
+    ) [DeclarationsDerived2]
+    VarDeclarations(
+      Type(
+       int
+      ) [Type]
+      Var(
+       y
+      ) [Var]
+      VariableListDerived1(
+      ) [VariableListDerived1]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnVoid(
+       main
+      ) [MethodReturnVoid]
+      FormalParsOptionalDerived1(
+      ) [FormalParsOptionalDerived1]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementLst(
+        StatementLst(
+          StatementListDerived1(
+          ) [StatementListDerived1]
+          Stmt(
+            PrintStatement(
+              PlusExpr(
+                TermFactor(
+                  ConstNumFactor(
+                   1
+                  ) [ConstNumFactor]
+                ) [TermFactor]
+              ) [PlusExpr]
+              CommaNumConstOptionalDerived1(
+              ) [CommaNumConstOptionalDerived1]
+            ) [PrintStatement]
+          ) [Stmt]
+        ) [StatementLst]
+        Stmt(
+          PrintStatement(
+            PlusExpr(
+              TermFactor(
+                ConstNumFactor(
+                 2
+                ) [ConstNumFactor]
+              ) [TermFactor]
+            ) [PlusExpr]
+            CommaNumConstOptionalDerived1(
+            ) [CommaNumConstOptionalDerived1]
+          ) [PrintStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  18:32:13,748 - ===================================
+INFO  18:32:13,751 - Deklarisana promenljiva c tipa 1 na liniji 2
+INFO  18:32:13,751 - Deklarisana promenljiva y tipa 1 na liniji 2
+INFO  18:32:13,752 - Deklaracija METODE : main() sa povratinim tipom: 0 na liniji 5
+INFO  18:32:13,752 - Obradjen glavni program MJProgram na liniji 1
+INFO  18:32:13,754 - Parsiranje uspesno zavrseno!

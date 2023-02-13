@@ -1,0 +1,271 @@
+INFO  00:57:38,189 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  00:57:38,248 - #2 program
+INFO  00:57:38,248 - #50 ABC
+INFO  00:57:38,248 - #44 {
+INFO  00:57:38,249 - #15 void
+INFO  00:57:38,250 - #50 main
+INFO  00:57:38,250 - #40 (
+INFO  00:57:38,250 - #41 )
+INFO  00:57:38,251 - #50 int
+INFO  00:57:38,253 - #50 x
+INFO  00:57:38,255 - #38 ,
+INFO  00:57:38,256 - #50 y
+INFO  00:57:38,256 - #36 ;
+INFO  00:57:38,256 - #44 {
+INFO  00:57:38,258 - #10 while
+INFO  00:57:38,258 - #40 (
+INFO  00:57:38,259 - #50 x
+INFO  00:57:38,259 - #29 <
+INFO  00:57:38,260 - #48 4
+INFO  00:57:38,261 - #41 )
+INFO  00:57:38,262 - #44 {
+INFO  00:57:38,262 - #8 if
+INFO  00:57:38,262 - #40 (
+INFO  00:57:38,263 - #50 x
+INFO  00:57:38,267 - #25 ==
+INFO  00:57:38,267 - #48 1
+INFO  00:57:38,267 - #41 )
+INFO  00:57:38,267 - #17 continue
+INFO  00:57:38,268 - #36 ;
+INFO  00:57:38,268 - #6 else
+INFO  00:57:38,269 - #8 if
+INFO  00:57:38,270 - #40 (
+INFO  00:57:38,271 - #50 x
+INFO  00:57:38,271 - #25 ==
+INFO  00:57:38,271 - #48 2
+INFO  00:57:38,271 - #41 )
+INFO  00:57:38,271 - #3 break
+INFO  00:57:38,271 - #36 ;
+INFO  00:57:38,271 - #6 else
+INFO  00:57:38,272 - #50 y
+INFO  00:57:38,272 - #33 =
+INFO  00:57:38,272 - #48 0
+INFO  00:57:38,272 - #36 ;
+INFO  00:57:38,273 - #50 y
+INFO  00:57:38,273 - #33 =
+INFO  00:57:38,273 - #50 y
+INFO  00:57:38,273 - #24 %
+INFO  00:57:38,273 - #48 2
+INFO  00:57:38,274 - #36 ;
+INFO  00:57:38,274 - #45 }
+INFO  00:57:38,274 - #45 }
+INFO  00:57:38,275 - #45 }
+INFO  00:57:38,281 - Program(
+  ProgName(
+   ABC
+  ) [ProgName]
+  DeclarationsDerived4(
+  ) [DeclarationsDerived4]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnVoid(
+       main
+      ) [MethodReturnVoid]
+      FormalParsOptionalDerived1(
+      ) [FormalParsOptionalDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          Var(
+           x
+          ) [Var]
+          VariableLst(
+            VariableListDerived1(
+            ) [VariableListDerived1]
+            Var(
+             y
+            ) [Var]
+          ) [VariableLst]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          WhileStatement(
+            WhileStart(
+            ) [WhileStart]
+            ConditionWhile(
+              ConditionTerm(
+                CondTermFact(
+                  CondFactTwoExpr(
+                    PlusExpr(
+                      TermFactor(
+                        DesignatorFactor(
+                          DesignatorIdent(
+                           x
+                          ) [DesignatorIdent]
+                        ) [DesignatorFactor]
+                      ) [TermFactor]
+                    ) [PlusExpr]
+                    Lt(
+                    ) [Lt]
+                    PlusExpr(
+                      TermFactor(
+                        ConstNumFactor(
+                         4
+                        ) [ConstNumFactor]
+                      ) [TermFactor]
+                    ) [PlusExpr]
+                  ) [CondFactTwoExpr]
+                ) [CondTermFact]
+              ) [ConditionTerm]
+            ) [ConditionWhile]
+            Stmts(
+              StatementsDerived1(
+                StatementLst(
+                  StatementLst(
+                    StatementListDerived1(
+                    ) [StatementListDerived1]
+                    Stmt(
+                      ElseStatement(
+                        IfStart(
+                        ) [IfStart]
+                        CondIf(
+                          ConditionTerm(
+                            CondTermFact(
+                              CondFactTwoExpr(
+                                PlusExpr(
+                                  TermFactor(
+                                    DesignatorFactor(
+                                      DesignatorIdent(
+                                       x
+                                      ) [DesignatorIdent]
+                                    ) [DesignatorFactor]
+                                  ) [TermFactor]
+                                ) [PlusExpr]
+                                Eq(
+                                ) [Eq]
+                                PlusExpr(
+                                  TermFactor(
+                                    ConstNumFactor(
+                                     1
+                                    ) [ConstNumFactor]
+                                  ) [TermFactor]
+                                ) [PlusExpr]
+                              ) [CondFactTwoExpr]
+                            ) [CondTermFact]
+                          ) [ConditionTerm]
+                        ) [CondIf]
+                        Stmt(
+                          Continue(
+                          ) [Continue]
+                        ) [Stmt]
+                        ElseStart(
+                        ) [ElseStart]
+                        Stmt(
+                          ElseStatement(
+                            IfStart(
+                            ) [IfStart]
+                            CondIf(
+                              ConditionTerm(
+                                CondTermFact(
+                                  CondFactTwoExpr(
+                                    PlusExpr(
+                                      TermFactor(
+                                        DesignatorFactor(
+                                          DesignatorIdent(
+                                           x
+                                          ) [DesignatorIdent]
+                                        ) [DesignatorFactor]
+                                      ) [TermFactor]
+                                    ) [PlusExpr]
+                                    Eq(
+                                    ) [Eq]
+                                    PlusExpr(
+                                      TermFactor(
+                                        ConstNumFactor(
+                                         2
+                                        ) [ConstNumFactor]
+                                      ) [TermFactor]
+                                    ) [PlusExpr]
+                                  ) [CondFactTwoExpr]
+                                ) [CondTermFact]
+                              ) [ConditionTerm]
+                            ) [CondIf]
+                            Stmt(
+                              Break(
+                              ) [Break]
+                            ) [Stmt]
+                            ElseStart(
+                            ) [ElseStart]
+                            Stmt(
+                              DesignatorStm(
+                                DesignatorStatementAssign(
+                                  DesignatorIdent(
+                                   y
+                                  ) [DesignatorIdent]
+                                  AssignopExpresion(
+                                    Assignop(
+                                    ) [Assignop]
+                                    PlusExpr(
+                                      TermFactor(
+                                        ConstNumFactor(
+                                         0
+                                        ) [ConstNumFactor]
+                                      ) [TermFactor]
+                                    ) [PlusExpr]
+                                  ) [AssignopExpresion]
+                                ) [DesignatorStatementAssign]
+                              ) [DesignatorStm]
+                            ) [Stmt]
+                          ) [ElseStatement]
+                        ) [Stmt]
+                      ) [ElseStatement]
+                    ) [Stmt]
+                  ) [StatementLst]
+                  Stmt(
+                    DesignatorStm(
+                      DesignatorStatementAssign(
+                        DesignatorIdent(
+                         y
+                        ) [DesignatorIdent]
+                        AssignopExpresion(
+                          Assignop(
+                          ) [Assignop]
+                          PlusExpr(
+                            TermFactorList(
+                              TermFactor(
+                                DesignatorFactor(
+                                  DesignatorIdent(
+                                   y
+                                  ) [DesignatorIdent]
+                                ) [DesignatorFactor]
+                              ) [TermFactor]
+                              Mod(
+                              ) [Mod]
+                              ConstNumFactor(
+                               2
+                              ) [ConstNumFactor]
+                            ) [TermFactorList]
+                          ) [PlusExpr]
+                        ) [AssignopExpresion]
+                      ) [DesignatorStatementAssign]
+                    ) [DesignatorStm]
+                  ) [Stmt]
+                ) [StatementLst]
+              ) [StatementsDerived1]
+            ) [Stmts]
+          ) [WhileStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  00:57:38,282 - ===================================
+INFO  00:57:38,295 - Deklaracija METODE : main() sa povratinim tipom: 0 na liniji 3
+INFO  00:57:38,295 - Deklarisana promenljiva x tipa 1 na liniji 4
+INFO  00:57:38,295 - Deklarisana promenljiva y tipa 1 na liniji 4
+INFO  00:57:38,295 - Nadjen designator: x na liniji 11
+INFO  00:57:38,296 - Nadjen designator: x na liniji 12
+INFO  00:57:38,296 - Nadjen designator: x na liniji 13
+INFO  00:57:38,296 - Nadjen designator: y na liniji 14
+INFO  00:57:38,296 - Nadjen designator: y na liniji 15
+INFO  00:57:38,296 - Nadjen designator: y na liniji 15
+INFO  00:57:38,296 - Obradjen glavni program ABC na liniji 1

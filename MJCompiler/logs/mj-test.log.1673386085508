@@ -1,0 +1,154 @@
+INFO  22:27:37,226 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  22:27:37,259 - #2 program
+INFO  22:27:37,259 - #50 ABC
+INFO  22:27:37,259 - #50 char
+INFO  22:27:37,260 - #50 x
+INFO  22:27:37,261 - #42 [
+INFO  22:27:37,261 - #43 ]
+INFO  22:27:37,262 - #38 ,
+INFO  22:27:37,262 - #50 y
+INFO  22:27:37,262 - #38 ,
+INFO  22:27:37,263 - #50 z
+INFO  22:27:37,263 - #36 ;
+INFO  22:27:37,263 - #50 bool
+INFO  22:27:37,263 - #50 c
+INFO  22:27:37,264 - #36 ;
+INFO  22:27:37,264 - #50 int
+INFO  22:27:37,264 - #50 max
+INFO  22:27:37,264 - #36 ;
+INFO  22:27:37,264 - #50 char
+INFO  22:27:37,264 - #50 npp
+INFO  22:27:37,264 - #36 ;
+INFO  22:27:37,264 - #44 {
+INFO  22:27:37,264 - #15 void
+INFO  22:27:37,265 - #50 put
+INFO  22:27:37,269 - #40 (
+INFO  22:27:37,269 - #50 int
+INFO  22:27:37,269 - #50 x
+INFO  22:27:37,269 - #41 )
+INFO  22:27:37,269 - #44 {
+INFO  22:27:37,270 - #14 return
+INFO  22:27:37,270 - #50 x
+INFO  22:27:37,270 - #36 ;
+INFO  22:27:37,272 - #45 }
+INFO  22:27:37,272 - #45 }
+INFO  22:27:37,278 - Program(
+  ProgName(
+   ABC
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived2(
+      DeclarationsDerived2(
+        DeclarationsDerived2(
+          DeclarationsDerived4(
+          ) [DeclarationsDerived4]
+          VarDeclarations(
+            Type(
+             char
+            ) [Type]
+            ArrayVar(
+             x
+            ) [ArrayVar]
+            VariableLst(
+              VariableLst(
+                VariableListDerived1(
+                ) [VariableListDerived1]
+                Var(
+                 y
+                ) [Var]
+              ) [VariableLst]
+              Var(
+               z
+              ) [Var]
+            ) [VariableLst]
+          ) [VarDeclarations]
+        ) [DeclarationsDerived2]
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+          Var(
+           c
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [DeclarationsDerived2]
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        Var(
+         max
+        ) [Var]
+        VariableListDerived1(
+        ) [VariableListDerived1]
+      ) [VarDeclarations]
+    ) [DeclarationsDerived2]
+    VarDeclarations(
+      Type(
+       char
+      ) [Type]
+      Var(
+       npp
+      ) [Var]
+      VariableListDerived1(
+      ) [VariableListDerived1]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnVoid(
+      ) [MethodReturnVoid]
+     put
+      FormalParametarss(
+        FormParss(
+          Type(
+           int
+          ) [Type]
+          FormVar(
+           x
+          ) [FormVar]
+        ) [FormParss]
+        FormParsVariableListDerived1(
+        ) [FormParsVariableListDerived1]
+      ) [FormalParametarss]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          ReturnStatement(
+            ExprOption(
+              PlusExpr(
+                Term(
+                  DesignatorFactor(
+                    DesignatorIdent(
+                     x
+                    ) [DesignatorIdent]
+                  ) [DesignatorFactor]
+                  MulopFactorListDerived1(
+                  ) [MulopFactorListDerived1]
+                ) [Term]
+                AddopTermListDerived1(
+                ) [AddopTermListDerived1]
+              ) [PlusExpr]
+            ) [ExprOption]
+          ) [ReturnStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  22:27:37,279 - ===================================
+INFO  22:27:37,280 - Deklarisana NIZOVNA promenljiva x tipa 2 na liniji 2
+INFO  22:27:37,280 - Deklarisana promenljiva y tipa 2 na liniji 2
+INFO  22:27:37,281 - Deklarisana promenljiva z tipa 2 na liniji 2
+INFO  22:27:37,281 - Deklarisana promenljiva c tipa 5 na liniji 3
+INFO  22:27:37,281 - Deklarisana promenljiva max tipa 1 na liniji 4
+INFO  22:27:37,281 - Deklarisana promenljiva npp tipa 2 na liniji 5
+INFO  22:27:37,281 - Deklaracija METODE : put() sa povratinim tipom: 1 na liniji 7
+INFO  22:27:37,281 - Obradjen glavni program ABC na liniji 1

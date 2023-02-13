@@ -1,0 +1,254 @@
+INFO  14:30:40,062 - Compiling source file: C:\Users\Lazar\Desktop\PP1_projekat\workspace\MJCompiler\test\program.mj
+INFO  14:30:40,089 - #2 program
+INFO  14:30:40,090 - #51 MJProgram
+INFO  14:30:40,090 - #7 const
+INFO  14:30:40,091 - #51 int
+INFO  14:30:40,091 - #51 x
+INFO  14:30:40,092 - #35 =
+INFO  14:30:40,092 - #49 31
+INFO  14:30:40,092 - #40 ,
+INFO  14:30:40,093 - #51 y
+INFO  14:30:40,093 - #35 =
+INFO  14:30:40,093 - #49 5
+INFO  14:30:40,094 - #40 ,
+INFO  14:30:40,094 - #51 z
+INFO  14:30:40,094 - #35 =
+INFO  14:30:40,094 - #49 21
+INFO  14:30:40,094 - #38 ;
+INFO  14:30:40,094 - #51 double
+INFO  14:30:40,095 - #51 a
+INFO  14:30:40,096 - #44 [
+INFO  14:30:40,096 - #45 ]
+INFO  14:30:40,096 - #40 ,
+INFO  14:30:40,097 - #51 b
+INFO  14:30:40,098 - #40 ,
+INFO  14:30:40,098 - #51 c
+INFO  14:30:40,098 - #44 [
+INFO  14:30:40,098 - #45 ]
+INFO  14:30:40,098 - #38 ;
+INFO  14:30:40,098 - #4 class
+INFO  14:30:40,099 - #51 A
+INFO  14:30:40,100 - #16 extends
+INFO  14:30:40,100 - #51 B
+INFO  14:30:40,100 - #46 {
+INFO  14:30:40,100 - #51 bool
+INFO  14:30:40,101 - #51 condtion
+INFO  14:30:40,101 - #38 ;
+INFO  14:30:40,101 - #46 {
+INFO  14:30:40,101 - #51 int
+INFO  14:30:40,102 - #51 m
+INFO  14:30:40,102 - #42 (
+INFO  14:30:40,103 - #43 )
+INFO  14:30:40,103 - #46 {
+INFO  14:30:40,103 - #47 }
+INFO  14:30:40,103 - #47 }
+INFO  14:30:40,104 - #47 }
+INFO  14:30:40,104 - #21 record
+INFO  14:30:40,106 - #51 Rec
+INFO  14:30:40,106 - #46 {
+INFO  14:30:40,106 - #51 int
+INFO  14:30:40,107 - #51 x
+INFO  14:30:40,107 - #40 ,
+INFO  14:30:40,107 - #51 y
+INFO  14:30:40,107 - #38 ;
+INFO  14:30:40,107 - #51 double
+INFO  14:30:40,107 - #51 d1
+INFO  14:30:40,107 - #38 ;
+INFO  14:30:40,107 - #51 char
+INFO  14:30:40,108 - #51 c
+INFO  14:30:40,108 - #38 ;
+INFO  14:30:40,108 - #47 }
+INFO  14:30:40,108 - #46 {
+INFO  14:30:40,109 - #15 void
+INFO  14:30:40,109 - #51 method1
+INFO  14:30:40,110 - #42 (
+INFO  14:30:40,110 - #43 )
+INFO  14:30:40,110 - #51 int
+INFO  14:30:40,111 - #51 m1
+INFO  14:30:40,111 - #38 ;
+INFO  14:30:40,111 - #46 {
+INFO  14:30:40,111 - #47 }
+INFO  14:30:40,111 - #51 bool
+INFO  14:30:40,111 - #51 m2
+INFO  14:30:40,111 - #42 (
+INFO  14:30:40,111 - #43 )
+INFO  14:30:40,111 - #46 {
+INFO  14:30:40,112 - #47 }
+INFO  14:30:40,112 - #47 }
+INFO  14:30:40,114 - Program(
+ MJProgram
+  DeclarationsDerived4(
+    DeclarationsDerived3(
+      DeclarationsDerived2(
+        DeclarationsDerived1(
+          DeclarationsDerived5(
+          ) [DeclarationsDerived5]
+          ConstDeclarations(
+            Type(
+             int
+            ) [Type]
+            NumConst(
+             x
+             31
+            ) [NumConst]
+            ConstDeclLst(
+              ConstDeclLst(
+                ConstDeclListDerived1(
+                ) [ConstDeclListDerived1]
+                NumConst(
+                 y
+                 5
+                ) [NumConst]
+              ) [ConstDeclLst]
+              NumConst(
+               z
+               21
+              ) [NumConst]
+            ) [ConstDeclLst]
+          ) [ConstDeclarations]
+        ) [DeclarationsDerived1]
+        VarDeclarations(
+          Type(
+           double
+          ) [Type]
+          ArrayVar(
+           a
+          ) [ArrayVar]
+          VariableLst(
+            VariableLst(
+              VariableListDerived1(
+              ) [VariableListDerived1]
+              Var(
+               b
+              ) [Var]
+            ) [VariableLst]
+            ArrayVar(
+             c
+            ) [ArrayVar]
+          ) [VariableLst]
+        ) [VarDeclarations]
+      ) [DeclarationsDerived2]
+      ClassDeclarations(
+       A
+        Exten(
+          Type(
+           B
+          ) [Type]
+        ) [Exten]
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             bool
+            ) [Type]
+            Var(
+             condtion
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        ClassMethodsDeclarationsDerived1(
+          MethodDeclLst(
+            MethodDeclListDerived1(
+            ) [MethodDeclListDerived1]
+            MethodDeclDerived1(
+              MethodTypeDerived1(
+                Type(
+                 int
+                ) [Type]
+              ) [MethodTypeDerived1]
+             m
+              VarDeclarationsListDerived1(
+              ) [VarDeclarationsListDerived1]
+            ) [MethodDeclDerived1]
+          ) [MethodDeclLst]
+        ) [ClassMethodsDeclarationsDerived1]
+      ) [ClassDeclarations]
+    ) [DeclarationsDerived3]
+    RecordDeclarations(
+     Rec
+      VarDeclarationsLst(
+        VarDeclarationsLst(
+          VarDeclarationsLst(
+            VarDeclarationsListDerived1(
+            ) [VarDeclarationsListDerived1]
+            VarDeclarations(
+              Type(
+               int
+              ) [Type]
+              Var(
+               x
+              ) [Var]
+              VariableLst(
+                VariableListDerived1(
+                ) [VariableListDerived1]
+                Var(
+                 y
+                ) [Var]
+              ) [VariableLst]
+            ) [VarDeclarations]
+          ) [VarDeclarationsLst]
+          VarDeclarations(
+            Type(
+             double
+            ) [Type]
+            Var(
+             d1
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        VarDeclarations(
+          Type(
+           char
+          ) [Type]
+          Var(
+           c
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+    ) [RecordDeclarations]
+  ) [DeclarationsDerived4]
+  MethodDeclLst(
+    MethodDeclLst(
+      MethodDeclListDerived1(
+      ) [MethodDeclListDerived1]
+      MethodDeclDerived1(
+        MethodTypeDerived2(
+        ) [MethodTypeDerived2]
+       method1
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             int
+            ) [Type]
+            Var(
+             m1
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+      ) [MethodDeclDerived1]
+    ) [MethodDeclLst]
+    MethodDeclDerived1(
+      MethodTypeDerived1(
+        Type(
+         bool
+        ) [Type]
+      ) [MethodTypeDerived1]
+     m2
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclLst]
+) [Program]
+INFO  14:30:40,115 - ===================================
+INFO  14:30:40,118 -  Deklarisanih promenljivih ima = 0

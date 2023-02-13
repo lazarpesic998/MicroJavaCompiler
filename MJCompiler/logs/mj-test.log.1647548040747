@@ -1,0 +1,119 @@
+INFO  21:12:23,929 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  21:12:24,003 - #2 program
+INFO  21:12:24,003 - #51 MJ
+INFO  21:12:24,003 - #51 int
+INFO  21:12:24,005 - #51 a
+INFO  21:12:24,006 - #44 [
+INFO  21:12:24,006 - #45 ]
+INFO  21:12:24,007 - #40 ,
+INFO  21:12:24,007 - #51 b
+INFO  21:12:24,008 - #40 ,
+INFO  21:12:24,008 - #51 c
+INFO  21:12:24,009 - #44 [
+INFO  21:12:24,009 - #45 ]
+INFO  21:12:24,009 - #38 ;
+INFO  21:12:24,009 - #51 bool
+INFO  21:12:24,011 - #51 x
+INFO  21:12:24,011 - #40 ,
+INFO  21:12:24,011 - #51 y
+INFO  21:12:24,012 - #44 [
+INFO  21:12:24,012 - #45 ]
+INFO  21:12:24,012 - #40 ,
+INFO  21:12:24,012 - #51 z
+INFO  21:12:24,012 - #38 ;
+INFO  21:12:24,013 - #51 char
+INFO  21:12:24,017 - #51 j
+INFO  21:12:24,017 - #40 ,
+INFO  21:12:24,017 - #51 k
+INFO  21:12:24,017 - #44 [
+INFO  21:12:24,017 - #45 ]
+INFO  21:12:24,018 - #40 ,
+INFO  21:12:24,018 - #51 l
+INFO  21:12:24,018 - #38 ;
+INFO  21:12:24,018 - #46 {
+INFO  21:12:24,018 - #47 }
+INFO  21:12:24,034 - Program(
+  ProgName(
+   MJ
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived2(
+      DeclarationsDerived2(
+        DeclarationsDerived5(
+        ) [DeclarationsDerived5]
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          ArrayVar(
+           a
+          ) [ArrayVar]
+          VariableLst(
+            VariableLst(
+              VariableListDerived1(
+              ) [VariableListDerived1]
+              Var(
+               b
+              ) [Var]
+            ) [VariableLst]
+            ArrayVar(
+             c
+            ) [ArrayVar]
+          ) [VariableLst]
+        ) [VarDeclarations]
+      ) [DeclarationsDerived2]
+      VarDeclarations(
+        Type(
+         bool
+        ) [Type]
+        Var(
+         x
+        ) [Var]
+        VariableLst(
+          VariableLst(
+            VariableListDerived1(
+            ) [VariableListDerived1]
+            ArrayVar(
+             y
+            ) [ArrayVar]
+          ) [VariableLst]
+          Var(
+           z
+          ) [Var]
+        ) [VariableLst]
+      ) [VarDeclarations]
+    ) [DeclarationsDerived2]
+    VarDeclarations(
+      Type(
+       char
+      ) [Type]
+      Var(
+       j
+      ) [Var]
+      VariableLst(
+        VariableLst(
+          VariableListDerived1(
+          ) [VariableListDerived1]
+          ArrayVar(
+           k
+          ) [ArrayVar]
+        ) [VariableLst]
+        Var(
+         l
+        ) [Var]
+      ) [VariableLst]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclListDerived1(
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  21:12:24,034 - ===================================
+INFO  21:12:24,039 - Deklarisana nizovna promenljiva a na liniji 2
+INFO  21:12:24,040 - Deklarisana promenljiva b na liniji 2
+INFO  21:12:24,040 - Deklarisana nizovna promenljiva c na liniji 2
+INFO  21:12:24,040 - Deklarisana promenljiva x na liniji 3
+INFO  21:12:24,040 - Deklarisana nizovna promenljiva y na liniji 3
+INFO  21:12:24,040 - Deklarisana promenljiva z na liniji 3
+INFO  21:12:24,041 - Deklarisana promenljiva j na liniji 4
+INFO  21:12:24,041 - Deklarisana nizovna promenljiva k na liniji 4
+INFO  21:12:24,041 - Deklarisana promenljiva l na liniji 4

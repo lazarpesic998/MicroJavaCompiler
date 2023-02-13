@@ -1,0 +1,149 @@
+INFO  18:22:46,758 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  18:22:46,789 - #2 program
+INFO  18:22:46,789 - #50 MJProgram
+INFO  18:22:46,790 - #50 int
+INFO  18:22:46,790 - #50 c
+INFO  18:22:46,791 - #36 ;
+INFO  18:22:46,792 - #50 int
+INFO  18:22:46,792 - #50 y
+INFO  18:22:46,793 - #36 ;
+INFO  18:22:46,793 - #44 {
+INFO  18:22:46,793 - #50 int
+INFO  18:22:46,793 - #50 k
+INFO  18:22:46,793 - #40 (
+INFO  18:22:46,793 - #41 )
+INFO  18:22:46,793 - #50 int
+INFO  18:22:46,794 - #50 c
+INFO  18:22:46,794 - #36 ;
+INFO  18:22:46,794 - #44 {
+INFO  18:22:46,794 - #45 }
+INFO  18:22:46,794 - #15 void
+INFO  18:22:46,795 - #50 main
+INFO  18:22:46,795 - #40 (
+INFO  18:22:46,795 - #41 )
+INFO  18:22:46,795 - #44 {
+INFO  18:22:46,796 - #12 print
+INFO  18:22:46,796 - #40 (
+INFO  18:22:46,796 - #48 1
+INFO  18:22:46,796 - #41 )
+INFO  18:22:46,796 - #36 ;
+INFO  18:22:46,796 - #12 print
+INFO  18:22:46,796 - #40 (
+INFO  18:22:46,797 - #48 2
+INFO  18:22:46,797 - #41 )
+INFO  18:22:46,797 - #36 ;
+INFO  18:22:46,797 - #45 }
+INFO  18:22:46,797 - #45 }
+INFO  18:22:46,801 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived2(
+      DeclarationsDerived4(
+      ) [DeclarationsDerived4]
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        Var(
+         c
+        ) [Var]
+        VariableListDerived1(
+        ) [VariableListDerived1]
+      ) [VarDeclarations]
+    ) [DeclarationsDerived2]
+    VarDeclarations(
+      Type(
+       int
+      ) [Type]
+      Var(
+       y
+      ) [Var]
+      VariableListDerived1(
+      ) [VariableListDerived1]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclLst(
+      MethodDeclListDerived1(
+      ) [MethodDeclListDerived1]
+      MethodDecl(
+        MethodReturnType(
+          Type(
+           int
+          ) [Type]
+         k
+        ) [MethodReturnType]
+        FormalParsOptionalDerived1(
+        ) [FormalParsOptionalDerived1]
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             int
+            ) [Type]
+            Var(
+             c
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        StatementListDerived1(
+        ) [StatementListDerived1]
+      ) [MethodDecl]
+    ) [MethodDeclLst]
+    MethodDecl(
+      MethodReturnVoid(
+       main
+      ) [MethodReturnVoid]
+      FormalParsOptionalDerived1(
+      ) [FormalParsOptionalDerived1]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementLst(
+        StatementLst(
+          StatementListDerived1(
+          ) [StatementListDerived1]
+          Stmt(
+            PrintStatement(
+              PlusExpr(
+                TermFactor(
+                  ConstNumFactor(
+                   1
+                  ) [ConstNumFactor]
+                ) [TermFactor]
+              ) [PlusExpr]
+              CommaNumConstOptionalDerived1(
+              ) [CommaNumConstOptionalDerived1]
+            ) [PrintStatement]
+          ) [Stmt]
+        ) [StatementLst]
+        Stmt(
+          PrintStatement(
+            PlusExpr(
+              TermFactor(
+                ConstNumFactor(
+                 2
+                ) [ConstNumFactor]
+              ) [TermFactor]
+            ) [PlusExpr]
+            CommaNumConstOptionalDerived1(
+            ) [CommaNumConstOptionalDerived1]
+          ) [PrintStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  18:22:46,801 - ===================================
+INFO  18:22:46,803 - Deklarisana promenljiva c tipa 1 na liniji 2
+INFO  18:22:46,803 - Deklarisana promenljiva y tipa 1 na liniji 2
+INFO  18:22:46,804 - Deklaracija METODE : k() sa povratinim tipom: 1 na liniji 4
+ERROR 18:22:46,804 - Desila se SEMANTICKA GRESKA: DVOSTRUKA definicija simbola na liniji 4
+ERROR 18:22:46,804 - SEMANTICKA GRESKA: methoda k() nema RETURN iskaz na liniji 4
+INFO  18:22:46,804 - Deklaracija METODE : main() sa povratinim tipom: 0 na liniji 9
+INFO  18:22:46,804 - Obradjen glavni program MJProgram na liniji 1
+ERROR 18:22:46,804 - Parsiranje NIJE uspesno zavrseno!

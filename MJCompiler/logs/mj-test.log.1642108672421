@@ -1,0 +1,123 @@
+INFO  22:17:10,196 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  22:17:10,245 - #2 program
+INFO  22:17:10,245 - #51 Program
+INFO  22:17:10,245 - #46 {
+INFO  22:17:10,246 - #15 void
+INFO  22:17:10,248 - #51 main
+INFO  22:17:10,248 - #42 (
+INFO  22:17:10,248 - #43 )
+INFO  22:17:10,249 - #51 A
+INFO  22:17:10,251 - #51 a
+INFO  22:17:10,252 - #38 ;
+INFO  22:17:10,254 - #46 {
+INFO  22:17:10,255 - #8 if
+INFO  22:17:10,255 - #42 (
+INFO  22:17:10,256 - #51 a
+INFO  22:17:10,257 - #22 +
+INFO  22:17:10,260 - #29 >
+ERROR 22:17:10,261 - 
+Sintaksna greska na liniji 5
+INFO  22:17:10,261 - #51 b
+INFO  22:17:10,261 - #43 )
+INFO  22:17:10,261 - #46 {
+INFO  22:17:10,262 - #51 x
+INFO  22:17:10,262 - #36 ++
+INFO  22:17:10,263 - #38 ;
+INFO  22:17:10,265 - #47 }
+INFO  22:17:10,265 - #6 else
+INFO  22:17:10,265 - #46 {
+INFO  22:17:10,265 - #51 m
+INFO  22:17:10,266 - #42 (
+INFO  22:17:10,266 - #43 )
+INFO  22:17:10,266 - #38 ;
+INFO  22:17:10,267 - #47 }
+INFO  22:17:10,268 - #47 }
+INFO  22:17:10,268 - #47 }
+INFO  22:17:10,271 - Program(
+ Program
+  DeclarationsDerived5(
+  ) [DeclarationsDerived5]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDeclDerived1(
+      MethodTypeDerived2(
+      ) [MethodTypeDerived2]
+     main
+      FormalParametarsDerived1(
+      ) [FormalParametarsDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        VarDeclarations(
+          Type(
+           A
+          ) [Type]
+          Var(
+           a
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          ElseStatement(
+            ConditionError(
+            ) [ConditionError]
+            Stmts(
+              StatementsDerived1(
+                StatementLst(
+                  StatementListDerived1(
+                  ) [StatementListDerived1]
+                  Stmt(
+                    DesignatorStm(
+                      DesignatorStatement(
+                        Designator(
+                         x
+                          DesignatorListDerived1(
+                          ) [DesignatorListDerived1]
+                        ) [Designator]
+                        DesignatorInc(
+                        ) [DesignatorInc]
+                      ) [DesignatorStatement]
+                    ) [DesignatorStm]
+                  ) [Stmt]
+                ) [StatementLst]
+              ) [StatementsDerived1]
+            ) [Stmts]
+            Stmts(
+              StatementsDerived1(
+                StatementLst(
+                  StatementListDerived1(
+                  ) [StatementListDerived1]
+                  Stmt(
+                    DesignatorStm(
+                      DesignatorStatement(
+                        Designator(
+                         m
+                          DesignatorListDerived1(
+                          ) [DesignatorListDerived1]
+                        ) [Designator]
+                        DesignatorParens(
+                          ActParsParen(
+                            ActParsListDerived1(
+                            ) [ActParsListDerived1]
+                          ) [ActParsParen]
+                        ) [DesignatorParens]
+                      ) [DesignatorStatement]
+                    ) [DesignatorStm]
+                  ) [Stmt]
+                ) [StatementLst]
+              ) [StatementsDerived1]
+            ) [Stmts]
+          ) [ElseStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclLst]
+) [Program]
+INFO  22:17:10,271 - ===================================
+INFO  22:17:10,274 -  Deklarisanih promenljivih ima = 0

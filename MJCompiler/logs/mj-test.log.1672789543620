@@ -1,0 +1,87 @@
+INFO  00:44:34,106 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  00:44:34,174 - #2 program
+INFO  00:44:34,174 - #50 MJ
+INFO  00:44:34,174 - #50 int
+INFO  00:44:34,176 - #50 a
+INFO  00:44:34,178 - #38 ,
+INFO  00:44:34,179 - #50 b
+INFO  00:44:34,179 - #38 ,
+INFO  00:44:34,180 - #50 c
+INFO  00:44:34,180 - #36 ;
+INFO  00:44:34,180 - #44 {
+INFO  00:44:34,180 - #50 int
+INFO  00:44:34,182 - #50 main
+INFO  00:44:34,182 - #40 (
+INFO  00:44:34,182 - #41 )
+INFO  00:44:34,182 - #44 {
+INFO  00:44:34,183 - #50 a
+INFO  00:44:34,184 - #33 =
+INFO  00:44:34,184 - #50 b
+INFO  00:44:34,185 - #50 c
+ERROR 00:44:34,185 - 
+Sintaksna greska na liniji 7
+INFO  00:44:34,185 - #36 ;
+INFO  00:44:34,186 - #45 }
+INFO  00:44:34,186 - #45 }
+ERROR 00:44:34,187 - Izvrsen oporavak do ; u liniji 7
+INFO  00:44:34,200 - Program(
+  ProgName(
+   MJ
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived4(
+    ) [DeclarationsDerived4]
+    VarDeclarations(
+      Type(
+       int
+      ) [Type]
+      Var(
+       a
+      ) [Var]
+      VariableLst(
+        VariableLst(
+          VariableListDerived1(
+          ) [VariableListDerived1]
+          Var(
+           b
+          ) [Var]
+        ) [VariableLst]
+        Var(
+         c
+        ) [Var]
+      ) [VariableLst]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnType(
+        Type(
+         int
+        ) [Type]
+      ) [MethodReturnType]
+     main
+      FormalParametarsDerived1(
+      ) [FormalParametarsDerived1]
+      VarDeclarationsListDerived1(
+      ) [VarDeclarationsListDerived1]
+      StatementLst(
+        StatementListDerived1(
+        ) [StatementListDerived1]
+        Stmt(
+          DesignatorStm(
+            DesignatorStatementAssign(
+              DesignatorIdent(
+               a
+              ) [DesignatorIdent]
+              AssignopExprError(
+              ) [AssignopExprError]
+            ) [DesignatorStatementAssign]
+          ) [DesignatorStm]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  00:44:34,200 - ===================================

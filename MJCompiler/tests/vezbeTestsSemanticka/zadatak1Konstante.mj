@@ -1,0 +1,15 @@
+program ABC
+char x[], y, z;
+bool c;
+int max;
+char npp;
+
+const int a1 = 3, a2 = 4, a3=5;
+const char b1='L', b2='P';
+const bool yes=true, no=false;
+{
+    void put(int x)
+    {
+        return x;
+    }
+}

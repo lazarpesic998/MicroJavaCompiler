@@ -1,0 +1,469 @@
+INFO  00:58:48,787 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  00:58:48,832 - #2 program
+INFO  00:58:48,832 - #50 oporavakOdGreske
+INFO  00:58:48,833 - #50 int
+INFO  00:58:48,834 - #50 i
+INFO  00:58:48,834 - #38 ,
+INFO  00:58:48,835 - #10 while
+ERROR 00:58:48,835 - 
+Sintaksna greska na liniji 4
+INFO  00:58:48,836 - #38 ,
+INFO  00:58:48,836 - #50 x
+INFO  00:58:48,836 - #36 ;
+INFO  00:58:48,837 - #44 {
+ERROR 00:58:48,837 - Izvrsen oporavak do , ili ; u liniji 4
+INFO  00:58:48,838 - #15 void
+INFO  00:58:48,839 - #50 f
+INFO  00:58:48,840 - #40 (
+INFO  00:58:48,840 - #50 int
+INFO  00:58:48,840 - #48 1
+ERROR 00:58:48,840 - 
+Sintaksna greska na liniji 8
+INFO  00:58:48,840 - #38 ,
+INFO  00:58:48,841 - #50 int
+INFO  00:58:48,841 - #50 c
+INFO  00:58:48,841 - #38 ,
+ERROR 00:58:48,841 - Izvrsen oporavak do , ili ) u liniji 8
+INFO  00:58:48,843 - #50 int
+INFO  00:58:48,843 - #48 35
+ERROR 00:58:48,843 - 
+Sintaksna greska na liniji 8
+INFO  00:58:48,843 - #41 )
+INFO  00:58:48,844 - #44 {
+INFO  00:58:48,844 - #12 print
+INFO  00:58:48,844 - #40 (
+ERROR 00:58:48,844 - Izvrsen oporavak do , ili ) u liniji 8
+INFO  00:58:48,846 - #50 c
+INFO  00:58:48,846 - #41 )
+INFO  00:58:48,851 - #36 ;
+INFO  00:58:48,851 - #45 }
+INFO  00:58:48,852 - #15 void
+INFO  00:58:48,853 - #50 main
+INFO  00:58:48,853 - #40 (
+INFO  00:58:48,854 - #41 )
+INFO  00:58:48,854 - #50 int
+INFO  00:58:48,855 - #50 j
+INFO  00:58:48,855 - #36 ;
+INFO  00:58:48,855 - #44 {
+INFO  00:58:48,855 - #50 j
+INFO  00:58:48,856 - #33 =
+INFO  00:58:48,856 - #48 10
+INFO  00:58:48,857 - #36 ;
+INFO  00:58:48,858 - #50 j
+INFO  00:58:48,858 - #33 =
+INFO  00:58:48,858 - #48 1
+INFO  00:58:48,858 - #41 )
+ERROR 00:58:48,858 - 
+Sintaksna greska na liniji 16
+INFO  00:58:48,859 - #48 9
+INFO  00:58:48,859 - #36 ;
+INFO  00:58:48,859 - #12 print
+INFO  00:58:48,859 - #40 (
+INFO  00:58:48,859 - #50 j
+ERROR 00:58:48,859 - Izvrsen oporavak do ; u liniji 16
+INFO  00:58:48,860 - #41 )
+INFO  00:58:48,860 - #36 ;
+INFO  00:58:48,860 - #50 i
+INFO  00:58:48,861 - #33 =
+INFO  00:58:48,861 - #21 -
+INFO  00:58:48,861 - #48 1
+INFO  00:58:48,861 - #36 ;
+INFO  00:58:48,861 - #50 f
+INFO  00:58:48,861 - #40 (
+INFO  00:58:48,862 - #48 2
+INFO  00:58:48,862 - #41 )
+INFO  00:58:48,862 - #36 ;
+INFO  00:58:48,863 - #12 print
+INFO  00:58:48,863 - #40 (
+INFO  00:58:48,863 - #50 i
+INFO  00:58:48,863 - #41 )
+INFO  00:58:48,863 - #36 ;
+INFO  00:58:48,864 - #8 if
+INFO  00:58:48,864 - #40 (
+INFO  00:58:48,864 - #48 1
+INFO  00:58:48,864 - #29 <
+INFO  00:58:48,864 - #48 2
+INFO  00:58:48,865 - #31 &&
+INFO  00:58:48,866 - #15 void
+ERROR 00:58:48,866 - 
+Sintaksna greska na liniji 24
+INFO  00:58:48,866 - #41 )
+INFO  00:58:48,866 - #44 {
+INFO  00:58:48,867 - #12 print
+INFO  00:58:48,867 - #40 (
+ERROR 00:58:48,867 - Izvrsen oporavak do ) u liniji 24
+INFO  00:58:48,868 - #49 T
+INFO  00:58:48,868 - #38 ,
+INFO  00:58:48,868 - #48 5
+INFO  00:58:48,868 - #41 )
+INFO  00:58:48,869 - #36 ;
+INFO  00:58:48,869 - #45 }
+INFO  00:58:48,869 - #6 else
+INFO  00:58:48,869 - #44 {
+INFO  00:58:48,869 - #12 print
+INFO  00:58:48,869 - #40 (
+INFO  00:58:48,869 - #49 E
+INFO  00:58:48,869 - #38 ,
+INFO  00:58:48,870 - #48 5
+INFO  00:58:48,870 - #41 )
+INFO  00:58:48,870 - #36 ;
+INFO  00:58:48,870 - #45 }
+INFO  00:58:48,870 - #12 print
+INFO  00:58:48,870 - #40 (
+INFO  00:58:48,870 - #50 eol
+INFO  00:58:48,870 - #41 )
+INFO  00:58:48,871 - #36 ;
+INFO  00:58:48,871 - #12 print
+INFO  00:58:48,871 - #40 (
+INFO  00:58:48,871 - #49 X
+INFO  00:58:48,871 - #41 )
+INFO  00:58:48,871 - #36 ;
+INFO  00:58:48,871 - #45 }
+INFO  00:58:48,871 - #45 }
+INFO  00:58:48,881 - Program(
+  ProgName(
+   oporavakOdGreske
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived4(
+    ) [DeclarationsDerived4]
+    VarDeclarations(
+      Type(
+       int
+      ) [Type]
+      Var(
+       i
+      ) [Var]
+      VariableLst(
+        VariableLst(
+          VariableListDerived1(
+          ) [VariableListDerived1]
+          VariableError(
+          ) [VariableError]
+        ) [VariableLst]
+        Var(
+         x
+        ) [Var]
+      ) [VariableLst]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclLst(
+      MethodDeclListDerived1(
+      ) [MethodDeclListDerived1]
+      MethodDecl(
+        MethodReturnVoid(
+        ) [MethodReturnVoid]
+       f
+        FormalParametarss(
+          FormalParsError(
+          ) [FormalParsError]
+          FormParsVariableLst(
+            FormParsVariableLst(
+              FormParsVariableListDerived1(
+              ) [FormParsVariableListDerived1]
+              FormParss(
+                Type(
+                 int
+                ) [Type]
+                FormVar(
+                 c
+                ) [FormVar]
+              ) [FormParss]
+            ) [FormParsVariableLst]
+            FormalParsError(
+            ) [FormalParsError]
+          ) [FormParsVariableLst]
+        ) [FormalParametarss]
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        StatementLst(
+          StatementListDerived1(
+          ) [StatementListDerived1]
+          Stmt(
+            PrintStatement(
+              PlusExpr(
+                Term(
+                  DesignatorFactor(
+                    DesignatorIdent(
+                     c
+                    ) [DesignatorIdent]
+                  ) [DesignatorFactor]
+                  MulopFactorListDerived1(
+                  ) [MulopFactorListDerived1]
+                ) [Term]
+                AddopTermListDerived1(
+                ) [AddopTermListDerived1]
+              ) [PlusExpr]
+              CommaNumConstOptionalDerived1(
+              ) [CommaNumConstOptionalDerived1]
+            ) [PrintStatement]
+          ) [Stmt]
+        ) [StatementLst]
+      ) [MethodDecl]
+    ) [MethodDeclLst]
+    MethodDecl(
+      MethodReturnVoid(
+      ) [MethodReturnVoid]
+     main
+      FormalParametarsDerived1(
+      ) [FormalParametarsDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          Var(
+           j
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementLst(
+        StatementLst(
+          StatementLst(
+            StatementLst(
+              StatementLst(
+                StatementLst(
+                  StatementLst(
+                    StatementLst(
+                      StatementLst(
+                        StatementListDerived1(
+                        ) [StatementListDerived1]
+                        Stmt(
+                          DesignatorStm(
+                            DesignatorStatementAssign(
+                              DesignatorIdent(
+                               j
+                              ) [DesignatorIdent]
+                              AssignopExpresion(
+                                Assignop(
+                                ) [Assignop]
+                                PlusExpr(
+                                  Term(
+                                    NumConstFactor(
+                                     10
+                                    ) [NumConstFactor]
+                                    MulopFactorListDerived1(
+                                    ) [MulopFactorListDerived1]
+                                  ) [Term]
+                                  AddopTermListDerived1(
+                                  ) [AddopTermListDerived1]
+                                ) [PlusExpr]
+                              ) [AssignopExpresion]
+                            ) [DesignatorStatementAssign]
+                          ) [DesignatorStm]
+                        ) [Stmt]
+                      ) [StatementLst]
+                      Stmt(
+                        DesignatorStm(
+                          DesignatorStatementAssign(
+                            DesignatorIdent(
+                             j
+                            ) [DesignatorIdent]
+                            AssignopExprError(
+                            ) [AssignopExprError]
+                          ) [DesignatorStatementAssign]
+                        ) [DesignatorStm]
+                      ) [Stmt]
+                    ) [StatementLst]
+                    Stmt(
+                      PrintStatement(
+                        PlusExpr(
+                          Term(
+                            DesignatorFactor(
+                              DesignatorIdent(
+                               j
+                              ) [DesignatorIdent]
+                            ) [DesignatorFactor]
+                            MulopFactorListDerived1(
+                            ) [MulopFactorListDerived1]
+                          ) [Term]
+                          AddopTermListDerived1(
+                          ) [AddopTermListDerived1]
+                        ) [PlusExpr]
+                        CommaNumConstOptionalDerived1(
+                        ) [CommaNumConstOptionalDerived1]
+                      ) [PrintStatement]
+                    ) [Stmt]
+                  ) [StatementLst]
+                  Stmt(
+                    DesignatorStm(
+                      DesignatorStatementAssign(
+                        DesignatorIdent(
+                         i
+                        ) [DesignatorIdent]
+                        AssignopExpresion(
+                          Assignop(
+                          ) [Assignop]
+                          MinusExpr(
+                            Term(
+                              NumConstFactor(
+                               1
+                              ) [NumConstFactor]
+                              MulopFactorListDerived1(
+                              ) [MulopFactorListDerived1]
+                            ) [Term]
+                            AddopTermListDerived1(
+                            ) [AddopTermListDerived1]
+                          ) [MinusExpr]
+                        ) [AssignopExpresion]
+                      ) [DesignatorStatementAssign]
+                    ) [DesignatorStm]
+                  ) [Stmt]
+                ) [StatementLst]
+                Stmt(
+                  DesignatorStm(
+                    DesignatorStatementParens(
+                      DesignatorIdent(
+                       f
+                      ) [DesignatorIdent]
+                      ActParsParen(
+                        ActParsLst(
+                          ActParam(
+                            PlusExpr(
+                              Term(
+                                NumConstFactor(
+                                 2
+                                ) [NumConstFactor]
+                                MulopFactorListDerived1(
+                                ) [MulopFactorListDerived1]
+                              ) [Term]
+                              AddopTermListDerived1(
+                              ) [AddopTermListDerived1]
+                            ) [PlusExpr]
+                          ) [ActParam]
+                        ) [ActParsLst]
+                      ) [ActParsParen]
+                    ) [DesignatorStatementParens]
+                  ) [DesignatorStm]
+                ) [Stmt]
+              ) [StatementLst]
+              Stmt(
+                PrintStatement(
+                  PlusExpr(
+                    Term(
+                      DesignatorFactor(
+                        DesignatorIdent(
+                         i
+                        ) [DesignatorIdent]
+                      ) [DesignatorFactor]
+                      MulopFactorListDerived1(
+                      ) [MulopFactorListDerived1]
+                    ) [Term]
+                    AddopTermListDerived1(
+                    ) [AddopTermListDerived1]
+                  ) [PlusExpr]
+                  CommaNumConstOptionalDerived1(
+                  ) [CommaNumConstOptionalDerived1]
+                ) [PrintStatement]
+              ) [Stmt]
+            ) [StatementLst]
+            Stmt(
+              ElseStatement(
+                ConditionError(
+                ) [ConditionError]
+                Stmts(
+                  StatementsDerived1(
+                    StatementLst(
+                      StatementListDerived1(
+                      ) [StatementListDerived1]
+                      Stmt(
+                        PrintStatement(
+                          PlusExpr(
+                            Term(
+                              CharConstFactor(
+                               T
+                              ) [CharConstFactor]
+                              MulopFactorListDerived1(
+                              ) [MulopFactorListDerived1]
+                            ) [Term]
+                            AddopTermListDerived1(
+                            ) [AddopTermListDerived1]
+                          ) [PlusExpr]
+                          CommaNumConstOption(
+                            CommaNumConstOptionalDerived1(
+                            ) [CommaNumConstOptionalDerived1]
+                           5
+                          ) [CommaNumConstOption]
+                        ) [PrintStatement]
+                      ) [Stmt]
+                    ) [StatementLst]
+                  ) [StatementsDerived1]
+                ) [Stmts]
+                Stmts(
+                  StatementsDerived1(
+                    StatementLst(
+                      StatementListDerived1(
+                      ) [StatementListDerived1]
+                      Stmt(
+                        PrintStatement(
+                          PlusExpr(
+                            Term(
+                              CharConstFactor(
+                               E
+                              ) [CharConstFactor]
+                              MulopFactorListDerived1(
+                              ) [MulopFactorListDerived1]
+                            ) [Term]
+                            AddopTermListDerived1(
+                            ) [AddopTermListDerived1]
+                          ) [PlusExpr]
+                          CommaNumConstOption(
+                            CommaNumConstOptionalDerived1(
+                            ) [CommaNumConstOptionalDerived1]
+                           5
+                          ) [CommaNumConstOption]
+                        ) [PrintStatement]
+                      ) [Stmt]
+                    ) [StatementLst]
+                  ) [StatementsDerived1]
+                ) [Stmts]
+              ) [ElseStatement]
+            ) [Stmt]
+          ) [StatementLst]
+          Stmt(
+            PrintStatement(
+              PlusExpr(
+                Term(
+                  DesignatorFactor(
+                    DesignatorIdent(
+                     eol
+                    ) [DesignatorIdent]
+                  ) [DesignatorFactor]
+                  MulopFactorListDerived1(
+                  ) [MulopFactorListDerived1]
+                ) [Term]
+                AddopTermListDerived1(
+                ) [AddopTermListDerived1]
+              ) [PlusExpr]
+              CommaNumConstOptionalDerived1(
+              ) [CommaNumConstOptionalDerived1]
+            ) [PrintStatement]
+          ) [Stmt]
+        ) [StatementLst]
+        Stmt(
+          PrintStatement(
+            PlusExpr(
+              Term(
+                CharConstFactor(
+                 X
+                ) [CharConstFactor]
+                MulopFactorListDerived1(
+                ) [MulopFactorListDerived1]
+              ) [Term]
+              AddopTermListDerived1(
+              ) [AddopTermListDerived1]
+            ) [PlusExpr]
+            CommaNumConstOptionalDerived1(
+            ) [CommaNumConstOptionalDerived1]
+          ) [PrintStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  00:58:48,882 - ===================================

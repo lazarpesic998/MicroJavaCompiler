@@ -1,0 +1,250 @@
+INFO  22:48:46,037 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  22:48:46,077 - #2 program
+INFO  22:48:46,078 - #50 test302
+INFO  22:48:46,078 - #7 const
+INFO  22:48:46,079 - #50 int
+INFO  22:48:46,079 - #50 jedan
+INFO  22:48:46,080 - #33 =
+INFO  22:48:46,080 - #48 1
+INFO  22:48:46,080 - #36 ;
+INFO  22:48:46,081 - #50 int
+INFO  22:48:46,082 - #50 i
+INFO  22:48:46,082 - #36 ;
+INFO  22:48:46,082 - #50 bool
+INFO  22:48:46,083 - #50 ibool
+INFO  22:48:46,083 - #36 ;
+INFO  22:48:46,083 - #50 int
+INFO  22:48:46,083 - #50 niz2
+INFO  22:48:46,083 - #36 ;
+INFO  22:48:46,083 - #50 int
+INFO  22:48:46,083 - #50 niz
+INFO  22:48:46,083 - #42 [
+INFO  22:48:46,083 - #43 ]
+INFO  22:48:46,083 - #36 ;
+INFO  22:48:46,088 - #50 int
+INFO  22:48:46,088 - #50 a
+INFO  22:48:46,088 - #38 ,
+INFO  22:48:46,088 - #50 curr
+INFO  22:48:46,088 - #36 ;
+INFO  22:48:46,088 - #44 {
+INFO  22:48:46,088 - #15 void
+INFO  22:48:46,089 - #50 main
+INFO  22:48:46,089 - #40 (
+INFO  22:48:46,089 - #41 )
+INFO  22:48:46,090 - #50 int
+INFO  22:48:46,091 - #50 x
+INFO  22:48:46,091 - #36 ;
+INFO  22:48:46,091 - #44 {
+INFO  22:48:46,091 - #50 niz
+INFO  22:48:46,092 - #33 =
+INFO  22:48:46,092 - #11 new
+INFO  22:48:46,092 - #50 int
+INFO  22:48:46,092 - #42 [
+INFO  22:48:46,092 - #48 3
+INFO  22:48:46,092 - #43 ]
+INFO  22:48:46,093 - #36 ;
+INFO  22:48:46,093 - #50 niz
+INFO  22:48:46,094 - #39 .
+INFO  22:48:46,094 - #19 foreach
+INFO  22:48:46,094 - #40 (
+INFO  22:48:46,095 - #50 curr
+INFO  22:48:46,095 - #46 =>
+INFO  22:48:46,096 - #12 print
+INFO  22:48:46,096 - #40 (
+INFO  22:48:46,096 - #50 curr
+INFO  22:48:46,096 - #41 )
+INFO  22:48:46,097 - #36 ;
+INFO  22:48:46,097 - #41 )
+INFO  22:48:46,097 - #36 ;
+INFO  22:48:46,097 - #45 }
+INFO  22:48:46,097 - #45 }
+INFO  22:48:46,102 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived2(
+      DeclarationsDerived2(
+        DeclarationsDerived2(
+          DeclarationsDerived2(
+            DeclarationsDerived1(
+              DeclarationsDerived4(
+              ) [DeclarationsDerived4]
+              ConstDeclarations(
+                Type(
+                 int
+                ) [Type]
+                NumConst(
+                 jedan
+                 1
+                ) [NumConst]
+                ConstDeclListDerived1(
+                ) [ConstDeclListDerived1]
+              ) [ConstDeclarations]
+            ) [DeclarationsDerived1]
+            VarDeclarations(
+              Type(
+               int
+              ) [Type]
+              Var(
+               i
+              ) [Var]
+              VariableListDerived1(
+              ) [VariableListDerived1]
+            ) [VarDeclarations]
+          ) [DeclarationsDerived2]
+          VarDeclarations(
+            Type(
+             bool
+            ) [Type]
+            Var(
+             ibool
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [DeclarationsDerived2]
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          Var(
+           niz2
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [DeclarationsDerived2]
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        ArrayVar(
+         niz
+        ) [ArrayVar]
+        VariableListDerived1(
+        ) [VariableListDerived1]
+      ) [VarDeclarations]
+    ) [DeclarationsDerived2]
+    VarDeclarations(
+      Type(
+       int
+      ) [Type]
+      Var(
+       a
+      ) [Var]
+      VariableLst(
+        VariableListDerived1(
+        ) [VariableListDerived1]
+        Var(
+         curr
+        ) [Var]
+      ) [VariableLst]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnVoid(
+       main
+      ) [MethodReturnVoid]
+      FormalParsOptionalDerived1(
+      ) [FormalParsOptionalDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          Var(
+           x
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementLst(
+        StatementLst(
+          StatementListDerived1(
+          ) [StatementListDerived1]
+          Stmt(
+            DesignatorStm(
+              DesignatorStatementAssign(
+                DesignatorIdent(
+                 niz
+                ) [DesignatorIdent]
+                AssignopExpresion(
+                  Assignop(
+                  ) [Assignop]
+                  PlusExpr(
+                    TermFactor(
+                      NewFactorArray(
+                        Type(
+                         int
+                        ) [Type]
+                        PlusExpr(
+                          TermFactor(
+                            ConstNumFactor(
+                             3
+                            ) [ConstNumFactor]
+                          ) [TermFactor]
+                        ) [PlusExpr]
+                      ) [NewFactorArray]
+                    ) [TermFactor]
+                  ) [PlusExpr]
+                ) [AssignopExpresion]
+              ) [DesignatorStatementAssign]
+            ) [DesignatorStm]
+          ) [Stmt]
+        ) [StatementLst]
+        Stmt(
+          ForeachStatement(
+            ForeachDesignator(
+              DesignatorIdent(
+               niz
+              ) [DesignatorIdent]
+            ) [ForeachDesignator]
+            ForeachIdent(
+              DesignatorIdent(
+               curr
+              ) [DesignatorIdent]
+            ) [ForeachIdent]
+            Stmt(
+              PrintStatement(
+                PlusExpr(
+                  TermFactor(
+                    DesignatorFactor(
+                      DesignatorIdent(
+                       curr
+                      ) [DesignatorIdent]
+                    ) [DesignatorFactor]
+                  ) [TermFactor]
+                ) [PlusExpr]
+                CommaNumConstOptionalDerived1(
+                ) [CommaNumConstOptionalDerived1]
+              ) [PrintStatement]
+            ) [Stmt]
+          ) [ForeachStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  22:48:46,102 - ===================================
+INFO  22:48:46,105 - Deklarisana BROJEVNA KONSTANTA jedan tipa 1 vrednosti: 1 na liniji 5
+INFO  22:48:46,105 - Deklarisana promenljiva i tipa 1 na liniji 7
+INFO  22:48:46,105 - Deklarisana promenljiva ibool tipa 5 na liniji 8
+INFO  22:48:46,105 - Deklarisana promenljiva niz2 tipa 1 na liniji 10
+INFO  22:48:46,105 - Deklarisana NIZOVNA promenljiva niz tipa 1 na liniji 12
+INFO  22:48:46,105 - Deklarisana promenljiva a tipa 1 na liniji 13
+INFO  22:48:46,105 - Deklarisana promenljiva curr tipa 1 na liniji 13
+INFO  22:48:46,105 - Deklaracija METODE : main() sa povratinim tipom: 0 na liniji 37
+INFO  22:48:46,105 - Deklarisana promenljiva x tipa 1 na liniji 38
+INFO  22:48:46,105 - Nadjen designator: niz na liniji 55
+INFO  22:48:46,105 - Nadjen designator: niz na liniji 93
+INFO  22:48:46,105 - Nadjen designator: curr na liniji 93
+INFO  22:48:46,105 - Nadjen designator: curr na liniji 93
+INFO  22:48:46,106 - Obradjen glavni program test302 na liniji 3
+INFO  22:48:46,109 - Parsiranje uspesno zavrseno!

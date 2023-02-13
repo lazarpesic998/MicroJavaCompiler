@@ -1,0 +1,30 @@
+INFO  11:00:52,753 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  11:00:52,831 - #2 program
+INFO  11:00:52,831 - #51 MJ
+INFO  11:00:52,831 - #51 int
+INFO  11:00:52,833 - #51 x
+INFO  11:00:52,833 - #38 ;
+INFO  11:00:52,835 - #46 {
+INFO  11:00:52,836 - #47 }
+INFO  11:00:52,846 - Program(
+  ProgName(
+   MJ
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived5(
+    ) [DeclarationsDerived5]
+    VarDeclarations(
+      Type(
+       int
+      ) [Type]
+      Var(
+       x
+      ) [Var]
+      VariableListDerived1(
+      ) [VariableListDerived1]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclListDerived1(
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  11:00:52,846 - ===================================

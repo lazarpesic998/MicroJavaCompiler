@@ -1,0 +1,74 @@
+INFO  23:34:21,612 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  23:34:21,658 - #2 program
+INFO  23:34:21,658 - #51 Program
+INFO  23:34:21,658 - #46 {
+INFO  23:34:21,659 - #15 void
+INFO  23:34:21,660 - #51 main
+INFO  23:34:21,660 - #42 (
+INFO  23:34:21,660 - #22 +
+ERROR 23:34:21,661 - 
+Sintaksna greska na liniji 3
+INFO  23:34:21,661 - #40 ,
+INFO  23:34:21,661 - #51 a
+INFO  23:34:21,661 - #40 ,
+INFO  23:34:21,662 - #51 bool
+INFO  23:34:21,662 - #43 )
+INFO  23:34:21,663 - #51 A
+INFO  23:34:21,663 - #51 a
+INFO  23:34:21,663 - #38 ;
+INFO  23:34:21,665 - #51 char
+INFO  23:34:21,666 - #51 ch
+INFO  23:34:21,666 - #38 ;
+INFO  23:34:21,667 - #46 {
+INFO  23:34:21,667 - #47 }
+INFO  23:34:21,668 - #47 }
+INFO  23:34:21,674 - Program(
+ Program
+  DeclarationsDerived5(
+  ) [DeclarationsDerived5]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDeclDerived1(
+      MethodTypeDerived2(
+      ) [MethodTypeDerived2]
+     main
+      FormalParms(
+        FormalParsError(
+          FormParsVariableListDerived1(
+          ) [FormParsVariableListDerived1]
+        ) [FormalParsError]
+      ) [FormalParms]
+      VarDeclarationsLst(
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             A
+            ) [Type]
+            Var(
+             a
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        VarDeclarations(
+          Type(
+           char
+          ) [Type]
+          Var(
+           ch
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementListDerived1(
+      ) [StatementListDerived1]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclLst]
+) [Program]
+INFO  23:34:21,674 - ===================================
+INFO  23:34:21,678 -  Deklarisanih promenljivih ima = 0

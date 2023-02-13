@@ -1,0 +1,191 @@
+INFO  14:53:22,281 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  14:53:22,356 - #2 program
+INFO  14:53:22,356 - #50 test301
+INFO  14:53:22,356 - #7 const
+INFO  14:53:22,357 - #50 int
+INFO  14:53:22,358 - #50 nula
+INFO  14:53:22,358 - #33 =
+INFO  14:53:22,358 - #48 0
+INFO  14:53:22,358 - #36 ;
+INFO  14:53:22,359 - #7 const
+INFO  14:53:22,361 - #50 int
+INFO  14:53:22,361 - #50 jedan
+INFO  14:53:22,361 - #33 =
+INFO  14:53:22,361 - #48 1
+INFO  14:53:22,361 - #36 ;
+INFO  14:53:22,361 - #7 const
+INFO  14:53:22,361 - #50 int
+INFO  14:53:22,361 - #50 pet
+INFO  14:53:22,361 - #33 =
+INFO  14:53:22,362 - #48 5
+INFO  14:53:22,362 - #36 ;
+INFO  14:53:22,362 - #50 int
+INFO  14:53:22,362 - #50 niz
+INFO  14:53:22,362 - #42 [
+INFO  14:53:22,363 - #43 ]
+INFO  14:53:22,363 - #38 ,
+INFO  14:53:22,363 - #50 niz2
+INFO  14:53:22,363 - #42 [
+INFO  14:53:22,363 - #43 ]
+INFO  14:53:22,364 - #38 ,
+INFO  14:53:22,364 - #50 a
+INFO  14:53:22,364 - #38 ,
+INFO  14:53:22,364 - #50 b
+INFO  14:53:22,364 - #36 ;
+INFO  14:53:22,364 - #50 char
+INFO  14:53:22,365 - #50 nizch
+INFO  14:53:22,365 - #42 [
+INFO  14:53:22,365 - #43 ]
+INFO  14:53:22,365 - #36 ;
+INFO  14:53:22,365 - #44 {
+INFO  14:53:22,366 - #15 void
+INFO  14:53:22,366 - #50 main
+INFO  14:53:22,367 - #40 (
+INFO  14:53:22,367 - #41 )
+INFO  14:53:22,367 - #50 int
+INFO  14:53:22,368 - #50 bodovi
+INFO  14:53:22,368 - #36 ;
+INFO  14:53:22,368 - #50 bool
+INFO  14:53:22,369 - #50 bt
+INFO  14:53:22,369 - #36 ;
+INFO  14:53:22,369 - #44 {
+INFO  14:53:22,369 - #45 }
+INFO  14:53:22,370 - #45 }
+INFO  14:53:22,375 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  DeclarationsDerived2(
+    DeclarationsDerived2(
+      DeclarationsDerived1(
+        DeclarationsDerived1(
+          DeclarationsDerived1(
+            DeclarationsDerived4(
+            ) [DeclarationsDerived4]
+            ConstDeclarations(
+              Type(
+               int
+              ) [Type]
+              NumConst(
+               nula
+               0
+              ) [NumConst]
+              ConstDeclListDerived1(
+              ) [ConstDeclListDerived1]
+            ) [ConstDeclarations]
+          ) [DeclarationsDerived1]
+          ConstDeclarations(
+            Type(
+             int
+            ) [Type]
+            NumConst(
+             jedan
+             1
+            ) [NumConst]
+            ConstDeclListDerived1(
+            ) [ConstDeclListDerived1]
+          ) [ConstDeclarations]
+        ) [DeclarationsDerived1]
+        ConstDeclarations(
+          Type(
+           int
+          ) [Type]
+          NumConst(
+           pet
+           5
+          ) [NumConst]
+          ConstDeclListDerived1(
+          ) [ConstDeclListDerived1]
+        ) [ConstDeclarations]
+      ) [DeclarationsDerived1]
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        ArrayVar(
+         niz
+        ) [ArrayVar]
+        VariableLst(
+          VariableLst(
+            VariableLst(
+              VariableListDerived1(
+              ) [VariableListDerived1]
+              ArrayVar(
+               niz2
+              ) [ArrayVar]
+            ) [VariableLst]
+            Var(
+             a
+            ) [Var]
+          ) [VariableLst]
+          Var(
+           b
+          ) [Var]
+        ) [VariableLst]
+      ) [VarDeclarations]
+    ) [DeclarationsDerived2]
+    VarDeclarations(
+      Type(
+       char
+      ) [Type]
+      ArrayVar(
+       nizch
+      ) [ArrayVar]
+      VariableListDerived1(
+      ) [VariableListDerived1]
+    ) [VarDeclarations]
+  ) [DeclarationsDerived2]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDecl(
+      MethodReturnVoid(
+       main
+      ) [MethodReturnVoid]
+      FormalParsOptionalDerived1(
+      ) [FormalParsOptionalDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsLst(
+          VarDeclarationsListDerived1(
+          ) [VarDeclarationsListDerived1]
+          VarDeclarations(
+            Type(
+             int
+            ) [Type]
+            Var(
+             bodovi
+            ) [Var]
+            VariableListDerived1(
+            ) [VariableListDerived1]
+          ) [VarDeclarations]
+        ) [VarDeclarationsLst]
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+          Var(
+           bt
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementListDerived1(
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclLst]
+) [Program]
+INFO  14:53:22,375 - ===================================
+INFO  14:53:22,379 - Deklarisana BROJEVNA KONSTANTA nula tipa 1 vrednosti: 0 na liniji 5
+INFO  14:53:22,379 - Deklarisana BROJEVNA KONSTANTA jedan tipa 1 vrednosti: 1 na liniji 6
+INFO  14:53:22,379 - Deklarisana BROJEVNA KONSTANTA pet tipa 1 vrednosti: 5 na liniji 7
+INFO  14:53:22,379 - Deklarisana NIZOVNA promenljiva niz tipa 1 na liniji 9
+INFO  14:53:22,379 - Deklarisana NIZOVNA promenljiva niz2 tipa 1 na liniji 9
+INFO  14:53:22,379 - Deklarisana promenljiva a tipa 1 na liniji 9
+INFO  14:53:22,379 - Deklarisana promenljiva b tipa 1 na liniji 9
+INFO  14:53:22,379 - Deklarisana NIZOVNA promenljiva nizch tipa 2 na liniji 10
+INFO  14:53:22,379 - Deklaracija METODE : main() sa povratinim tipom: 0 na liniji 13
+INFO  14:53:22,379 - Deklarisana promenljiva bodovi tipa 1 na liniji 14
+INFO  14:53:22,379 - Deklarisana promenljiva bt tipa 5 na liniji 15
+INFO  14:53:22,379 - Obradjen glavni program test301 na liniji 3
+INFO  14:53:22,383 - Parsiranje uspesno zavrseno!

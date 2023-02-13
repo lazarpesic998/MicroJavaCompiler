@@ -1,0 +1,168 @@
+INFO  22:17:52,426 - Compiling source file: D:\gitRepo\MJCompiler\test\program.mj
+INFO  22:17:52,482 - #2 program
+INFO  22:17:52,482 - #51 Program
+INFO  22:17:52,482 - #46 {
+INFO  22:17:52,483 - #15 void
+INFO  22:17:52,485 - #51 main
+INFO  22:17:52,487 - #42 (
+INFO  22:17:52,487 - #43 )
+INFO  22:17:52,488 - #51 A
+INFO  22:17:52,489 - #51 a
+INFO  22:17:52,490 - #38 ;
+INFO  22:17:52,492 - #46 {
+INFO  22:17:52,493 - #8 if
+INFO  22:17:52,494 - #42 (
+INFO  22:17:52,494 - #51 a
+INFO  22:17:52,496 - #22 +
+INFO  22:17:52,501 - #29 >
+ERROR 22:17:52,501 - 
+Sintaksna greska na liniji 5
+INFO  22:17:52,502 - #51 b
+INFO  22:17:52,502 - #43 )
+INFO  22:17:52,502 - #46 {
+INFO  22:17:52,503 - #51 x
+INFO  22:17:52,504 - #36 ++
+INFO  22:17:52,509 - #38 ;
+INFO  22:17:52,511 - #47 }
+INFO  22:17:52,512 - #6 else
+INFO  22:17:52,512 - #46 {
+INFO  22:17:52,513 - #51 m
+INFO  22:17:52,513 - #42 (
+INFO  22:17:52,513 - #43 )
+INFO  22:17:52,514 - #38 ;
+INFO  22:17:52,516 - #47 }
+INFO  22:17:52,516 - #8 if
+INFO  22:17:52,516 - #42 (
+INFO  22:17:52,516 - #24 *
+ERROR 22:17:52,517 - 
+Sintaksna greska na liniji 12
+INFO  22:17:52,517 - #24 *
+INFO  22:17:52,517 - #24 *
+INFO  22:17:52,517 - #24 *
+INFO  22:17:52,518 - #24 *
+INFO  22:17:52,518 - #24 *
+INFO  22:17:52,518 - #43 )
+INFO  22:17:52,518 - #46 {
+INFO  22:17:52,518 - #51 y
+INFO  22:17:52,519 - #37 --
+INFO  22:17:52,519 - #38 ;
+INFO  22:17:52,520 - #47 }
+INFO  22:17:52,520 - #47 }
+INFO  22:17:52,521 - #47 }
+INFO  22:17:52,523 - Program(
+ Program
+  DeclarationsDerived5(
+  ) [DeclarationsDerived5]
+  MethodDeclLst(
+    MethodDeclListDerived1(
+    ) [MethodDeclListDerived1]
+    MethodDeclDerived1(
+      MethodTypeDerived2(
+      ) [MethodTypeDerived2]
+     main
+      FormalParametarsDerived1(
+      ) [FormalParametarsDerived1]
+      VarDeclarationsLst(
+        VarDeclarationsListDerived1(
+        ) [VarDeclarationsListDerived1]
+        VarDeclarations(
+          Type(
+           A
+          ) [Type]
+          Var(
+           a
+          ) [Var]
+          VariableListDerived1(
+          ) [VariableListDerived1]
+        ) [VarDeclarations]
+      ) [VarDeclarationsLst]
+      StatementLst(
+        StatementLst(
+          StatementListDerived1(
+          ) [StatementListDerived1]
+          Stmt(
+            ElseStatement(
+              ConditionError(
+              ) [ConditionError]
+              Stmts(
+                StatementsDerived1(
+                  StatementLst(
+                    StatementListDerived1(
+                    ) [StatementListDerived1]
+                    Stmt(
+                      DesignatorStm(
+                        DesignatorStatement(
+                          Designator(
+                           x
+                            DesignatorListDerived1(
+                            ) [DesignatorListDerived1]
+                          ) [Designator]
+                          DesignatorInc(
+                          ) [DesignatorInc]
+                        ) [DesignatorStatement]
+                      ) [DesignatorStm]
+                    ) [Stmt]
+                  ) [StatementLst]
+                ) [StatementsDerived1]
+              ) [Stmts]
+              Stmts(
+                StatementsDerived1(
+                  StatementLst(
+                    StatementListDerived1(
+                    ) [StatementListDerived1]
+                    Stmt(
+                      DesignatorStm(
+                        DesignatorStatement(
+                          Designator(
+                           m
+                            DesignatorListDerived1(
+                            ) [DesignatorListDerived1]
+                          ) [Designator]
+                          DesignatorParens(
+                            ActParsParen(
+                              ActParsListDerived1(
+                              ) [ActParsListDerived1]
+                            ) [ActParsParen]
+                          ) [DesignatorParens]
+                        ) [DesignatorStatement]
+                      ) [DesignatorStm]
+                    ) [Stmt]
+                  ) [StatementLst]
+                ) [StatementsDerived1]
+              ) [Stmts]
+            ) [ElseStatement]
+          ) [Stmt]
+        ) [StatementLst]
+        Stmt(
+          IfStatement(
+            ConditionError(
+            ) [ConditionError]
+            Stmts(
+              StatementsDerived1(
+                StatementLst(
+                  StatementListDerived1(
+                  ) [StatementListDerived1]
+                  Stmt(
+                    DesignatorStm(
+                      DesignatorStatement(
+                        Designator(
+                         y
+                          DesignatorListDerived1(
+                          ) [DesignatorListDerived1]
+                        ) [Designator]
+                        DesignatorDec(
+                        ) [DesignatorDec]
+                      ) [DesignatorStatement]
+                    ) [DesignatorStm]
+                  ) [Stmt]
+                ) [StatementLst]
+              ) [StatementsDerived1]
+            ) [Stmts]
+          ) [IfStatement]
+        ) [Stmt]
+      ) [StatementLst]
+    ) [MethodDeclDerived1]
+  ) [MethodDeclLst]
+) [Program]
+INFO  22:17:52,524 - ===================================
+INFO  22:17:52,528 -  Deklarisanih promenljivih ima = 0

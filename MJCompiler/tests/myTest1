@@ -1,0 +1,57 @@
+program MJProgram
+
+const int x = 31, y = 5, z=21;
+double a[], b, c[];
+
+class A extends B {
+
+	bool condtion;
+	
+	{
+	int m() {}
+	}
+}
+
+record Rec {
+	int x,y;
+	double d1;
+	char c;
+}
+
+{
+
+//nije mi jasno zasto su dozvolili posle imena metode da se stavi {VarDecl}
+void method1() int m1; {}
+bool m2(int x, double y[], bool z) {
+	
+	//statement Designator Ident Ident
+	statement: x.a;
+	
+	//statement Designator Ident Expr
+	statement1: y[-5];
+	statement11: y[-5*5/5%2];
+	
+	statement12: y[-5+7-2*5/5%2];
+	
+	{statement2: z['a'];}
+	
+	statement3: y[new A];
+	statement4: y[new A[1]];
+	statement5: y[(false)];
+	
+	//statement Designator Ident Expr Term Factor
+	statement6: y[-x.x()];
+	statement7: y[-x.x(true)];
+	
+	
+	
+	//designator statement
+	statementA: m();
+	statementB: x++;
+	statementC: y--;
+	
+	
+
+}
+
+}
